@@ -1,6 +1,7 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useRef, useEffect } from 'react';
 import TrendChart from './TrendChart';
 import { API_BASE } from '../../constants';
+import { createPortal } from 'react-dom';
 
 const ALL_RATIOS = [
   { key: 'debt_ratio', label: '资产负债率' },
@@ -33,6 +34,36 @@ const HistoricalTrendAnalysis = ({
   const [showRatioDropdown, setShowRatioDropdown] = useState(false);
   const [drilldown, setDrilldown] = useState(null);
   const [drilldownLoading, setDrilldownLoading] = useState(false);
+  const dropdownBtnRef = useRef();
+  const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0, width: 180 });
+
+  useEffect(() => {
+    if (showRatioDropdown && dropdownBtnRef.current) {
+      const rect = dropdownBtnRef.current.getBoundingClientRect();
+      setDropdownPos({
+        top: rect.bottom + 4,
+        left: rect.left,
+        width: rect.width || 180
+      });
+    }
+  }, [showRatioDropdown]);
+
+  // 点击外部关闭
+  useEffect(() => {
+    if (!showRatioDropdown) return;
+    const handleClick = (e) => {
+      if (
+        dropdownBtnRef.current &&
+        !dropdownBtnRef.current.contains(e.target) &&
+        document.getElementById('ratio-dropdown-portal') &&
+        !document.getElementById('ratio-dropdown-portal').contains(e.target)
+      ) {
+        setShowRatioDropdown(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [showRatioDropdown]);
 
   // 指标切换区块和趋势模式切换
   return (
@@ -63,15 +94,15 @@ const HistoricalTrendAnalysis = ({
           margin: '0 2px', padding: '4px 12px', borderRadius: 8, border: trendMetricMode === 'main' ? '2px solid #40a9ff' : '1.5px solid #223366', background: trendMetricMode === 'main' ? 'linear-gradient(90deg, #40a9ff 60%, #1e90ff 100%)' : '#223366', color: trendMetricMode === 'main' ? '#fff' : '#b3cfff', fontWeight: 700, fontSize: 15, cursor: 'pointer', boxShadow: trendMetricMode === 'main' ? '0 0 8px #40a9ff55' : 'none', transition: 'all 0.18s', outline: 'none', letterSpacing: 1,
         }}>主要项目</button>
         <div style={{ position: 'relative', display: 'inline-block' }}>
-          <button onClick={() => {
+          <button ref={dropdownBtnRef} onClick={() => {
             setTrendMetricMode('ratio');
             setTrendMetricKeys(selectedRatios);
             setShowRatioDropdown(v => !v);
           }} style={{
             margin: '0 2px', padding: '4px 12px', borderRadius: 8, border: trendMetricMode === 'ratio' ? '2px solid #40a9ff' : '1.5px solid #223366', background: trendMetricMode === 'ratio' ? 'linear-gradient(90deg, #40a9ff 60%, #1e90ff 100%)' : '#223366', color: trendMetricMode === 'ratio' ? '#fff' : '#b3cfff', fontWeight: 700, fontSize: 15, cursor: 'pointer', boxShadow: trendMetricMode === 'ratio' ? '0 0 8px #40a9ff55' : 'none', transition: 'all 0.18s', outline: 'none', letterSpacing: 1,
           }}>财务比率 ▾</button>
-          {showRatioDropdown && (
-            <div style={{ position: 'absolute', top: 36, left: 0, background: '#223366', border: '1.5px solid #40a9ff', borderRadius: 10, boxShadow: '0 2px 12px #22336655', zIndex: 10, minWidth: 180, padding: 8 }}>
+          {showRatioDropdown && createPortal(
+            <div id="ratio-dropdown-portal" style={{ position: 'fixed', top: dropdownPos.top, left: dropdownPos.left, background: '#223366', border: '1.5px solid #40a9ff', borderRadius: 10, boxShadow: '0 2px 12px #22336655', zIndex: 9999, minWidth: dropdownPos.width, padding: 8 }}>
               {ALL_RATIOS.map(r => (
                 <label key={r.key} style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#eaf6ff', fontWeight: 600, fontSize: 15, margin: '4px 0', cursor: 'pointer' }}>
                   <input type="checkbox" checked={selectedRatios.includes(r.key)} onChange={e => {
@@ -82,7 +113,8 @@ const HistoricalTrendAnalysis = ({
                   {r.label}
                 </label>
               ))}
-            </div>
+            </div>,
+            document.body
           )}
         </div>
       </div>

@@ -1,0 +1,313 @@
+/* Data Update Highlight Effects */
+
+.data-update-highlight {
+  animation: card-highlight 2s ease-in-out;
+}
+
+@keyframes card-highlight {
+  0% {
+    box-shadow: 0 0 0 3px rgba(75, 225, 160, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(75, 225, 160, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(75, 225, 160, 0);
+  }
+}
+
+.data-update-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4be1a0;
+  color: #0a1f44;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  animation: badge-fade 5s forwards;
+  z-index: 10;
+}
+
+@keyframes badge-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.update-time {
+  font-size: 12px;
+  color: #99b7ff;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.update-time.data-update-highlight {
+  color: #4be1a0;
+  animation: text-highlight 3s;
+}
+
+@keyframes text-highlight {
+  0% {
+    color: #4be1a0;
+  }
+  50% {
+    color: #e6b45e;
+  }
+  100% {
+    color: #99b7ff;
+  }
+}
+
+/* Enhanced DataQualityMatrix animations */
+.matrix-container.refreshing-container {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 0 2px rgba(75, 225, 160, 0.3);
+}
+
+.metric-cell.refreshing {
+  position: relative;
+  animation: cell-glow 3s ease;
+  z-index: 2;
+}
+
+@keyframes cell-glow {
+  0% {
+    box-shadow: 0 0 12px rgba(75, 225, 160, 0.8);
+    transform: scale(1.1);
+  }
+  50% {
+    box-shadow: 0 0 8px rgba(75, 225, 160, 0.6);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(75, 225, 160, 0);
+    transform: scale(1);
+  }
+}
+
+.refresh-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(75, 225, 160, 0.3) 0%, rgba(75, 225, 160, 0) 70%);
+  animation: highlight-ripple 3s ease-out;
+  pointer-events: none;
+}
+
+@keyframes highlight-ripple {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.refreshing-text {
+  position: relative;
+  animation: text-pulse 3s ease;
+}
+
+@keyframes text-pulse {
+  0% {
+    color: #4be1a0;
+    text-shadow: 0 0 8px rgba(75, 225, 160, 0.8);
+  }
+  50% {
+    color: #4be1a0;
+    text-shadow: 0 0 4px rgba(75, 225, 160, 0.5);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+.auto-refresh-indicator.active-refresh {
+  color: #4be1a0;
+  font-weight: bold;
+}
+
+.refresh-notification {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: rgba(75, 225, 160, 0.15);
+  border: 1px solid rgba(75, 225, 160, 0.3);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 11px;
+  animation: notification-pulse 1.5s infinite;
+}
+
+@keyframes notification-pulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+}
+
+/* Cell pulse animation for heatmap */
+.cell-pulse {
+  animation: cell-pulse-animation 2s infinite;
+}
+
+@keyframes cell-pulse-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Progress bar animation */
+.progress-fill.animated {
+  transition: width 1s ease-in-out;
+}
+
+/* Number counter animation */
+.animate-number {
+  transition: all 0.5s ease-out;
+}
+
+/* Card entrance animations */
+.card-entrance {
+  animation: card-entrance-animation 0.5s ease-out;
+}
+
+@keyframes card-entrance-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Alert notification pulse */
+.alert-badge {
+  position: relative;
+}
+
+.alert-badge::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+  animation: alert-pulse 2s infinite;
+  z-index: -1;
+}
+
+@keyframes alert-pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+/* Health score ring animation */
+.health-score-ring {
+  position: relative;
+}
+
+.health-score-ring::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 50%;
+  border: 2px solid;
+  border-color: inherit;
+  opacity: 0.6;
+  animation: ring-pulse 2s infinite;
+}
+
+@keyframes ring-pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* Data point hover effect */
+.data-point {
+  transition: transform 0.2s, filter 0.2s;
+  cursor: pointer;
+}
+
+.data-point:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+  z-index: 2;
+}
+
+/* Feature bar hover animation */
+.feature-bar-fill:hover {
+  animation: feature-bar-pulse 1s infinite;
+}
+
+@keyframes feature-bar-pulse {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+} 

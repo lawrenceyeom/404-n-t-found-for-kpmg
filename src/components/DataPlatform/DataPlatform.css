@@ -1,0 +1,170 @@
+/* 现有样式 */
+
+/* 仪表盘卡片布局 */
+.dashboard-cards {
+  margin-top: 20px;
+}
+
+.dashboard-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  background-color: #15294e;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #2a3c6e;
+  transition: all 0.3s;
+  flex: 1;
+  min-width: 300px;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #4be1a0;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  color: #eaf6ff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-content {
+  min-height: 180px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #2a3c6e;
+  color: #99b7ff;
+  font-size: 14px;
+}
+
+.card-action {
+  color: #4be1a0;
+  cursor: pointer;
+}
+
+.card-action:hover {
+  text-decoration: underline;
+}
+
+/* 状态指示器 */
+.stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.success {
+  background-color: rgba(75, 225, 160, 0.2);
+  color: #4be1a0;
+}
+
+.warning {
+  background-color: rgba(230, 180, 94, 0.2);
+  color: #e6b45e;
+}
+
+.danger {
+  background-color: rgba(230, 94, 94, 0.2);
+  color: #e65e5e;
+}
+
+/* 进度条样式 */
+.progress-bar {
+  height: 6px;
+  background-color: #182c54;
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #99b7ff;
+}
+
+/* 加载动画 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(75, 225, 160, 0.2);
+  border-top: 4px solid #4be1a0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 小统计数据 */
+.mini-stat {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.mini-stat-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.mini-stat-text {
+  flex: 1;
+}
+
+.mini-stat-label {
+  font-size: 12px;
+  color: #99b7ff;
+  margin-bottom: 4px;
+}
+
+.mini-stat-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #eaf6ff;
+} 

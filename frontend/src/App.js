@@ -1,6 +1,8 @@
 // src/App.js
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
+import DataPlatform from './components/DataPlatform/DataPlatform';
 
 // Constants (Import only what App.js directly needs for props or top-level decisions)
 import {
@@ -42,6 +44,7 @@ import RadarDetailModal from './components/modals/RadarDetailModal';
 
 function App() {
   const [company, setCompany] = useState('aura'); // Top-level state
+  const [lastVisitedPath, setLastVisitedPath] = useState('');
 
   // --- Instantiate Custom Hooks ---
   const { opinionList, opinionIdx, opinionLoading } = useOpinionData(company, API_BASE);
@@ -69,6 +72,27 @@ function App() {
   const [feedbackContent, setFeedbackContent] = useState('');
   const [feedbackContact, setFeedbackContact] = useState('');
 
+  // 记住用户最后访问的路径
+  useEffect(() => {
+    // 从localStorage获取上次访问的路径
+    const savedPath = localStorage.getItem('lastVisitedPath');
+    if (savedPath) {
+      setLastVisitedPath(savedPath);
+    }
+
+    // 监听路径变化并保存
+    const handlePathChange = () => {
+      const currentPath = window.location.pathname;
+      localStorage.setItem('lastVisitedPath', currentPath);
+      setLastVisitedPath(currentPath);
+    };
+
+    window.addEventListener('beforeunload', handlePathChange);
+    return () => {
+      window.removeEventListener('beforeunload', handlePathChange);
+    };
+  }, []);
+
   // 使用 useCallback 包装 onOpenRadarDetail
   const handleOpenRadarDetail = useCallback((dimIdx) => {
     if (riskScores && riskScores[dimIdx] !== undefined) {
@@ -93,33 +117,33 @@ function App() {
 
   console.log('trendData', trendData, 'financeISData', financeISData, 'trendLoading', trendLoading);
 
+  // 检查当前路径是否包含data-platform/data-quality
+  const shouldRedirectToDataQuality = lastVisitedPath && lastVisitedPath.includes('/data-platform/data-quality');
+
   return (
+    <Router>
     <div className="App" style={{ background: 'linear-gradient(135deg, #0a1f44 60%, #102b6a 100%)', minHeight: '100vh', color: '#eaf6ff' }}>
       <Header
-        currentCompanyId={company} // Pass company ID
+          currentCompanyId={company}
         onSetCompany={setCompany}
-        companiesData={COMPANIES} // Pass company data for rendering buttons
+          companiesData={COMPANIES}
       />
-
+        <Routes>
+          <Route path="/" element={
       <main style={{
         width: '96vw',
         maxWidth: 1600,
-        minWidth: 320, // Ensure responsiveness
-        margin: '0 auto', // Centering
+              minWidth: 320,
+              margin: '0 auto',
         padding: '2vw',
-        paddingTop: 'calc(2vw + 80px)', // Adjusted for fixed header (approx. 80px height of header)
+              paddingTop: 110,
         background: 'rgba(22,36,71,0.92)',
         borderRadius: 20,
         boxShadow: '0 6px 32px #00152944',
         border: '1.5px solid #223366',
         transition: 'width 0.3s',
-        // overflow: 'hidden', // Be cautious with this if modals are not portalized
       }}>
-        <CompanyInfoSection
-          companyId={company}
-          companiesData={COMPANIES}
-        />
-
+              <CompanyInfoSection companyId={company} companiesData={COMPANIES} />
         <HistoricalTrendAnalysis
           company={company}
           trendData={trendData}
@@ -130,7 +154,6 @@ function App() {
           initialSelectedRatios={INITIAL_SELECTED_RATIOS}
           initialTrendMetricKeysMain={INITIAL_TREND_METRIC_KEYS_MAIN}
         />
-
         <DashboardGrid
           opinionList={opinionList}
           opinionIdx={opinionIdx}
@@ -143,21 +166,19 @@ function App() {
           onOpenAlertHistory={openAlertHistoryModal}
           onOpenRadarDetail={handleOpenRadarDetail}
         />
-
         <div style={{ marginTop: 36, width: '100%', display: 'flex', gap: 40, flexWrap: 'wrap', minHeight: '450px' }}>
-          <AssetStructurePieChart
-            financeData={financeData}
-            assetItems={ASSET_ITEMS} // Asset items definition
-          />
-          <BusinessRiskHeatmap
-            company={company}
-            bizModules={bizModules}
-            riskDimensions={RISK_DIMENSIONS}
-          />
+                <AssetStructurePieChart financeData={financeData} assetItems={ASSET_ITEMS} />
+                <BusinessRiskHeatmap company={company} bizModules={bizModules} riskDimensions={RISK_DIMENSIONS} />
         </div>
       </main>
-
-      {/* Modals rendered at the App level */}
+          } />
+          <Route path="/data-platform/*" element={<DataPlatform />} />
+          <Route path="/data-platform" element={
+            shouldRedirectToDataQuality ? 
+            <Navigate to="/data-platform/data-quality" replace /> :
+            <Navigate to="/data-platform/dashboard" replace />
+          } />
+        </Routes>
       {isFeedbackModalOpen && (
         <FeedbackModal
           isOpen={isFeedbackModalOpen}
@@ -171,36 +192,32 @@ function App() {
           onSubmit={handleFeedbackSubmit}
         />
       )}
-
       {isAlertHistoryOpen && (
         <AlertHistoryModal
           isOpen={isAlertHistoryOpen}
           onClose={closeAlertHistoryModal}
           history={alertHistory}
-          alertDetailData={alertDetailData} // Data for the detail view
-          onOpenDetail={openAlertDetail}     // Function to trigger detail view/fetch
-          onCloseDetail={closeAlertDetail}   // Function to close detail view
+            alertDetailData={alertDetailData}
+            onOpenDetail={openAlertDetail}
+            onCloseDetail={closeAlertDetail}
           riskDimensions={RISK_DIMENSIONS}
-          apiBase={API_BASE} // If modal fetches detail internally
+            apiBase={API_BASE}
         />
       )}
-
       {radarModalData && (
         <RadarDetailModal
           isOpen={!!radarModalData}
           onClose={() => setRadarModalData(null)}
-          modalData={radarModalData} // Contains { dimIdx, score }
+            modalData={radarModalData}
           riskDimensions={RISK_DIMENSIONS}
           riskDimExplain={RISK_DIM_EXPLAIN}
           riskDimKeys={RISK_DIM_KEYS}
         />
       )}
-
       {feedbackSuccess && (
         <div style={{
-          position: 'fixed', top: '12%', left: '50%', transform: 'translateX(-50%)', // Better centering
-          width: 'auto', // Fit content
-          zIndex: 10000, // Ensure it's above other elements
+            position: 'fixed', top: '12%', left: '50%', transform: 'translateX(-50%)',
+            width: 'auto', zIndex: 10000,
         }}>
           <div style={{
             background: '#223366', color: '#4be1a0', fontWeight: 800,
@@ -213,6 +230,7 @@ function App() {
         </div>
       )}
     </div>
+    </Router>
   );
 }
 

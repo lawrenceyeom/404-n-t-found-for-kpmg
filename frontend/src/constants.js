@@ -1,5 +1,5 @@
 // src/constants.js
-export const API_BASE = process.env.REACT_APP_API_BASE || 'http://127.0.0.1:8000';
+export const API_BASE = 'http://127.0.0.1:8000';
 
 export const COMPANIES = [
   { id: 'aura', name: 'AURA稳健', desc: 'AURA稳健公司描述' },

@@ -4,11 +4,13 @@ from pathlib import Path
 from typing import Literal
 import numpy as np
 import random
+import os
 
 router = APIRouter()
 
-# 使用相对路径，适配云端部署
-EXCEL_PATH = Path(__file__).parent / ".." / ".." / ".venv" / "财务模板大全-兴化城投-2024年9月末(已更新).xlsx"
+# 修改为相对路径，适配Render部署
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
+EXCEL_PATH = BASE_DIR / ".venv" / "财务模板大全-兴化城投-2024年9月末(已更新).xlsx"
 
 # 支持的主要表名
 SUPPORTED_SHEETS = {

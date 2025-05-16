@@ -21,7 +21,7 @@ const DashboardGrid = ({
     <div style={{
       display: 'grid',
       gridTemplateColumns: '1fr 1fr 1.2fr',
-      gridTemplateRows: '1fr 1fr',
+      gridTemplateRows: 'auto auto auto',
       gap: 28,
       marginTop: 32,
       width: '100%',
