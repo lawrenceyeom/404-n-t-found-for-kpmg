@@ -1,5 +1,5 @@
 // src/constants.js
-export const API_BASE = 'http://127.0.0.1:8000';
+export const API_BASE = 'https://four04-n-t-found-for-kpmg-1.onrender.com';
 
 export const COMPANIES = [
   { id: 'aura', name: 'AURA稳健', desc: 'AURA稳健公司描述' },
