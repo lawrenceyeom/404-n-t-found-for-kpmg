@@ -1,5 +1,5 @@
 // src/constants.js
-export const API_BASE = 'https://four04-n-t-found-for-kpmg-1.onrender.com/';
+export const API_BASE = 'https://four04-n-t-found-for-kpmg-1.onrender.com';
 export const API_URL = API_BASE;
 
 export const COMPANIES = [
