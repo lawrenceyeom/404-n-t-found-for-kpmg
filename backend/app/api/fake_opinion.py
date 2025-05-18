@@ -1,3 +1,27 @@
+"""
+Sentiment Analysis Module for AURA Platform
+
+This module provides API endpoints for generating simulated sentiment data from various
+media sources (news, social media) for different companies. It demonstrates the platform's
+ability to monitor and analyze public opinion about audited companies, which serves as an
+important external risk indicator.
+
+Key components:
+- Mock sentiment generation with platform-specific content templates
+- Company-specific sentiment distribution based on risk profile
+- Realistic simulation of different user/source types and their behavior patterns
+- Sentiment trend aggregation and analysis
+- Keyword extraction and hot event identification
+
+Main endpoints:
+- /fake/opinion_raw: Generates detailed sentiment data entries with platform, user, content, and scores
+- /fake/opinion_trend: Provides aggregated sentiment analysis including trends, keywords, and hot events
+
+This module showcases how AURA would integrate external sentiment data into its risk
+assessment framework, helping auditors understand public perception risks and identify
+potential issues that might not be visible in financial data alone.
+"""
+
 import random
 from fastapi import APIRouter, Query
 from datetime import datetime, timedelta

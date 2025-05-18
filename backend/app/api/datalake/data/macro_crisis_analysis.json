@@ -1,0 +1,191 @@
+{
+  "company": "CRISIS压力",
+  "type": "macro",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "economic_indicators": {
+    "gdp_growth": {
+      "value": 3.1,
+      "trend": "放缓",
+      "impact": "消费需求萎缩，市场增长乏力"
+    },
+    "interest_rate": {
+      "value": 5.25,
+      "trend": "持续上升",
+      "impact": "融资成本大幅增加，财务压力加剧"
+    },
+    "inflation_rate": {
+      "value": 4.6,
+      "trend": "高位运行",
+      "impact": "成本上升难以完全传导，毛利率承压"
+    },
+    "unemployment_rate": {
+      "value": 5.8,
+      "trend": "上升",
+      "impact": "需求减弱，但有利于控制人力成本"
+    },
+    "currency_exchange": {
+      "value": "波动加大",
+      "trend": "不确定性增强",
+      "impact": "进口原材料成本波动，出口收入不稳定"
+    }
+  },
+  "industry_conditions": {
+    "market_growth": {
+      "value": -2.5,
+      "trend": "负增长",
+      "impact": "行业进入调整期，过剩产能待出清"
+    },
+    "competitive_intensity": {
+      "value": "极高",
+      "trend": "恶性竞争",
+      "impact": "价格战加剧，行业利润大幅下滑"
+    },
+    "technology_evolution": {
+      "value": "加速淘汰",
+      "trend": "分化明显",
+      "impact": "传统技术路线被快速替代，转型压力巨大"
+    },
+    "regulatory_environment": {
+      "value": "监管趋严",
+      "trend": "合规要求提高",
+      "impact": "增加合规成本，部分业务面临调整"
+    }
+  },
+  "audit_analysis": {
+    "macro_risk_exposure": {
+      "industry_cycle_position": {
+        "assessment": "衰退期",
+        "implications": "行业面临整合重组，弱势企业将被淘汰",
+        "audit_focus": "关注持续经营能力评估，资产减值迹象，债务风险"
+      },
+      "interest_rate_sensitivity": {
+        "assessment": "高度敏感",
+        "implications": "债务负担加重，财务风险上升",
+        "audit_focus": "评估债务偿还能力，利息覆盖率下降风险，债务契约合规性"
+      },
+      "regulatory_change_exposure": {
+        "assessment": "较高风险",
+        "implications": "环保与安全监管趋严，不合规企业面临处罚",
+        "audit_focus": "检查合规状况，评估潜在罚款与整改成本"
+      },
+      "technology_disruption_risk": {
+        "assessment": "高风险",
+        "implications": "现有技术路线面临淘汰，产品竞争力下降",
+        "audit_focus": "评估技术资产减值风险，检查产品生命周期状态"
+      }
+    },
+    "economic_scenario_analysis": {
+      "base_case": {
+        "probability": 0.55,
+        "description": "经济低速增长，行业持续调整",
+        "impact": "持续亏损，但仍能维持基本运营",
+        "key_indicators_to_monitor": ["行业去产能进展", "融资环境", "债务重组进展"]
+      },
+      "upside_case": {
+        "probability": 0.15,
+        "description": "行业企稳回暖，竞争格局优化",
+        "impact": "亏损收窄，现金流改善",
+        "key_indicators_to_monitor": ["行业需求变化", "原材料价格", "竞争对手动态"]
+      },
+      "downside_case": {
+        "probability": 0.30,
+        "description": "经济衰退，行业危机加剧",
+        "impact": "亏损扩大，流动性危机，可能面临破产重组",
+        "key_indicators_to_monitor": ["银行贷款态度", "现金流状况", "资产处置进度"]
+      }
+    },
+    "policy_environment_analysis": {
+      "supportive_policies": [
+        {
+          "policy": "产业结构调整支持政策",
+          "impact": "可能获得转型资金支持",
+          "outlook": "针对性支持有限，需主动申请"
+        },
+        {
+          "policy": "稳就业政策",
+          "impact": "裁员压力缓解，可获得一定补贴",
+          "outlook": "短期有效，长期仍需自身调整"
+        }
+      ],
+      "challenging_policies": [
+        {
+          "policy": "环保标准提升",
+          "impact": "增加环保合规成本，部分产线需改造",
+          "outlook": "执行力度加强，处罚趋严"
+        },
+        {
+          "policy": "产能过剩行业调控",
+          "impact": "扩张受限，部分产能可能被强制淘汰",
+          "outlook": "调控将持续加强"
+        },
+        {
+          "policy": "能耗双控政策",
+          "impact": "增加能源成本，部分高耗能设备面临限制",
+          "outlook": "长期政策方向，影响将持续"
+        }
+      ],
+      "audit_recommendations": [
+        "全面评估政策合规状况，制定整改计划",
+        "识别和申请可获得的政策支持",
+        "将政策风险纳入企业重组和战略调整考量"
+      ]
+    },
+    "market_contraction_risk": {
+      "demand_decline": {
+        "severity": "严重",
+        "trend": "持续萎缩",
+        "affected_segments": ["传统产品线", "中低端市场", "出口业务"],
+        "audit_focus": "关注销售预测合理性，存货计价和滞销风险",
+        "recommendations": "加速产品结构调整，降低对萎缩市场依赖"
+      },
+      "price_pressure": {
+        "severity": "极高",
+        "trend": "持续恶化",
+        "margin_impact": "毛利率下降超过40%",
+        "audit_focus": "评估定价策略合理性，成本控制措施有效性",
+        "recommendations": "避免无序价格竞争，寻找差异化空间"
+      }
+    },
+    "restructuring_considerations": {
+      "operational_restructuring": {
+        "necessity": "紧急",
+        "focus_areas": ["产能优化", "组织精简", "成本控制"],
+        "expected_benefits": "降低盈亏平衡点，改善现金流",
+        "execution_risks": "调整幅度不足，执行不力",
+        "audit_focus": "评估重组计划合理性和有效性，关注资产处置定价"
+      },
+      "financial_restructuring": {
+        "necessity": "刻不容缓",
+        "focus_areas": ["债务重组", "资产处置", "寻求战略投资"],
+        "expected_benefits": "降低债务负担，改善资本结构",
+        "execution_risks": "债权人谈判困难，资产价值低估",
+        "audit_focus": "评估债务重组方案可行性，关注关联交易和资产定价"
+      },
+      "strategic_repositioning": {
+        "necessity": "中长期",
+        "focus_areas": ["业务聚焦", "产品升级", "商业模式转型"],
+        "expected_benefits": "重建核心竞争力，提高资产回报率",
+        "execution_risks": "转型方向不清，资源不足",
+        "audit_focus": "评估战略调整的合理性和资源保障"
+      }
+    },
+    "sustainable_development_impediments": {
+      "financial_constraints": {
+        "severity": "严重",
+        "impact": "缺乏环保投入能力，难以支持技术升级",
+        "audit_recommendations": "制定有优先级的环保合规计划，结合产能调整"
+      },
+      "reputation_damage": {
+        "severity": "中等",
+        "impact": "负面形象影响人才吸引和客户关系",
+        "audit_recommendations": "加强危机公关，保持基本的社会责任活动"
+      },
+      "governance_weaknesses": {
+        "severity": "严重",
+        "impact": "决策效率低下，管理层信任度下降",
+        "audit_recommendations": "改善公司治理，提高决策透明度和管理层问责"
+      }
+    }
+  }
+} 

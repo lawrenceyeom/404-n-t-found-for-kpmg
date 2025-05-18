@@ -6,21 +6,93 @@ const TrendChart = ({ trendData, financeISData, trendPeriods, trendMode, trendMe
   const chartRef = useRef();
 
   // 分别查找资产负债表和利润表
-  const findInTrendData = itemName => trendData.find(r => r.item === itemName || (r.item && r.item.includes(itemName)));
+  const findInTrendData = itemName => {
+    if (Array.isArray(trendData)) {
+      return trendData.find(r => r.item === itemName || (r.item && r.item.includes(itemName)));
+    }
+    return null;
+  };
+  
+  // 添加一个更灵活的查找函数，可以查找包含关键词的项目
+  const findInTrendDataFlexible = (keywords) => {
+    if (!Array.isArray(trendData)) return null;
+    // 尝试按完全匹配，然后逐步放宽匹配条件
+    for (const keyword of keywords) {
+      // 精确匹配
+      const exactMatch = trendData.find(r => r.item === keyword);
+      if (exactMatch) return exactMatch;
+      
+      // 包含匹配
+      const containsMatch = trendData.find(r => r.item && r.item.includes(keyword));
+      if (containsMatch) return containsMatch;
+    }
+    return null;
+  };
+  
   const findInISData = itemName => financeISData.find(r => r.item === itemName || (r.item && r.item.includes(itemName)));
 
   useEffect(() => {
-    if (!trendData || !trendData.length || !chartRef.current) return;
+    if (!trendData || (!Array.isArray(trendData) && Object.keys(trendData).length === 0) || !chartRef.current) return;
     const dom = chartRef.current;
     let chart = echarts.getInstanceByDom(dom) || echarts.init(dom);
     // 计算比率
     const ratios = calculateRatios(trendData, financeISData, trendPeriods, findInTrendData, findInISData);
     console.log('Calculated Ratios:', JSON.parse(JSON.stringify(ratios)));
+    
     // 动态series和legend
     const metricMap = {
-      cash: { row: trendData.find(r => r.item && r.item.includes('货币资金')), label: '货币资金', color: '#40a9ff' },
-      receivable: { row: trendData.find(r => r.item && r.item.includes('应收账款')), label: '应收账款', color: '#4be1a0' },
-      debt: { row: trendData.find(r => r.item === '流动负债合计'), label: '流动负债', color: '#ff5c5c' },
+      // Asset items
+      cash: { row: findInTrendData('货币资金'), label: '货币资金', color: '#40a9ff' },
+      receivable: { 
+        row: findInTrendDataFlexible(['应收账款', '应收款项', '应收票据']), 
+        label: '应收账款', 
+        color: '#4be1a0',
+        fallbackRows: [findInTrendData('长期应收款'), findInTrendData('其他应收款')]
+      },
+      inventory: { row: findInTrendData('存货'), label: '存货', color: '#ffd666' },
+      fixed_assets: { row: findInTrendData('固定资产'), label: '固定资产', color: '#ff8c40' },
+      construction: { row: findInTrendData('在建工程'), label: '在建工程', color: '#a084ff' },
+      intangible: { row: findInTrendData('无形资产'), label: '无形资产', color: '#00e0e0' },
+      investment_property: { row: findInTrendData('投资性房地产'), label: '投资性房地产', color: '#ff5c5c' },
+      long_term_equity: { row: findInTrendData('长期股权投资'), label: '长期股权投资', color: '#ff7a5c' },
+      other_receivables: { row: findInTrendData('其他应收款'), label: '其他应收款', color: '#5cffb5' },
+      total_current_assets: { row: findInTrendData('流动资产合计'), label: '流动资产合计', color: '#ff5c5c' },
+      total_assets: { row: findInTrendData('资产总计'), label: '资产总计', color: '#ff8f5c' },
+      
+      // Liability items
+      short_borrowings: { row: findInTrendData('短期借款'), label: '短期借款', color: '#ff5c79' },
+      accounts_payable: { 
+        row: findInTrendDataFlexible(['应付账款', '应付款项', '应付票据']), 
+        label: '应付账款', 
+        color: '#ff5ca8',
+        fallbackRows: [findInTrendData('其他应付款')]
+      },
+      contract_liabilities: { row: findInTrendData('合同负债'), label: '合同负债', color: '#d15cff' },
+      long_borrowings: { row: findInTrendData('长期借款'), label: '长期借款', color: '#915cff' },
+      bonds_payable: { row: findInTrendData('应付债券'), label: '应付债券', color: '#5c7dff' },
+      debt: { row: findInTrendData('流动负债合计'), label: '流动负债合计', color: '#5cbdff' },
+      non_current_liabilities: { row: findInTrendData('非流动负债合计'), label: '非流动负债合计', color: '#5cffef' },
+      total_liabilities: { row: findInTrendData('负债合计'), label: '负债合计', color: '#5cff9a' },
+      
+      // Equity items
+      share_capital: { row: findInTrendData('实收资本（或股本）'), label: '实收资本（或股本）', color: '#adff5c' },
+      capital_reserve: { row: findInTrendData('资本公积'), label: '资本公积', color: '#eeff5c' },
+      surplus_reserve: { row: findInTrendData('盈余公积'), label: '盈余公积', color: '#ffb45c' },
+      undistributed_profit: { row: findInTrendData('未分配利润'), label: '未分配利润', color: '#ff755c' },
+      total_equity: { row: findInTrendData('所有者权益合计'), label: '所有者权益合计', color: '#ff5c8e' },
+      
+      // Income statement items
+      revenue: { row: findInISData('一、营业总收入'), label: '营业收入', color: '#5ca2ff' },
+      operating_costs: { row: findInISData('其中：营业成本'), label: '营业成本', color: '#ff5c5c' },
+      operating_profit: { row: findInISData('营业利润'), label: '营业利润', color: '#5cffe3' },
+      total_profit: { row: findInISData('利润总额'), label: '利润总额', color: '#5cffa2' },
+      net_profit: { row: findInISData('净利润'), label: '净利润', color: '#a0ff5c' },
+      
+      // Legacy asset properties with non-key names
+      '投资性房地产': { row: findInTrendData('投资性房地产'), label: '投资性房地产', color: '#ffd666' },
+      '长期应收款': { row: findInTrendData('长期应收款'), label: '长期应收款', color: '#a084ff' },
+      
+      // Financial ratios
       debt_ratio: { arr: ratios.debt_ratio, label: '资产负债率', color: '#ffd666', isRatio: true },
       current_ratio: { arr: ratios.current_ratio, label: '流动比率', color: '#a084ff', isRatio: true },
       quick_ratio: { arr: ratios.quick_ratio, label: '速动比率', color: '#ff8c40', isRatio: true },
@@ -32,10 +104,26 @@ const TrendChart = ({ trendData, financeISData, trendPeriods, trendMode, trendMe
       receivable_turnover: { arr: ratios.receivable_turnover, label: '应收账款周转率', color: '#a084ff', isRatio: true },
       inventory_turnover: { arr: ratios.inventory_turnover, label: '存货周转率', color: '#ff8c40', isRatio: true },
     };
+    
     // 动态series生成
     const series = trendMetricKeys.map(key => {
       const m = metricMap[key];
       if (!m) return null;
+
+      // 特殊处理：检查应收账款和应付账款
+      if ((key === 'receivable' || key === 'accounts_payable') && 
+          (!m.row || !Object.values(m.row).some(v => v !== null && v !== undefined && v !== 'item' && v !== 'aux'))) {
+        // 尝试使用备选数据
+        const fallbacks = m.fallbackRows || [];
+        for (const fallbackRow of fallbacks) {
+          if (fallbackRow && Object.values(fallbackRow).some(v => v !== null && v !== undefined && v !== 'item' && v !== 'aux')) {
+            console.log(`找到备选数据行: ${fallbackRow.item}`);
+            m.row = fallbackRow;
+            break;
+          }
+        }
+      }
+
       let markPoint = undefined;
       if (m.isRatio) {
         let data = m.arr;
@@ -80,6 +168,12 @@ const TrendChart = ({ trendData, financeISData, trendPeriods, trendMode, trendMe
         };
       } else {
         let row = m.row;
+        
+        // 没有找到有效数据，显示警告
+        if (!row || !Object.values(row).some(v => v !== null && v !== undefined && v !== 'item' && v !== 'aux')) {
+          console.warn(`未找到项目 ${m.label} 的数据`);
+        }
+        
         let seriesData = trendPeriods.map(y => row && row[y] ? Number(row[y]) : null);
         if (trendMode === 'yoy' || trendMode === 'qoq' || trendMode === 'abnormal') {
           seriesData = seriesData.map((v, i) => (i === 0 || seriesData[i-1] == null || v == null) ? null : ((v - seriesData[i-1]) / Math.abs(seriesData[i-1]) * 100).toFixed(2));
@@ -227,7 +321,10 @@ const TrendChart = ({ trendData, financeISData, trendPeriods, trendMode, trendMe
     <div style={{ width: '100%', height: 320, minWidth: 320, borderRadius: 12, background: 'rgba(16,43,106,0.12)' }}>
       <div ref={chartRef} style={{ width: '100%', height: '100%' }} />
       {isLoading && <div style={{ color: '#b3cfff', textAlign: 'center', marginTop: 10 }}>数据加载中...</div>}
-      {!isLoading && (!trendData || !trendData.length || !trendPeriods || !trendPeriods.length) && (
+      {!isLoading && (!trendData || 
+        (Array.isArray(trendData) && trendData.length === 0) || 
+        (!Array.isArray(trendData) && Object.keys(trendData).length === 0) || 
+        !trendPeriods || !trendPeriods.length) && (
         <div style={{ color: '#ff5c5c', textAlign: 'center', marginTop: 18, fontWeight: 700 }}>暂无可用历史数据。</div>
       )}
     </div>

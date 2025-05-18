@@ -1,0 +1,132 @@
+{
+  "company": "CRISIS压力",
+  "type": "finance",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "financial_ratios": {
+    "profitability": {
+      "gross_margin": 0.218,
+      "operating_margin": 0.062,
+      "net_profit_margin": 0.023,
+      "return_on_equity": 0.054
+    },
+    "liquidity": {
+      "current_ratio": 0.92,
+      "quick_ratio": 0.68
+    },
+    "solvency": {
+      "debt_ratio": 0.765,
+      "interest_coverage": 1.62
+    },
+    "efficiency": {
+      "asset_turnover": 0.58,
+      "inventory_turnover": 3.2,
+      "receivables_turnover": 4.5,
+      "payables_turnover": 2.8
+    }
+  },
+  "audit_analysis": {
+    "key_risk_areas": [
+      {
+        "area": "持续经营能力",
+        "risk_level": "高",
+        "description": "公司连续三个季度经营现金流为负，短期债务压力大",
+        "audit_focus": "关注现金流预测的合理性及债务偿还安排的可行性",
+        "potential_misstatement": "可能对持续经营假设的适当应用产生影响，影响资产计量基础",
+        "recommendation": "制定详细的资金周转计划，加强与债权人沟通，探索债务重组方案"
+      },
+      {
+        "area": "资产减值",
+        "risk_level": "高",
+        "description": "部分业务线持续亏损，相关资产存在较大减值风险",
+        "audit_focus": "关注资产减值迹象的识别及减值测试的充分性",
+        "potential_misstatement": "可能导致资产减值准备计提不足，高估资产价值",
+        "recommendation": "对亏损业务线资产进行全面减值评估，可引入独立评估机构参与"
+      },
+      {
+        "area": "财务费用",
+        "risk_level": "高",
+        "description": "负债率高且以短期融资为主，融资成本上升显著",
+        "audit_focus": "关注利息费用计提的完整性和准确性，特别是债务展期情况",
+        "potential_misstatement": "可能低估财务费用，高估利润和权益",
+        "recommendation": "优化债务结构，增加长期融资比例，建立融资成本管控机制"
+      },
+      {
+        "area": "收入确认",
+        "risk_level": "高",
+        "description": "在业绩压力下可能存在提前确认收入或虚增收入的风险",
+        "audit_focus": "关注收入确认的真实性和准确性，特别是期末大额销售交易",
+        "potential_misstatement": "可能导致收入、利润虚增，影响财务报表公允性",
+        "recommendation": "加强销售与收款循环的内部控制，对大额、异常交易执行额外检查程序"
+      },
+      {
+        "area": "关联方交易",
+        "risk_level": "中等",
+        "description": "公司与大股东及其关联企业存在频繁的业务往来",
+        "audit_focus": "关注关联方交易的商业实质和定价公允性",
+        "potential_misstatement": "可能通过不公允的关联交易转移利润，影响财务报表公允性",
+        "recommendation": "完善关联交易管理制度，确保所有关联交易均经过适当审批和披露"
+      }
+    ],
+    "going_concern": {
+      "status": "存在重大不确定性",
+      "liquidity_assessment": "紧张，速动比率0.68显著低于行业平均，短期偿债压力大",
+      "debt_service_capability": "较弱，利息覆盖率仅1.62倍，且呈下降趋势",
+      "operational_indicators": "行业地位下滑，主要产品市场份额减少，部分工厂产能利用率不足60%",
+      "analysis": "公司面临较大的财务压力和经营挑战，主要表现为流动性紧张、债务负担重、业务萎缩等。虽然公司已启动资产处置和业务重组计划，但若未能如期实现融资目标或改善经营状况，可能对持续经营能力产生重大不确定性影响。建议密切关注公司债务重组进展和经营改善措施的有效性。"
+    },
+    "internal_control": {
+      "overall_assessment": "较弱",
+      "control_environment": "一般，人员精简导致职责分离不充分",
+      "risk_assessment_process": "较弱，过度关注短期业绩，忽视长期风险管理",
+      "information_system": "一般，系统老旧且资源投入不足",
+      "significant_deficiencies": [
+        {
+          "area": "存货管理",
+          "description": "存货盘点不规范，部分仓库账实不符情况严重",
+          "impact": "高",
+          "recommendation": "重建存货管理制度，增强仓储管理系统功能，提高盘点频率和质量"
+        },
+        {
+          "area": "授权审批",
+          "description": "部分重大支出未按规定履行完整审批程序",
+          "impact": "高",
+          "recommendation": "强化审批控制，建立关键审批事项的检查监督机制"
+        },
+        {
+          "area": "财务报告",
+          "description": "财务部门人员流失严重，报告编制质量下降",
+          "impact": "中等",
+          "recommendation": "稳定财务团队，加强培训，优化财务报告编制流程"
+        }
+      ]
+    },
+    "analytical_procedures": {
+      "revenue_trend": {
+        "assessment": "异常",
+        "explanation": "收入同比下降15%，远低于行业平均增长率，下降趋势逐季加剧，且季度间波动明显"
+      },
+      "expense_trend": {
+        "assessment": "异常",
+        "explanation": "固定成本占比高且刚性强，收入下降导致毛利率和营业利润率大幅下滑，费用率上升"
+      },
+      "unusual_transactions": [
+        {
+          "description": "紧急出售两处闲置物业资产",
+          "materiality": "高",
+          "conclusion": "交易价格低于评估价值约8%，但在当前市场环境下基本合理，主要用于缓解流动性压力"
+        },
+        {
+          "description": "与大股东关联公司发生大额原材料采购",
+          "materiality": "高",
+          "conclusion": "价格基本符合市场行情，但付款条件优于其他供应商，需关注对现金流的影响"
+        },
+        {
+          "description": "对主要生产设备计提减值准备",
+          "materiality": "高",
+          "conclusion": "减值测试假设基本合理，但对未来产能利用率的预测较为乐观，存在低估减值的可能"
+        }
+      ]
+    }
+  }
+} 

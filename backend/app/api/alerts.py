@@ -1,3 +1,25 @@
+"""
+Alerts API Module for AURA Platform
+
+This module provides the alert notification system for the AURA platform, generating
+mock alerts data that simulates the risk notification capabilities of the system.
+The alerts are designed to demonstrate how the platform would identify various
+risk factors and provide actionable insights to auditors.
+
+Key components:
+- Mock alert data generation with different risk levels (high, medium, low)
+- Alert details with audit focus points, financial impact analysis, and suggested procedures
+- APIs to retrieve alert history and detailed information
+
+Main functions:
+- get_alerts_history(): Retrieves the list of historical alerts for a company
+- get_alert_detail(): Gets detailed information about a specific alert
+
+This module showcases how AURA would present identified risks to auditors in a way
+that highlights audit significance, financial statement impacts, and recommended
+audit procedures to address the identified risks.
+"""
+
 from fastapi import APIRouter, Query
 from typing import List, Optional
 from datetime import datetime

@@ -1,3 +1,31 @@
+"""
+Data Sources Management Module for AURA Platform
+
+This module provides API endpoints for the data management capabilities of the AURA platform,
+simulating a comprehensive data integration system that connects to various data sources
+including financial systems, operational monitoring systems, news/sentiment data, and
+macroeconomic indicators.
+
+Key components:
+- Data source connection management with status monitoring
+- Data ingestion statistics and performance metrics
+- Data quality measurement across different data types
+- Data processing pipeline status tracking
+- Feature engineering metrics monitoring
+
+Main endpoints:
+- /platform/data-sources: Lists all connected data sources with their status
+- /platform/data-sources/{source_id}: Retrieves detailed information about a specific data source
+- /platform/data-ingestion-stats: Provides statistics on data volume and ingestion success rates
+- /platform/data-quality-metrics: Shows quality metrics for different data types
+- /platform/processing-pipeline-status: Reports on the data processing pipeline health
+- /platform/feature-engineering-metrics: Displays metrics about feature engineering processes
+
+This module demonstrates how AURA manages the data layer of the platform, ensuring
+high-quality data integration from multiple sources, which is fundamental to the
+platform's risk analysis capabilities.
+"""
+
 from fastapi import APIRouter, HTTPException
 from typing import List, Dict, Any
 from pydantic import BaseModel

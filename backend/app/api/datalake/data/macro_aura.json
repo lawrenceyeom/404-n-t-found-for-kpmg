@@ -1,0 +1,99 @@
+{
+  "company": "AURA稳健",
+  "type": "macro",
+  "layer": "raw",
+  "data_format": "macro",
+  "indicators": [
+    {"year": 2020, "quarter": "Q1", "GDP": 207539, "CPI": 4.9, "PPI": -0.6, "PMI": 49.8, "M2": 208100, "unemployment": 5.9, "fixed_asset_investment": -16.1, "retail_sales": -19.0, "foreign_exchange_reserves": 3060000, "freight_index": 102.3, "export_growth": -13.3, "import_growth": -2.9, "balance_of_trade": 98400, "corporate_credit_growth": 12.1, "housing_sales_growth": -24.7, "interest_rate": 3.85},
+    {"year": 2020, "quarter": "Q2", "GDP": 229000, "CPI": 2.7, "PPI": -3.3, "PMI": 50.9, "M2": 213500, "unemployment": 5.7, "fixed_asset_investment": -3.1, "retail_sales": -3.9, "foreign_exchange_reserves": 3112000, "freight_index": 103.1, "export_growth": 0.1, "import_growth": -3.7, "balance_of_trade": 119800, "corporate_credit_growth": 12.5, "housing_sales_growth": -2.8, "interest_rate": 3.85},
+    {"year": 2020, "quarter": "Q3", "GDP": 250000, "CPI": 2.3, "PPI": -2.0, "PMI": 51.5, "M2": 216400, "unemployment": 5.4, "fixed_asset_investment": 0.8, "retail_sales": 0.9, "foreign_exchange_reserves": 3143000, "freight_index": 104.2, "export_growth": 8.8, "import_growth": 3.7, "balance_of_trade": 115400, "corporate_credit_growth": 12.8, "housing_sales_growth": 3.7, "interest_rate": 3.85},
+    {"year": 2020, "quarter": "Q4", "GDP": 271800, "CPI": 0.1, "PPI": -1.5, "PMI": 51.9, "M2": 218680, "unemployment": 5.2, "fixed_asset_investment": 2.9, "retail_sales": 4.6, "foreign_exchange_reserves": 3217000, "freight_index": 105.9, "export_growth": 16.9, "import_growth": 5.7, "balance_of_trade": 135200, "corporate_credit_growth": 13.0, "housing_sales_growth": 2.6, "interest_rate": 3.85},
+    {"year": 2021, "quarter": "Q1", "GDP": 249300, "CPI": 0.0, "PPI": 2.1, "PMI": 51.3, "M2": 223600, "unemployment": 5.3, "fixed_asset_investment": 25.6, "retail_sales": 33.9, "foreign_exchange_reserves": 3170000, "freight_index": 106.8, "export_growth": 38.7, "import_growth": 19.3, "balance_of_trade": 132400, "corporate_credit_growth": 12.6, "housing_sales_growth": 38.3, "interest_rate": 3.85},
+    {"year": 2021, "quarter": "Q2", "GDP": 286000, "CPI": 1.1, "PPI": 5.1, "PMI": 50.9, "M2": 231800, "unemployment": 5.0, "fixed_asset_investment": 12.6, "retail_sales": 23.0, "foreign_exchange_reserves": 3214000, "freight_index": 108.2, "export_growth": 28.1, "import_growth": 25.9, "balance_of_trade": 128400, "corporate_credit_growth": 12.3, "housing_sales_growth": 21.5, "interest_rate": 3.85},
+    {"year": 2021, "quarter": "Q3", "GDP": 297900, "CPI": 0.8, "PPI": 6.7, "PMI": 49.6, "M2": 234300, "unemployment": 4.9, "fixed_asset_investment": 7.3, "retail_sales": 16.4, "foreign_exchange_reserves": 3201000, "freight_index": 110.5, "export_growth": 24.4, "import_growth": 28.1, "balance_of_trade": 122600, "corporate_credit_growth": 11.9, "housing_sales_growth": 3.1, "interest_rate": 3.85},
+    {"year": 2021, "quarter": "Q4", "GDP": 324900, "CPI": 1.8, "PPI": 10.3, "PMI": 50.1, "M2": 244900, "unemployment": 5.1, "fixed_asset_investment": 4.9, "retail_sales": 12.5, "foreign_exchange_reserves": 3250000, "freight_index": 112.9, "export_growth": 20.9, "import_growth": 19.5, "balance_of_trade": 145600, "corporate_credit_growth": 11.6, "housing_sales_growth": -13.9, "interest_rate": 3.8},
+    {"year": 2022, "quarter": "Q1", "GDP": 270800, "CPI": 1.1, "PPI": 8.7, "PMI": 49.5, "M2": 249800, "unemployment": 5.8, "fixed_asset_investment": 9.3, "retail_sales": 3.3, "foreign_exchange_reserves": 3188000, "freight_index": 113.1, "export_growth": 13.4, "import_growth": 7.5, "balance_of_trade": 138700, "corporate_credit_growth": 11.4, "housing_sales_growth": -22.7, "interest_rate": 3.7},
+    {"year": 2022, "quarter": "Q2", "GDP": 291300, "CPI": 2.3, "PPI": 6.1, "PMI": 50.2, "M2": 258100, "unemployment": 5.5, "fixed_asset_investment": 6.1, "retail_sales": -4.6, "foreign_exchange_reserves": 3071000, "freight_index": 112.6, "export_growth": 12.8, "import_growth": 1.5, "balance_of_trade": 165600, "corporate_credit_growth": 11.2, "housing_sales_growth": -28.9, "interest_rate": 3.7},
+    {"year": 2022, "quarter": "Q3", "GDP": 309900, "CPI": 2.6, "PPI": 2.9, "PMI": 50.1, "M2": 265200, "unemployment": 5.4, "fixed_asset_investment": 5.9, "retail_sales": 3.5, "foreign_exchange_reserves": 3029000, "freight_index": 111.8, "export_growth": 10.5, "import_growth": 0.3, "balance_of_trade": 147000, "corporate_credit_growth": 10.9, "housing_sales_growth": -27.6, "interest_rate": 3.65},
+    {"year": 2022, "quarter": "Q4", "GDP": 328500, "CPI": 1.8, "PPI": -1.3, "PMI": 49.0, "M2": 272600, "unemployment": 5.5, "fixed_asset_investment": 5.1, "retail_sales": -0.2, "foreign_exchange_reserves": 3128000, "freight_index": 112.4, "export_growth": -9.9, "import_growth": -7.5, "balance_of_trade": 134500, "corporate_credit_growth": 11.3, "housing_sales_growth": -28.3, "interest_rate": 3.65},
+    {"year": 2023, "quarter": "Q1", "GDP": 284900, "CPI": 1.3, "PPI": -2.5, "PMI": 51.9, "M2": 281500, "unemployment": 5.3, "fixed_asset_investment": 5.1, "retail_sales": 5.8, "foreign_exchange_reserves": 3185000, "freight_index": 113.6, "export_growth": -3.5, "import_growth": -7.1, "balance_of_trade": 126800, "corporate_credit_growth": 11.1, "housing_sales_growth": -6.2, "interest_rate": 3.65},
+    {"year": 2023, "quarter": "Q2", "GDP": 309500, "CPI": 0.1, "PPI": -5.4, "PMI": 49.2, "M2": 288400, "unemployment": 5.2, "fixed_asset_investment": 3.8, "retail_sales": 8.2, "foreign_exchange_reserves": 3193000, "freight_index": 115.2, "export_growth": -14.5, "import_growth": -12.4, "balance_of_trade": 142000, "corporate_credit_growth": 10.8, "housing_sales_growth": -5.4, "interest_rate": 3.55},
+    {"year": 2023, "quarter": "Q3", "GDP": 329900, "CPI": -0.3, "PPI": -3.2, "PMI": 49.8, "M2": 292700, "unemployment": 5.0, "fixed_asset_investment": 3.1, "retail_sales": 6.3, "foreign_exchange_reserves": 3240000, "freight_index": 116.9, "export_growth": -9.4, "import_growth": -7.2, "balance_of_trade": 141800, "corporate_credit_growth": 10.6, "housing_sales_growth": -8.1, "interest_rate": 3.45},
+    {"year": 2023, "quarter": "Q4", "GDP": 342700, "CPI": -0.5, "PPI": -2.7, "PMI": 49.0, "M2": 300500, "unemployment": 5.1, "fixed_asset_investment": 3.0, "retail_sales": 7.4, "foreign_exchange_reserves": 3310000, "freight_index": 119.1, "export_growth": 4.3, "import_growth": 3.1, "balance_of_trade": 133900, "corporate_credit_growth": 10.4, "housing_sales_growth": -8.5, "interest_rate": 3.45},
+    {"year": 2024, "quarter": "Q1", "GDP": 295300, "CPI": -0.8, "PPI": -2.7, "PMI": 49.2, "M2": 307800, "unemployment": 5.2, "fixed_asset_investment": 4.5, "retail_sales": 4.7, "foreign_exchange_reserves": 3369000, "freight_index": 120.6, "export_growth": 7.4, "import_growth": 2.9, "balance_of_trade": 117600, "corporate_credit_growth": 10.2, "housing_sales_growth": -20.5, "interest_rate": 3.45}
+  ],
+  "policies": [
+    {"title": "宏观调控政策持续发力", "content": "2024年国家继续实施积极财政政策，推动经济高质量发展。重点投向制造业、数字经济和绿色转型领域，预计对AURA稳健的海外贸易和供应链金融服务形成良好支撑。", "date": "2024-05-20", "impact": "positive", "relevance": 8.5, "specific_impact": "海外贸易活动预计增长8.5%，供应链金融市场规模提升约12%"},
+    {"title": "金融支持实体经济新政", "content": "央行发布支持实体经济新举措，降低企业融资成本，鼓励金融机构向制造业和战略新兴产业提供长期贷款，有利于AURA稳健的资金成本优化。", "date": "2024-05-15", "impact": "positive", "relevance": 7.8, "specific_impact": "供应链金融业务成本预计下降0.5个百分点，放款规模有望提升15%"},
+    {"title": "稳就业稳增长一揽子措施", "content": "国务院发布稳就业稳增长一揽子措施，通过减税降费、简化行政审批等手段，优化企业经营环境，有望提振国内消费和投资。", "date": "2024-05-10", "impact": "positive", "relevance": 7.2, "specific_impact": "物流服务需求预计增长6.8%，商品销售环境改善"},
+    {"title": "数字经济促进条例实施", "content": "《数字经济促进条例》正式实施，明确支持企业数字化转型和智能制造升级，AURA稳健的数字中台战略与政策导向高度吻合。", "date": "2024-04-28", "impact": "positive", "relevance": 9.2, "specific_impact": "物流服务数字化转型加速，市场份额预计提升3.5%"},
+    {"title": "金融监管新规发布", "content": "金融监管部门发布企业融资新规，加强对上市公司治理和信息披露的监管，对AURA稳健等合规经营的企业构成长期利好。", "date": "2024-04-15", "impact": "positive", "relevance": 8.0, "specific_impact": "合规优势转化为业务增量，供应链金融业务信用评级提升"},
+    {"title": "国际贸易新规实施", "content": "商务部发布国际贸易新规定，简化跨境贸易流程，降低贸易壁垒，有助于扩大进出口规模，对AURA稳健的海外贸易业务构成直接利好。", "date": "2024-03-28", "impact": "positive", "relevance": 9.5, "specific_impact": "海外贸易通关效率提升18%，交易量预计增长7.2%"},
+    {"title": "物流运输碳减排政策", "content": "交通部联合环保部门发布物流运输碳减排激励政策，对绿色物流企业提供税收优惠和财政补贴，鼓励企业更新设备减少碳排放。", "date": "2024-03-15", "impact": "positive", "relevance": 8.3, "specific_impact": "物流服务获得碳减排补贴约2800万元，品牌形象提升"},
+    {"title": "区域全面经济伙伴关系协定深化", "content": "RCEP协定进一步深化，降低区域内关税，简化原产地规则，扩大服务贸易开放，为AURA稳健的区域贸易提供政策支持。", "date": "2024-02-20", "impact": "positive", "relevance": 9.0, "specific_impact": "东南亚贸易量预计增长12.5%，物流服务需求相应提升"},
+    {"title": "供应链安全保障措施", "content": "国家发改委发布供应链安全保障政策，要求提高关键产业供应链韧性，鼓励多元化采购和本地化生产，对AURA稳健的业务模式提出新要求。", "date": "2024-02-10", "impact": "neutral", "relevance": 7.5, "specific_impact": "供应链多元化布局加速，短期成本增加，长期安全性提升"},
+    {"title": "数字货币试点扩大", "content": "央行数字货币试点范围扩大，覆盖更多城市和应用场景，为跨境贸易和供应链金融提供新型支付工具，有望降低交易成本。", "date": "2024-01-25", "impact": "positive", "relevance": 7.0, "specific_impact": "供应链金融交易效率提升，成本降低约0.3%"}
+  ],
+  "industry_indicators": {
+    "industry_growth": 7.8,
+    "market_size": 2450000,
+    "competitive_intensity": 0.76,
+    "technology_adoption": 0.85,
+    "regulatory_pressure": 0.62,
+    "entry_barriers": 0.73,
+    "industry_lifecycle": "成长期",
+    "market_growth": 0.068,
+    "investment_trend": "increasing",
+    "key_challenges": ["人才竞争", "技术更新", "合规成本", "国际贸易环境", "数据安全", "供应链稳定性"],
+    "key_opportunities": ["数字化转型", "跨境电商增长", "绿色物流需求", "金融科技创新", "区域贸易协定"],
+    "industry_consolidation": 0.59,
+    "profit_margin_trend": "stable",
+    "industry_innovation_index": 7.8
+  },
+  "regional_comparison": [
+    {"region": "华东", "gdp_growth": 7.5, "industry_concentration": 0.38, "market_potential": 9.2, "local_policies": "开放贸易", "investment_attractiveness": 8.6, "labor_costs": "中高", "infrastructure_quality": 9.1},
+    {"region": "华南", "gdp_growth": 7.8, "industry_concentration": 0.42, "market_potential": 8.9, "local_policies": "制造业升级", "investment_attractiveness": 8.8, "labor_costs": "中高", "infrastructure_quality": 9.0},
+    {"region": "华北", "gdp_growth": 7.2, "industry_concentration": 0.35, "market_potential": 8.5, "local_policies": "服务业促进", "investment_attractiveness": 8.3, "labor_costs": "高", "infrastructure_quality": 8.7},
+    {"region": "西南", "gdp_growth": 8.1, "industry_concentration": 0.26, "market_potential": 9.0, "local_policies": "内陆开放", "investment_attractiveness": 8.5, "labor_costs": "中", "infrastructure_quality": 8.3},
+    {"region": "东北", "gdp_growth": 6.8, "industry_concentration": 0.22, "market_potential": 7.8, "local_policies": "产业振兴", "investment_attractiveness": 7.5, "labor_costs": "中低", "infrastructure_quality": 8.2},
+    {"region": "华中", "gdp_growth": 7.6, "industry_concentration": 0.29, "market_potential": 8.6, "local_policies": "交通枢纽", "investment_attractiveness": 8.1, "labor_costs": "中", "infrastructure_quality": 8.5},
+    {"region": "西北", "gdp_growth": 6.5, "industry_concentration": 0.18, "market_potential": 7.6, "local_policies": "能源开发", "investment_attractiveness": 7.3, "labor_costs": "低", "infrastructure_quality": 7.8}
+  ],
+  "forecast_scenarios": [
+    {"scenario": "基准", "gdp_growth": 5.2, "industry_growth": 7.8, "probability": 0.65, "timeframe": "1年", "key_assumptions": ["政策稳定性", "区域贸易持续增长", "国内消费平稳"], "impact_description": "在基准情景下，AURA稳健的海外贸易和物流服务将保持稳健增长，供应链金融业务有较大发展空间"},
+    {"scenario": "乐观", "gdp_growth": 5.8, "industry_growth": 9.2, "probability": 0.20, "timeframe": "1年", "key_assumptions": ["财政政策扩张", "出口强劲增长", "区域合作深化"], "impact_description": "在乐观情景下，AURA稳健的各项业务将全面加速，尤其是海外贸易和供应链金融领域增长最为显著"},
+    {"scenario": "保守", "gdp_growth": 4.5, "industry_growth": 6.5, "probability": 0.15, "timeframe": "1年", "key_assumptions": ["全球经济波动", "贸易摩擦增加", "政策收紧"], "impact_description": "在保守情景下，AURA稳健的商品销售业务受到一定冲击，但海外贸易的多元化布局有助于降低风险"}
+  ],
+  "risk_factors": {
+    "external_risks": [
+      {"risk": "全球供应链中断", "probability": 0.35, "impact": 0.75, "mitigation_level": 0.65, "response_strategy": "供应商多元化、库存优化", "early_warning_indicators": ["国际物流成本上升", "关键原材料价格波动"]},
+      {"risk": "贸易保护主义抬头", "probability": 0.40, "impact": 0.60, "mitigation_level": 0.55, "response_strategy": "市场多元化、本地化生产", "early_warning_indicators": ["关税政策变化", "非关税壁垒增加"]},
+      {"risk": "地缘政治紧张局势", "probability": 0.30, "impact": 0.70, "mitigation_level": 0.50, "response_strategy": "风险分散、情景应急预案", "early_warning_indicators": ["国际关系紧张", "区域冲突升级"]},
+      {"risk": "全球通胀压力", "probability": 0.55, "impact": 0.50, "mitigation_level": 0.60, "response_strategy": "成本管控、合理定价", "early_warning_indicators": ["大宗商品价格上涨", "劳动力成本增加"]},
+      {"risk": "数字安全威胁", "probability": 0.48, "impact": 0.65, "mitigation_level": 0.75, "response_strategy": "安全系统升级、员工培训", "early_warning_indicators": ["网络攻击频率", "行业安全漏洞报告"]}
+    ],
+    "policy_risks": [
+      {"risk": "贸易政策收紧", "probability": 0.35, "impact": 0.65, "primary_affected_sector": "海外贸易", "secondary_affected_sector": "物流服务"},
+      {"risk": "金融监管加强", "probability": 0.58, "impact": 0.55, "primary_affected_sector": "供应链金融", "secondary_affected_sector": "商品销售"},
+      {"risk": "环保标准提高", "probability": 0.62, "impact": 0.45, "primary_affected_sector": "物流服务", "secondary_affected_sector": "商品销售"},
+      {"risk": "数据合规要求", "probability": 0.70, "impact": 0.50, "primary_affected_sector": "供应链金融", "secondary_affected_sector": "海外贸易"}
+    ]
+  },
+  "industry_specific_interpretation": {
+    "company_type": "海外贸易与物流",
+    "key_economic_indicators_impact": [
+      {"indicator": "PMI", "correlation": 0.78, "impact_description": "PMI每增长1个点，公司海外贸易业务平均增长约3.2%"},
+      {"indicator": "出口增长率", "correlation": 0.85, "impact_description": "出口增长率与公司业绩高度相关，每增长1个百分点，收入增长约0.9%"},
+      {"indicator": "航运指数", "correlation": 0.72, "impact_description": "航运指数上升表明物流成本增加，对利润率有负面影响"},
+      {"indicator": "汇率波动", "correlation": 0.65, "impact_description": "人民币对美元每升值1%，公司外贸利润率平均下降约0.35%"}
+    ],
+    "business_cycle_sensitivity": {
+      "海外贸易": 0.82,
+      "物流服务": 0.75,
+      "供应链金融": 0.62,
+      "商品销售": 0.70
+    },
+    "competitive_landscape_outlook": "随着全球供应链重构和区域贸易协定深化，AURA稳健所处行业集中度将缓慢上升，龙头企业优势扩大。数字化转型成为行业主要驱动力，预计未来3年内技术投入将占营收的4.5%-5.5%。",
+    "regulatory_trend_forecast": "预计未来一年内，跨境数据流动和供应链安全将成为监管重点，针对供应链金融业务的监管将趋严。海外贸易政策总体保持开放，但合规要求将更加细化。"
+  }
+} 

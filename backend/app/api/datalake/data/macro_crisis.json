@@ -1,0 +1,99 @@
+{
+  "company": "CRISIS压力",
+  "type": "macro",
+  "layer": "raw",
+  "data_format": "macro",
+  "indicators": [
+    {"year": 2020, "quarter": "Q1", "GDP": 207539, "CPI": 4.9, "PPI": -0.6, "PMI": 49.8, "M2": 208100, "unemployment": 5.9, "fixed_asset_investment": -16.1, "retail_sales": -19.0, "foreign_exchange_reserves": 3060000},
+    {"year": 2020, "quarter": "Q2", "GDP": 229000, "CPI": 2.7, "PPI": -3.3, "PMI": 50.9, "M2": 213500, "unemployment": 5.7, "fixed_asset_investment": -3.1, "retail_sales": -3.9, "foreign_exchange_reserves": 3112000},
+    {"year": 2020, "quarter": "Q3", "GDP": 250000, "CPI": 2.3, "PPI": -2.0, "PMI": 51.5, "M2": 216400, "unemployment": 5.4, "fixed_asset_investment": 0.8, "retail_sales": 0.9, "foreign_exchange_reserves": 3143000},
+    {"year": 2020, "quarter": "Q4", "GDP": 271800, "CPI": 0.1, "PPI": -1.5, "PMI": 51.9, "M2": 218680, "unemployment": 5.2, "fixed_asset_investment": 2.9, "retail_sales": 4.6, "foreign_exchange_reserves": 3217000},
+    {"year": 2021, "quarter": "Q1", "GDP": 249300, "CPI": 0.0, "PPI": 2.1, "PMI": 51.3, "M2": 223600, "unemployment": 5.3, "fixed_asset_investment": 25.6, "retail_sales": 33.9, "foreign_exchange_reserves": 3170000},
+    {"year": 2021, "quarter": "Q2", "GDP": 286000, "CPI": 1.1, "PPI": 5.1, "PMI": 50.9, "M2": 231800, "unemployment": 5.0, "fixed_asset_investment": 12.6, "retail_sales": 23.0, "foreign_exchange_reserves": 3214000},
+    {"year": 2021, "quarter": "Q3", "GDP": 297900, "CPI": 0.8, "PPI": 6.7, "PMI": 49.6, "M2": 234300, "unemployment": 4.9, "fixed_asset_investment": 7.3, "retail_sales": 16.4, "foreign_exchange_reserves": 3201000},
+    {"year": 2021, "quarter": "Q4", "GDP": 324900, "CPI": 1.8, "PPI": 10.3, "PMI": 50.1, "M2": 244900, "unemployment": 5.1, "fixed_asset_investment": 4.9, "retail_sales": 12.5, "foreign_exchange_reserves": 3250000},
+    {"year": 2022, "quarter": "Q1", "GDP": 270800, "CPI": 1.1, "PPI": 8.7, "PMI": 49.5, "M2": 249800, "unemployment": 5.8, "fixed_asset_investment": 9.3, "retail_sales": 3.3, "foreign_exchange_reserves": 3188000},
+    {"year": 2022, "quarter": "Q2", "GDP": 291300, "CPI": 2.3, "PPI": 6.1, "PMI": 50.2, "M2": 258100, "unemployment": 5.5, "fixed_asset_investment": 6.1, "retail_sales": -4.6, "foreign_exchange_reserves": 3071000},
+    {"year": 2022, "quarter": "Q3", "GDP": 309900, "CPI": 2.6, "PPI": 2.9, "PMI": 50.1, "M2": 265200, "unemployment": 5.4, "fixed_asset_investment": 5.9, "retail_sales": 3.5, "foreign_exchange_reserves": 3029000},
+    {"year": 2022, "quarter": "Q4", "GDP": 328500, "CPI": 1.8, "PPI": -1.3, "PMI": 49.0, "M2": 272600, "unemployment": 5.5, "fixed_asset_investment": 5.1, "retail_sales": -0.2, "foreign_exchange_reserves": 3128000},
+    {"year": 2023, "quarter": "Q1", "GDP": 284900, "CPI": 1.3, "PPI": -2.5, "PMI": 51.9, "M2": 281500, "unemployment": 5.3, "fixed_asset_investment": 5.1, "retail_sales": 5.8, "foreign_exchange_reserves": 3185000},
+    {"year": 2023, "quarter": "Q2", "GDP": 309500, "CPI": 0.1, "PPI": -5.4, "PMI": 49.2, "M2": 288400, "unemployment": 5.2, "fixed_asset_investment": 3.8, "retail_sales": 8.2, "foreign_exchange_reserves": 3193000},
+    {"year": 2023, "quarter": "Q3", "GDP": 329900, "CPI": -0.3, "PPI": -3.2, "PMI": 49.8, "M2": 292700, "unemployment": 5.0, "fixed_asset_investment": 3.1, "retail_sales": 6.3, "foreign_exchange_reserves": 3240000},
+    {"year": 2023, "quarter": "Q4", "GDP": 342700, "CPI": -0.5, "PPI": -2.7, "PMI": 49.0, "M2": 300500, "unemployment": 5.1, "fixed_asset_investment": 3.0, "retail_sales": 7.4, "foreign_exchange_reserves": 3310000},
+    {"year": 2024, "quarter": "Q1", "GDP": 295300, "CPI": -0.8, "PPI": -2.7, "PMI": 49.2, "M2": 307800, "unemployment": 5.2, "fixed_asset_investment": 4.5, "retail_sales": 4.7, "foreign_exchange_reserves": 3369000}
+  ],
+  "policies": [
+    {"title": "宏观调控政策持续发力", "content": "2024年国家继续实施积极财政政策，推动经济高质量发展。重点投向制造业、数字经济和绿色转型领域，CRISIS压力的环保工程和基建工程业务将直接受益于相关政策。", "date": "2024-05-20", "impact": "positive", "relevance": 9.3, "specific_impact": "环保工程新增项目预计增长15.5%，基建工程投资规模提升约10.8%"},
+    {"title": "金融支持实体经济新政", "content": "央行发布支持实体经济新举措，降低企业融资成本，鼓励金融机构向制造业和战略新兴产业提供长期贷款，有助于CRISIS压力优化负债结构。", "date": "2024-05-15", "impact": "positive", "relevance": 7.5, "specific_impact": "设备租赁业务融资成本降低约0.6个百分点，环保工程项目资金渠道多元化"},
+    {"title": "稳就业稳增长一揽子措施", "content": "国务院发布稳就业稳增长一揽子措施，通过减税降费、简化行政审批等手段，优化企业经营环境，政府项目审批进度加快。", "date": "2024-05-10", "impact": "positive", "relevance": 8.6, "specific_impact": "政府项目立项速度提升25%，新增订单有望增长8.3%"},
+    {"title": "数字经济促进条例实施", "content": "《数字经济促进条例》正式实施，明确支持企业数字化转型和智能制造升级，CRISIS压力需加速智慧工程和数字化设备租赁服务转型。", "date": "2024-04-28", "impact": "mixed", "relevance": 7.2, "specific_impact": "短期需增加数字化转型投入约8500万元，长期竞争力提升"},
+    {"title": "金融监管新规发布", "content": "金融监管部门发布企业融资新规，加强对上市公司治理和信息披露的监管，CRISIS压力面临的融资环境将更加严格。", "date": "2024-04-15", "impact": "negative", "relevance": 8.4, "specific_impact": "短期融资难度增加，杠杆率控制更为严格，需降低约0.2个百分点"},
+    {"title": "国家重大基础设施建设计划", "content": "政策内容简化测试。", "date": "2024-03-25", "impact": "positive", "relevance": 9.8, "specific_impact": "影响简化测试."},
+    {"title": "环保产业扶持政策", "content": "生态环境部联合发改委发布环保产业扶持政策，通过专项资金、税收优惠等方式促进环保技术创新和产业发展，CRISIS压力的环保工程业务迎来历史机遇。", "date": "2024-03-20", "impact": "positive", "relevance": 9.5, "specific_impact": "环保工程业务有望获得近3亿元政府补贴和专项支持"},
+    {"title": "政府采购绿色化实施意见", "content": "财政部印发《政府采购绿色化实施意见》，要求政府采购优先考虑节能环保产品和服务，为CRISIS压力的政府项目业务提供政策支持。", "date": "2024-02-28", "impact": "positive", "relevance": 8.9, "specific_impact": "政府项目中环保相关采购比例提升至35%，带动相关业务增长"},
+    {"title": "设备租赁行业监管规范", "content": "市场监管总局发布设备租赁行业监管新规范，提高行业准入门槛和服务标准，有利于CRISIS压力等规范企业提升市场份额。", "date": "2024-02-15", "impact": "positive", "relevance": 7.8, "specific_impact": "行业小微企业加速退出，市场份额有望提升2.8个百分点"},
+    {"title": "碳达峰碳中和行动计划深化", "content": "国务院发布碳达峰碳中和行动计划实施细则，明确各行业减排路径和时间表，环保工程和绿色基建需求将持续增长。", "date": "2024-01-20", "impact": "positive", "relevance": 9.6, "specific_impact": "绿色环保项目需求激增，相关业务收入预计增长25%以上"}
+  ],
+  "industry_indicators": {
+    "industry_growth": 8.5,
+    "market_size": 4120000,
+    "competitive_intensity": 0.65,
+    "technology_adoption": 0.62,
+    "regulatory_pressure": 0.85,
+    "entry_barriers": 0.72,
+    "industry_lifecycle": "成长期",
+    "market_growth": 0.075,
+    "investment_trend": "increasing",
+    "key_challenges": ["资金压力", "地方债务风险", "技术要求提升", "人才短缺", "环保合规成本", "项目周期拉长"],
+    "key_opportunities": ["新基建投资", "环保需求增长", "政策支持力度", "智慧工程发展", "海外工程需求", "碳中和机遇"],
+    "industry_consolidation": 0.52,
+    "profit_margin_trend": "decreasing",
+    "industry_innovation_index": 6.8
+  },
+  "regional_comparison": [
+    {"region": "华东", "gdp_growth": 7.5, "industry_concentration": 0.38, "market_potential": 9.2, "local_policies": "产业升级", "investment_attractiveness": 8.8, "labor_costs": "高", "infrastructure_quality": 9.3},
+    {"region": "华南", "gdp_growth": 7.8, "industry_concentration": 0.42, "market_potential": 8.9, "local_policies": "低碳发展", "investment_attractiveness": 9.0, "labor_costs": "高", "infrastructure_quality": 9.2},
+    {"region": "华北", "gdp_growth": 7.2, "industry_concentration": 0.35, "market_potential": 8.5, "local_policies": "协同发展", "investment_attractiveness": 8.1, "labor_costs": "高", "infrastructure_quality": 8.8},
+    {"region": "西南", "gdp_growth": 8.1, "industry_concentration": 0.26, "market_potential": 9.0, "local_policies": "基建发展", "investment_attractiveness": 8.9, "labor_costs": "中", "infrastructure_quality": 8.0},
+    {"region": "东北", "gdp_growth": 6.8, "industry_concentration": 0.22, "market_potential": 7.8, "local_policies": "振兴战略", "investment_attractiveness": 7.5, "labor_costs": "中", "infrastructure_quality": 7.9},
+    {"region": "华中", "gdp_growth": 7.6, "industry_concentration": 0.29, "market_potential": 8.6, "local_policies": "区域枢纽", "investment_attractiveness": 8.3, "labor_costs": "中", "infrastructure_quality": 8.4},
+    {"region": "西北", "gdp_growth": 6.5, "industry_concentration": 0.18, "market_potential": 7.6, "local_policies": "生态保护", "investment_attractiveness": 7.8, "labor_costs": "低", "infrastructure_quality": 7.6}
+  ],
+  "forecast_scenarios": [
+    {"scenario": "基准", "gdp_growth": 5.2, "industry_growth": 8.5, "probability": 0.60, "timeframe": "1年", "key_assumptions": ["稳健投资", "环保政策延续", "专项债发行平稳"], "impact_description": "在基准情景下，CRISIS压力的基建工程和环保工程业务将保持较快增长，政府项目稳步推进"},
+    {"scenario": "乐观", "gdp_growth": 5.8, "industry_growth": 11.2, "probability": 0.25, "timeframe": "1年", "key_assumptions": ["扩张性财政政策", "环保投资加码", "专项债规模扩大"], "impact_description": "在乐观情景下，基础设施投资全面扩张，CRISIS压力各项业务全面受益，特别是环保工程和政府项目"},
+    {"scenario": "保守", "gdp_growth": 4.5, "industry_growth": 5.8, "probability": 0.15, "timeframe": "1年", "key_assumptions": ["财政紧缩", "地方债务压力", "项目审批收紧"], "impact_description": "在保守情景下，政府项目和基建工程业务面临压力，CRISIS压力需加强现金流管理和成本控制"}
+  ],
+  "risk_factors": {
+    "external_risks": [
+      {"risk": "地方政府债务风险", "probability": 0.65, "impact": 0.85, "mitigation_level": 0.50, "response_strategy": "客户多元化、加强回款管理", "early_warning_indicators": ["地方债务规模变化", "政府付款周期延长"]},
+      {"risk": "原材料价格波动", "probability": 0.70, "impact": 0.75, "mitigation_level": 0.65, "response_strategy": "供应链优化、套期保值", "early_warning_indicators": ["大宗商品价格指数", "供应商价格调整频率"]},
+      {"risk": "环保标准提升", "probability": 0.85, "impact": 0.65, "mitigation_level": 0.70, "response_strategy": "技术研发、提前布局", "early_warning_indicators": ["环保法规变动", "行业罚款案例增加"]},
+      {"risk": "技术迭代加速", "probability": 0.55, "impact": 0.60, "mitigation_level": 0.55, "response_strategy": "研发投入增加、产学研合作", "early_warning_indicators": ["行业专利申请数量", "竞争对手技术突破"]},
+      {"risk": "融资环境收紧", "probability": 0.60, "impact": 0.80, "mitigation_level": 0.55, "response_strategy": "多元化融资、优化资产结构", "early_warning_indicators": ["信贷政策变化", "行业融资成本上升"]}
+    ],
+    "policy_risks": [
+      {"risk": "基建投资政策调整", "probability": 0.45, "impact": 0.90, "primary_affected_sector": "基建工程", "secondary_affected_sector": "设备租赁"},
+      {"risk": "环保监管趋严", "probability": 0.80, "impact": 0.65, "primary_affected_sector": "环保工程", "secondary_affected_sector": "政府项目"},
+      {"risk": "政府采购制度改革", "probability": 0.55, "impact": 0.75, "primary_affected_sector": "政府项目", "secondary_affected_sector": "基建工程"},
+      {"risk": "PPP模式监管调整", "probability": 0.50, "impact": 0.70, "primary_affected_sector": "基建工程", "secondary_affected_sector": "环保工程"}
+    ]
+  },
+  "industry_specific_interpretation": {
+    "company_type": "基建环保与设备租赁",
+    "key_economic_indicators_impact": [
+      {"indicator": "固定资产投资", "correlation": 0.92, "impact_description": "固定资产投资每增长1个百分点，公司基建工程业务收入平均增长约1.5%"},
+      {"indicator": "财政支出", "correlation": 0.85, "impact_description": "政府财政支出增速与政府项目业务高度相关，每增长1个百分点带动相关收入增长约1.8%"},
+      {"indicator": "工业增加值", "correlation": 0.68, "impact_description": "工业增加值上升表明企业生产活动增加，直接提升设备租赁需求"},
+      {"indicator": "环保投资增速", "correlation": 0.95, "impact_description": "环保投资增速每上升1个百分点，公司环保工程业务收入增长约2.2%"}
+    ],
+    "business_cycle_sensitivity": {
+      "设备租赁": 0.78,
+      "环保工程": 0.65,
+      "政府项目": 0.55,
+      "基建工程": 0.82
+    },
+    "competitive_landscape_outlook": "基建和环保工程市场呈现出国企主导、民企协同的竞争格局，行业集中度正在提升。环保工程领域技术壁垒逐渐增高，具备核心技术的企业将获得更多溢价空间。随着'新基建'战略的深入推进，传统基建与智能化、绿色化深度融合，CRISIS压力需加速技术升级以适应市场变化。",
+    "regulatory_trend_forecast": "未来一年内，环保监管将持续趋严，环保工程技术标准和排放要求将进一步提高。政府项目招投标透明度要求增强，合规成本上升。基建投资结构将向新型基础设施、生态环保等领域倾斜，传统低效产能投资受限。政府与社会资本合作(PPP)模式将更加规范，风险分担机制更加完善。"
+  }
+} 

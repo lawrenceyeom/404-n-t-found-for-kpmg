@@ -1,8 +1,40 @@
+/**
+ * Main Application Component for AURA Platform Frontend
+ * 
+ * This is the root component of the AURA (Auditing Universal Risk Analytics) platform frontend.
+ * It orchestrates the overall UI layout, state management, and routing for the application,
+ * bringing together various dashboard components to create a comprehensive risk monitoring
+ * interface for auditors.
+ * 
+ * Key components:
+ * - Header: Navigation and company selection
+ * - Main Dashboard: Risk visualization, financial trends, and alert display
+ * - Data Platform: Technical platform management interface
+ * - Modal system: For detailed information and user feedback
+ * 
+ * Main features:
+ * - Company selection and data context management
+ * - Historical trend analysis of financial metrics
+ * - Risk score visualization across multiple dimensions
+ * - Asset structure visualization
+ * - Business risk heatmap
+ * - Alert notifications and history
+ * - Opinion and sentiment monitoring
+ * - Interactive feedback collection
+ * 
+ * The component uses several custom hooks to manage different data streams:
+ * - useOpinionData: Manages sentiment and news opinion data
+ * - useFinanceData: Handles financial statement information
+ * - useCompanyData: Calculates risk scores and business module analysis
+ * - useAlerts: Manages alert notifications and history
+ */
+
 // src/App.js
 import React, { useState, useCallback, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate, useLocation } from 'react-router-dom';
 import DataPlatform from './components/DataPlatform/DataPlatform';
+import DataLake from './components/DataLake/DataLake';
 
 // Constants (Import only what App.js directly needs for props or top-level decisions)
 import {
@@ -13,7 +45,7 @@ import {
   DEFAULT_TREND_PERIODS,
   ALL_RATIOS_CONFIG, // Used by HistoricalTrendAnalysis
   INITIAL_SELECTED_RATIOS, // Used by HistoricalTrendAnalysis
-  INITIAL_TREND_METRIC_KEYS_MAIN, // Used by HistoricalTrendAnalysis
+  INITIAL_MAIN_ITEMS, // Used by HistoricalTrendAnalysis
   RISK_DIM_EXPLAIN, // Used by RadarDetailModal
   RISK_DIM_KEYS,   // Used by RadarDetailModal
 } from './constants'; // Adjust path as needed
@@ -120,16 +152,8 @@ function App() {
   // 检查当前路径是否包含data-platform/data-quality
   const shouldRedirectToDataQuality = lastVisitedPath && lastVisitedPath.includes('/data-platform/data-quality');
 
-  return (
-    <Router>
-    <div className="App" style={{ background: 'linear-gradient(135deg, #0a1f44 60%, #102b6a 100%)', minHeight: '100vh', color: '#eaf6ff' }}>
-      <Header
-          currentCompanyId={company}
-        onSetCompany={setCompany}
-          companiesData={COMPANIES}
-      />
-        <Routes>
-          <Route path="/" element={
+  // 渲染主仪表板内容
+  const renderMainDashboard = () => (
       <main style={{
         width: '96vw',
         maxWidth: 1600,
@@ -148,11 +172,12 @@ function App() {
           company={company}
           trendData={trendData}
           financeISData={financeISData}
+          financeData={financeData}
           trendPeriods={DEFAULT_TREND_PERIODS}
           isLoading={trendLoading}
           allRatiosConfig={ALL_RATIOS_CONFIG}
           initialSelectedRatios={INITIAL_SELECTED_RATIOS}
-          initialTrendMetricKeysMain={INITIAL_TREND_METRIC_KEYS_MAIN}
+          initialMainItems={INITIAL_MAIN_ITEMS}
         />
         <DashboardGrid
           opinionList={opinionList}
@@ -171,13 +196,25 @@ function App() {
                 <BusinessRiskHeatmap company={company} bizModules={bizModules} riskDimensions={RISK_DIMENSIONS} />
         </div>
       </main>
-          } />
+  );
+
+  return (
+    <Router>
+      <div className="App" style={{ background: 'linear-gradient(135deg, #0a1f44 60%, #102b6a 100%)', minHeight: '100vh', color: '#eaf6ff' }}>
+        <Header
+          currentCompanyId={company}
+          onSetCompany={setCompany}
+          companiesData={COMPANIES}
+        />
+        <Routes>
+          <Route path="/" element={renderMainDashboard()} />
           <Route path="/data-platform/*" element={<DataPlatform />} />
           <Route path="/data-platform" element={
             shouldRedirectToDataQuality ? 
             <Navigate to="/data-platform/data-quality" replace /> :
             <Navigate to="/data-platform/dashboard" replace />
           } />
+          <Route path="/datalake" element={<DataLake />} />
         </Routes>
       {isFeedbackModalOpen && (
         <FeedbackModal

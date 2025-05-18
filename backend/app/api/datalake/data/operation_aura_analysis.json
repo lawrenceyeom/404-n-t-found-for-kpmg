@@ -1,0 +1,198 @@
+{
+  "company": "AURA稳健",
+  "type": "operation",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "kpi_summary": {
+    "sales_target": 200000,
+    "sales_actual": 215000,
+    "sales_achievement": 1.075,
+    "production_target": 180000,
+    "production_actual": 190000,
+    "production_achievement": 1.056,
+    "efficiency_target": 0.85,
+    "efficiency_actual": 0.88,
+    "efficiency_achievement": 1.035,
+    "defect_target": 0.02,
+    "defect_actual": 0.015,
+    "defect_achievement": 1.25
+  },
+  "departments": [
+    {
+      "name": "销售部",
+      "headcount": 120,
+      "performance": 0.97,
+      "cost": 12500000,
+      "kpi_achievement": 1.05,
+      "risk_level": "低"
+    },
+    {
+      "name": "生产部",
+      "headcount": 185,
+      "performance": 0.94,
+      "cost": 16800000,
+      "kpi_achievement": 1.02,
+      "risk_level": "低"
+    },
+    {
+      "name": "研发部",
+      "headcount": 76,
+      "performance": 0.91,
+      "cost": 9800000,
+      "kpi_achievement": 0.98,
+      "risk_level": "中等"
+    },
+    {
+      "name": "财务部",
+      "headcount": 32,
+      "performance": 0.96,
+      "cost": 4200000,
+      "kpi_achievement": 1.03,
+      "risk_level": "低"
+    },
+    {
+      "name": "人力资源部",
+      "headcount": 24,
+      "performance": 0.92,
+      "cost": 3100000,
+      "kpi_achievement": 0.97,
+      "risk_level": "低"
+    },
+    {
+      "name": "物流部",
+      "headcount": 68,
+      "performance": 0.89,
+      "cost": 7200000,
+      "kpi_achievement": 0.95,
+      "risk_level": "中等"
+    },
+    {
+      "name": "IT部",
+      "headcount": 42,
+      "performance": 0.93,
+      "cost": 5800000,
+      "kpi_achievement": 0.99,
+      "risk_level": "低"
+    }
+  ],
+  "audit_analysis": {
+    "operational_risks": [
+      {
+        "area": "供应链管理",
+        "risk_level": "中等",
+        "description": "供应商集中度较高，前五大供应商占比达62%，但多数关键原材料有至少2-3家供应商备选",
+        "audit_focus": "关注供应商依赖度及供应商资质定期评估机制",
+        "potential_impact": "供应链中断可能导致生产延迟，增加成本或影响产品质量",
+        "recommendation": "建议增加关键物料的备选供应商，优化供应商评估体系"
+      },
+      {
+        "area": "生产效率",
+        "risk_level": "低",
+        "description": "生产线自动化程度持续提升，但部分设备利用率波动较大",
+        "audit_focus": "关注产能利用率变化趋势及生产计划与实际执行的差异",
+        "potential_impact": "设备利用不足造成资源浪费，降低投资回报率",
+        "recommendation": "完善产能规划与生产计划协同机制，提高预测准确性"
+      },
+      {
+        "area": "质量控制",
+        "risk_level": "低",
+        "description": "质量管理体系完善，产品合格率稳定在98.5%以上，客户满意度调查结果良好",
+        "audit_focus": "关注质量成本构成及质量问题的根本原因分析",
+        "potential_impact": "质量问题可能导致产品召回、客户流失或品牌声誉损害",
+        "recommendation": "进一步强化质量预防控制，在设计和初期生产阶段加强质量把关"
+      },
+      {
+        "area": "物流管理",
+        "risk_level": "中等",
+        "description": "国际物流成本波动较大，部分区域配送时效不稳定",
+        "audit_focus": "关注物流成本变化及交付及时率异常情况",
+        "potential_impact": "物流延误或成本上升可能影响客户满意度和利润率",
+        "recommendation": "优化区域物流网络布局，增加多式联运方案，建立应急物流方案"
+      },
+      {
+        "area": "信息系统",
+        "risk_level": "中等",
+        "description": "ERP系统正在升级过渡期，部分模块整合存在数据一致性问题",
+        "audit_focus": "关注系统过渡期的数据准确性和完整性",
+        "potential_impact": "系统整合不良可能导致运营决策依据不准确，影响经营效率",
+        "recommendation": "加强系统过渡期的数据验证流程，建立数据质量监控指标"
+      }
+    ],
+    "internal_control_assessment": {
+      "procurement_cycle": {
+        "control_effectiveness": "良好",
+        "key_controls": ["供应商资质审核", "采购审批流程", "验收入库管理", "供应商绩效评估"],
+        "weaknesses": [],
+        "recommendation": "持续优化供应商绩效评估机制，将ESG因素纳入评估体系"
+      },
+      "production_cycle": {
+        "control_effectiveness": "有效",
+        "key_controls": ["生产计划审批", "物料需求计划", "生产进度监控", "质量检验"],
+        "weaknesses": ["设备维护记录不完整"],
+        "recommendation": "完善设备维护管理系统，实现设备全生命周期管理"
+      },
+      "inventory_cycle": {
+        "control_effectiveness": "有效",
+        "key_controls": ["库存盘点", "存货移动控制", "库龄监控", "安全库存管理"],
+        "weaknesses": [],
+        "recommendation": "优化库存预警机制，提高库存周转速度"
+      },
+      "logistics_cycle": {
+        "control_effectiveness": "一般",
+        "key_controls": ["运输方式选择", "货物跟踪", "交付确认", "物流成本监控"],
+        "weaknesses": ["国际物流应急预案不完善", "物流供应商评估不及时"],
+        "recommendation": "建立更完善的国际物流风险应对预案，加强物流商定期评估机制"
+      }
+    },
+    "efficiency_analysis": {
+      "capacity_utilization": {
+        "current": "85.3%",
+        "industry_benchmark": "82.1%",
+        "trend": "稳中有升",
+        "assessment": "优于行业平均水平",
+        "recommendation": "继续优化生产排程，提高设备利用率"
+      },
+      "labor_productivity": {
+        "current": "人均产值102.6万元",
+        "industry_benchmark": "人均产值95.8万元",
+        "trend": "持续提升",
+        "assessment": "优于行业平均水平",
+        "recommendation": "加强员工培训，进一步提升自动化水平"
+      },
+      "asset_efficiency": {
+        "current": "总资产周转率0.69",
+        "industry_benchmark": "行业平均0.65",
+        "trend": "略有提升",
+        "assessment": "处于行业良好水平",
+        "recommendation": "持续优化资产配置，提高资产使用效率"
+      },
+      "energy_consumption": {
+        "current": "单位产值能耗0.42千瓦时",
+        "industry_benchmark": "行业平均0.48千瓦时",
+        "trend": "稳步降低",
+        "assessment": "优于行业平均水平",
+        "recommendation": "继续推进节能技术应用，实现更高能效目标"
+      }
+    },
+    "business_continuity": {
+      "risk_assessment": "风险可控",
+      "key_dependencies": [
+        "核心供应商稳定性",
+        "关键技术人员稳定性",
+        "重要客户群体多元化",
+        "主要生产设备可靠性"
+      ],
+      "mitigation_measures": [
+        "关键物料安全库存策略",
+        "核心技术和知识管理体系",
+        "关键岗位人才梯队建设",
+        "分布式生产基地布局"
+      ],
+      "improvement_areas": [
+        "信息系统灾备能力",
+        "国际物流应急方案",
+        "极端气候事件应对准备"
+      ]
+    }
+  }
+} 

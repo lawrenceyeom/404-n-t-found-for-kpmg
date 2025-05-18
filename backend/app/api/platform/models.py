@@ -1,3 +1,31 @@
+"""
+AI Model Management Module for AURA Platform
+
+This module provides API endpoints for the AI model management capabilities of the AURA 
+platform, demonstrating the "Data Smart Middle Platform" concept that enables the monitoring, 
+deployment, and optimization of various risk analysis models.
+
+Key components:
+- Model registry with versioning and status monitoring
+- Model health monitoring with drift detection and performance tracking
+- Detailed performance metrics for model evaluation
+- Feature importance visualization for model explainability
+- Model training history and continuous improvement tracking
+- Prediction results visualization and monitoring
+
+Main endpoints:
+- /platform/models: Lists all AI models in the system with their status
+- /platform/model-health: Provides health indicators for deployed models
+- /platform/model-performance: Shows detailed performance metrics for each model
+- /platform/feature-importance/{model_id}: Displays feature importance for model explainability
+- /platform/model-training-history: Reports on model training iterations and improvements
+- /platform/model-predictions/{model_id}: Shows sample predictions and their explanations
+
+This module demonstrates AURA's AI governance capabilities, showing how the platform manages
+multiple specialized models focused on different risk aspects, ensures their reliability,
+provides explainability for audit transparency, and enables continuous improvement.
+"""
+
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Dict, Any, Optional
 import random

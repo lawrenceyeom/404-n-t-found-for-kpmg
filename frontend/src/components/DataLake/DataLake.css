@@ -1,0 +1,2466 @@
+.datalake-root {
+  background: linear-gradient(135deg, #223366 80%, #1e4495 100%);
+  min-height: 100vh;
+  color: #eaf6ff;
+  padding: 32px 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.datalake-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.datalake-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 20px;
+  border-bottom: 1px solid rgba(75, 225, 160, 0.2);
+  margin-bottom: 20px;
+}
+
+.datalake-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4be1a0;
+  text-shadow: 0 0 10px rgba(75, 225, 160, 0.4);
+}
+
+.datalake-company-tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.datalake-company-tabs button {
+  background: rgba(34, 51, 102, 0.85);
+  border: 2px solid transparent;
+  color: #b3cfff;
+  font-size: 14px;
+  padding: 5px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.18s;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.datalake-company-tabs button:hover {
+  background: rgba(64, 169, 255, 0.2);
+  color: #eaf6ff;
+}
+
+.datalake-company-tabs button.active {
+  background: #4be1a0;
+  color: #15294e;
+  box-shadow: 0 2px 8px rgba(75, 225, 160, 0.33);
+}
+
+.datalake-tabs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  margin-bottom: 20px;
+}
+
+.datalake-tabs-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.datalake-type-tabs, .datalake-layer-tabs {
+  display: flex;
+  padding: 16px 48px 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.datalake-type-tabs button, .datalake-layer-tabs button {
+  background: rgba(34, 51, 102, 0.85);
+  border: none;
+  color: #b3cfff;
+  font-size: 14px;
+  padding: 5px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.18s;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.datalake-type-tabs button:hover, .datalake-layer-tabs button:hover {
+  background: rgba(64, 169, 255, 0.2);
+  color: #eaf6ff;
+}
+
+.datalake-type-tabs button.active, .datalake-layer-tabs button.active {
+  background: #4be1a0;
+  color: #15294e;
+  box-shadow: 0 2px 8px rgba(75, 225, 160, 0.33);
+}
+
+.datalake-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 16px 48px 48px;
+}
+
+.datalake-content-full {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.datalake-card {
+  background: linear-gradient(135deg, #15294e 0%, rgba(21, 41, 78, 0.8) 100%);
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 24px 32px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.datalake-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: rgba(75, 225, 160, 0.5);
+}
+
+.datalake-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4be1a0, #36e2ec);
+}
+
+.datalake-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4be1a0;
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.datalake-card-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #4be1a0;
+}
+
+.datalake-card-desc {
+  font-size: 1rem;
+  color: #b3cfff;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.datalake-card-time {
+  font-size: 0.9rem;
+  color: #40a9ff;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.datalake-chart-container {
+  background: #15294e;
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.datalake-chart-container:hover {
+  border-color: rgba(75, 225, 160, 0.7);
+  box-shadow: 0 0 15px rgba(75, 225, 160, 0.2);
+}
+
+.datalake-info-card {
+  background: rgba(75, 225, 160, 0.1);
+  border: 1px solid rgba(75, 225, 160, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.datalake-info-title {
+  color: #4be1a0;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.datalake-info-content {
+  color: #b3cfff;
+  line-height: 1.5;
+}
+
+/* 表格样式优化 */
+.datalake-table-container {
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #15294e;
+  margin-bottom: 24px;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #2a3c6e;
+}
+
+.datalake-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.datalake-table th {
+  background: #1e3a6d;
+  color: #eaf6ff;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #2a3c6e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.datalake-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  color: #b3cfff;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.datalake-table tr:hover td {
+  background: rgba(75, 225, 160, 0.1);
+}
+
+.datalake-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* 文本块样式 */
+.datalake-text-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.datalake-news-block, .datalake-comments-block {
+  background: #15294e;
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.datalake-block-title {
+  color: #4be1a0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.datalake-block-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #4be1a0;
+}
+
+.datalake-news-item {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datalake-news-item:hover {
+  transform: translateX(5px);
+  background-color: rgba(75, 225, 160, 0.1);
+  box-shadow: -3px 0 0 rgba(75, 225, 160, 0.7);
+}
+
+.datalake-news-title {
+  font-weight: bold;
+  color: #eaf6ff;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.datalake-news-content {
+  color: #b3cfff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.datalake-news-meta {
+  font-size: 0.85rem;
+  color: #40a9ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.datalake-sentiment-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.datalake-sentiment-positive {
+  background-color: #4be1a0;
+}
+
+.datalake-sentiment-neutral {
+  background-color: #ffd666;
+}
+
+.datalake-sentiment-negative {
+  background-color: #ff5c5c;
+}
+
+.datalake-comment-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  line-height: 1.5;
+}
+
+.datalake-comment-user {
+  font-weight: bold;
+  color: #40a9ff;
+  margin-right: 4px;
+}
+
+.datalake-comment-content {
+  color: #eaf6ff;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.datalake-comment-meta {
+  font-size: 0.85rem;
+  color: #b3cfff;
+  margin-top: 4px;
+  display: block;
+}
+
+/* 时间序列样式 */
+.datalake-timeseries-block {
+  background: #15294e;
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.datalake-event-list {
+  margin-top: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.datalake-event-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+}
+
+.datalake-event-item:last-child {
+  border-bottom: none;
+}
+
+.datalake-event-time {
+  width: 100px;
+  margin-right: 20px;
+  color: #8cb2d9;
+  font-size: 0.9em;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.datalake-event-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.datalake-event-title {
+  color: #eaf6ff;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 600;
+}
+
+.datalake-event-description {
+  color: #b3cfff;
+  font-size: 0.85em;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 4px;
+}
+
+/* 外部数据和宏观数据样式 */
+.datalake-external-blocks, .datalake-macro-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.datalake-policy-list, .datalake-regulation-list {
+  background: #15294e;
+  border-radius: 10px;
+  border: 1px solid #2a3c6e;
+}
+
+.datalake-policy-item, .datalake-regulation-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  transition: all 0.2s;
+}
+
+.datalake-policy-item {
+  background: linear-gradient(90deg, rgba(75, 225, 160, 0.05) 0%, rgba(21, 41, 78, 0.8) 100%);
+}
+
+.datalake-regulation-item {
+  background: linear-gradient(90deg, rgba(64, 169, 255, 0.05) 0%, rgba(21, 41, 78, 0.8) 100%);
+}
+
+.datalake-policy-item:hover, .datalake-regulation-item:hover {
+  background: rgba(75, 225, 160, 0.1);
+  padding-left: 20px;
+}
+
+.datalake-policy-title, .datalake-regulation-title {
+  font-weight: bold;
+  color: #eaf6ff;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.datalake-policy-date, .datalake-regulation-date {
+  color: #b3cfff;
+  font-size: 0.85rem;
+  margin-left: 16px;
+}
+
+/* 无数据状态 */
+.datalake-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  color: #b3cfff;
+  text-align: center;
+  background: #15294e;
+  border-radius: 10px;
+  border: 1px solid #2a3c6e;
+}
+
+.datalake-no-data i {
+  font-size: 48px;
+  color: #40a9ff;
+  margin-bottom: 16px;
+}
+
+/* 加载和错误状态 */
+.datalake-loading, .datalake-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  color: #b3cfff;
+  text-align: center;
+  min-height: 300px;
+}
+
+.datalake-loading {
+  color: #4be1a0;
+}
+
+.datalake-error {
+  color: #ff5c5c;
+  background: rgba(255, 92, 92, 0.1);
+  border-radius: 10px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .datalake-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px 20px;
+  }
+  
+  .datalake-content {
+    padding: 16px 20px 32px;
+  }
+  
+  .datalake-type-tabs, .datalake-layer-tabs {
+    padding: 16px 20px 0;
+    justify-content: center;
+  }
+  
+  .datalake-company-tabs {
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
+
+/* 图表布局 */
+.datalake-charts-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.datalake-chart-half {
+  min-height: 320px;
+}
+
+.datalake-chart-third {
+  min-height: 300px;
+}
+
+.datalake-chart-full {
+  grid-column: 1 / -1;
+  min-height: 360px;
+  margin-top: 24px;
+}
+
+/* KPI 网格 */
+.datalake-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.datalake-kpi-card {
+  background: rgba(21, 41, 78, 0.5);
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.datalake-kpi-card:hover {
+  transform: translateY(-4px);
+  border-color: #4be1a0;
+}
+
+.datalake-kpi-title {
+  color: #b3cfff;
+  margin-bottom: 8px;
+}
+
+.datalake-kpi-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #eaf6ff;
+  margin-bottom: 4px;
+}
+
+.datalake-kpi-achievement {
+  font-size: 14px;
+}
+
+/* 财务指标样式 */
+.datalake-financial-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.datalake-metric {
+  background: rgba(21, 41, 78, 0.5);
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.datalake-metric:hover {
+  transform: translateY(-4px);
+  border-color: #4be1a0;
+}
+
+.datalake-metric-name {
+  color: #b3cfff;
+  margin-bottom: 8px;
+}
+
+.datalake-metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #eaf6ff;
+}
+
+.datalake-metric-detail {
+  font-size: 14px;
+  color: #40a9ff;
+  margin-top: 4px;
+}
+
+/* 指标网格 */
+.datalake-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.datalake-metric-item {
+  text-align: center;
+  padding: 12px;
+  background: rgba(21, 41, 78, 0.5);
+  border-radius: 8px;
+}
+
+.datalake-metric-label {
+  color: #b3cfff;
+  font-size: 14px;
+}
+
+.datalake-metric-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #eaf6ff;
+  margin-top: 8px;
+}
+
+/* 副标题 */
+.datalake-subtitle {
+  color: #4be1a0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 24px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(75, 225, 160, 0.2);
+}
+
+/* 风险网格 */
+.datalake-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.datalake-risk-card {
+  background: #15294e;
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.datalake-risk-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(75, 225, 160, 0.5);
+}
+
+.datalake-risk-title {
+  color: #4be1a0;
+  font-weight: bold;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+}
+
+.datalake-risk-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.datalake-risk-metrics > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.datalake-risk-label {
+  color: #b3cfff;
+}
+
+.datalake-risk-value {
+  font-weight: bold;
+  color: #eaf6ff;
+}
+
+/* 客户洞察 */
+.datalake-customer-insights {
+  margin-bottom: 24px;
+}
+
+.datalake-preference-section {
+  margin-bottom: 16px;
+}
+
+.datalake-preference-title {
+  color: #4be1a0;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.datalake-preference-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.datalake-tag {
+  background: rgba(75, 225, 160, 0.1);
+  border: 1px solid rgba(75, 225, 160, 0.3);
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: #eaf6ff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .datalake-charts-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .datalake-chart-half,
+  .datalake-chart-third {
+    min-height: 300px;
+  }
+  
+  .datalake-kpi-grid,
+  .datalake-financial-metrics,
+  .datalake-text-blocks,
+  .datalake-external-blocks, 
+  .datalake-macro-blocks {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Remove or repurpose old macro raw layout styles */
+.datalake-macro-raw-layout, 
+.datalake-macro-raw-left-column, 
+.datalake-macro-raw-right-column {
+  /* These are no longer used, or redefined below */
+  /* Consider removing them completely if not repurposed elsewhere */
+  display: none; 
+}
+
+.datalake-macro-content-area {
+  width: 100%;
+}
+
+.datalake-macro-section {
+  background: #15294e;
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.datalake-policy-list-container {
+  max-height: 300px; /* Example height, adjust as needed */
+  overflow-y: auto;
+  padding-right: 10px; /* Space for scrollbar */
+}
+
+/* Styles for the new 3-column grid for analysis sections */
+.datalake-macro-detailed-analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 3 columns */
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.datalake-analysis-card {
+  background: #15294e; /* Consistent card background */
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-height: 350px; /* Ensure cards have some base height */
+}
+
+.datalake-analysis-card .datalake-block-title {
+  margin-bottom: 15px;
+}
+
+.datalake-card-content-scrollable {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px; /* Space for scrollbar if content overflows */
+  color: #b3cfff;
+}
+
+.datalake-card-content-scrollable p,
+.datalake-card-content-scrollable ul li {
+  color: #b3cfff;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.datalake-card-content-scrollable p strong,
+.datalake-card-content-scrollable strong {
+  color: #eaf6ff; 
+}
+
+.datalake-card-content-scrollable ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.datalake-forecast-item {
+  border-bottom: 1px solid #2a3c6e;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.datalake-forecast-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Keep existing interpretation, forecast, risk section styles if they are general enough */
+/* or integrate them into .datalake-card-content-scrollable */
+.datalake-interpretation-card p, /* These might be redundant now */
+.datalake-forecast-card p,
+.datalake-risk-section ul li {
+  /* color: #b3cfff; Already covered by .datalake-card-content-scrollable */
+  /* line-height: 1.6; */
+  /* margin-bottom: 8px; */
+}
+
+/* Custom Scrollbar Styles - ensure these apply to new scrollable areas */
+.datalake-policy-list-container::-webkit-scrollbar,
+.datalake-card-content-scrollable::-webkit-scrollbar,
+.datalake-table-container::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+
+.datalake-policy-list-container::-webkit-scrollbar-track,
+.datalake-card-content-scrollable::-webkit-scrollbar-track,
+.datalake-table-container::-webkit-scrollbar-track {
+  background: #15294e;
+  border-radius: 10px;
+}
+
+.datalake-policy-list-container::-webkit-scrollbar-thumb,
+.datalake-card-content-scrollable::-webkit-scrollbar-thumb,
+.datalake-table-container::-webkit-scrollbar-thumb {
+  background-color: #2a3c6e;
+  border-radius: 10px;
+  border: 2px solid #15294e;
+}
+
+.datalake-policy-list-container::-webkit-scrollbar-thumb:hover,
+.datalake-card-content-scrollable::-webkit-scrollbar-thumb:hover,
+.datalake-table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #4be1a0;
+}
+
+/* For Firefox */
+.datalake-policy-list-container,
+.datalake-card-content-scrollable,
+.datalake-table-container {
+  scrollbar-width: thin; 
+  scrollbar-color: #2a3c6e #15294e;
+}
+
+/* External Data Section Styles */
+.datalake-external-sections-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Space between sections */
+}
+
+.datalake-external-section {
+  background: #15294e; /* Consistent with other section cards */
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.datalake-external-section .datalake-block-title {
+  margin-bottom: 15px;
+}
+
+.datalake-scrollable-list {
+  max-height: 300px; /* Example height, adjust as needed */
+  overflow-y: auto;
+  padding-right: 5px; /* Space for scrollbar, adjust if needed */
+}
+
+/* Ensure policy and regulation items still look good */
+.datalake-policy-item, .datalake-regulation-item {
+  /* Existing styles should be fine, but we can tweak if needed */
+  /* e.g., ensure they don't have conflicting backgrounds if .datalake-external-section has one */
+  background: transparent; /* Override if they had their own card-like backgrounds */
+  padding: 12px 0; /* Adjust padding if needed within the list */
+}
+
+/* Adjust .datalake-external-blocks if it still exists and conflicts */
+.datalake-external-blocks {
+  /* This class was in the original HTML structure from DataLake.js for this section. */
+  /* If it was applying a grid or other layout that we don't want for the new structure, */
+  /* we should override or remove it. For now, let's ensure it doesn't interfere. */
+  display: block; /* Override any grid/flex it might have had */
+}
+
+/* Custom Scrollbar Styles - ensure these apply to new scrollable areas */
+.datalake-scrollable-list::-webkit-scrollbar,
+.datalake-policy-list-container::-webkit-scrollbar,
+.datalake-card-content-scrollable::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+
+.datalake-scrollable-list::-webkit-scrollbar-track,
+.datalake-policy-list-container::-webkit-scrollbar-track,
+.datalake-card-content-scrollable::-webkit-scrollbar-track {
+  background: #15294e;
+  border-radius: 10px;
+}
+
+.datalake-scrollable-list::-webkit-scrollbar-thumb,
+.datalake-policy-list-container::-webkit-scrollbar-thumb,
+.datalake-card-content-scrollable::-webkit-scrollbar-thumb {
+  background-color: #2a3c6e;
+  border-radius: 10px;
+  border: 2px solid #15294e;
+}
+
+.datalake-scrollable-list::-webkit-scrollbar-thumb:hover,
+.datalake-policy-list-container::-webkit-scrollbar-thumb:hover,
+.datalake-card-content-scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #4be1a0;
+}
+
+/* For Firefox */
+.datalake-scrollable-list,
+.datalake-policy-list-container,
+.datalake-card-content-scrollable {
+  scrollbar-width: thin; 
+  scrollbar-color: #2a3c6e #15294e;
+}
+
+/* Audit View Styles */
+.datalake-audit-view {
+  margin-top: 20px;
+  /* font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; */ /* Keep global font */
+}
+
+.datalake-audit-section {
+  /* background-color: white; */
+  background: linear-gradient(135deg, #15294e 0%, rgba(21, 41, 78, 0.8) 100%);
+  border: 1px solid #2a3c6e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, transform 0.25s ease-in-out; /* Refined transition */
+}
+
+.datalake-audit-section:hover { /* Refined hover for section */
+  transform: translateY(-2px);
+  border-color: rgba(75, 225, 160, 0.7);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.datalake-audit-section-title {
+  font-size: 17px;
+  font-weight: 600;
+  /* color: #333; */
+  color: #4be1a0; /* Accent color */
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid #eee; */
+  border-bottom: 1px solid rgba(75, 225, 160, 0.2); /* Accent border */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: default;
+}
+
+.datalake-audit-section-title:hover {
+  color: #5cffb0; /* Brighter on hover */
+  text-shadow: 0 0 10px rgba(75, 225, 160, 0.3);
+}
+
+.datalake-audit-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  /* color: #444; */
+  color: #b3cfff; /* Light text */
+  margin: 16px 0 12px;
+}
+
+.datalake-audit-risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.datalake-audit-risk-card {
+  /* border: 1px solid #eee; */
+  border: 1px solid #2a3c6e;
+  border-radius: 6px;
+  padding: 16px;
+  /* background: #fbfbfb; */
+  background: #102142; /* Slightly darker than section for depth */
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out; /* Refined transition */
+}
+
+.datalake-audit-risk-card:hover { /* Refined hover */
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  border-color: rgba(75, 225, 160, 0.7);
+}
+
+.datalake-audit-risk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.datalake-audit-risk-area {
+  font-weight: 600;
+  font-size: 16px;
+  /* color: #333; */
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-risk-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white; /* Keep white text, background is dynamic */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datalake-risk-badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.datalake-audit-risk-content {
+  margin-bottom: 12px;
+}
+
+.datalake-audit-risk-description {
+  margin: 0 0 10px;
+  /* color: #555; */
+  color: #b3cfff; /* Light text */
+  line-height: 1.5;
+}
+
+.datalake-audit-label {
+  font-weight: 500;
+  /* color: #666; */
+  color: #8cb2d9; /* Softer light text */
+  margin-right: 6px;
+}
+
+.datalake-audit-risk-focus, 
+.datalake-audit-risk-misstatement,
+.datalake-audit-recommendation {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #b3cfff; /* Light text for recommendations */
+}
+
+.datalake-audit-status-card {
+  /* background: #f8f8ff; */
+  background: #102142;
+  border-radius: 6px;
+  padding: 16px;
+  /* border-left: 4px solid #1890ff; */
+  border-left: 4px solid #40a9ff; /* Accent color for border */
+}
+
+.datalake-audit-status-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.datalake-audit-status {
+  font-weight: 600;
+  font-size: 16px;
+  /* color: #1890ff; */
+  color: #40a9ff; /* Accent color */
+}
+
+.datalake-audit-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.datalake-audit-metric {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px;
+  /* background: white; */
+  background: #15294e;
+  border: 1px solid transparent; /* Start with transparent border for smooth transition */
+  border-radius: 4px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; /* Refined transition */
+  text-align: center; /* Center content */
+  display: flex; /* Added for centering */
+  flex-direction: column; /* Added for centering */
+  justify-content: center; /* Added for centering */
+  align-items: center; /* Added for centering */
+}
+
+.datalake-audit-metric:hover { /* Refined hover */
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+  border-color: rgba(75, 225, 160, 0.5);
+  background-color: #18325c; /* Slight background change on hover */
+}
+
+.datalake-audit-analysis-text {
+  line-height: 1.6;
+  /* color: #555; */
+  color: #b3cfff; /* Light text */
+  font-size: 14px;
+}
+
+.datalake-audit-ic-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.datalake-audit-ic-metric {
+  /* background: white; */
+  background: #15294e;
+  padding: 12px;
+  border: 1px solid transparent; /* Start with transparent border for smooth transition */
+  border-radius: 6px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center; 
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; /* Refined transition */
+  display: flex; /* Added for robust centering */
+  flex-direction: column; /* Added for robust centering */
+  justify-content: center; /* Added for robust centering */
+  align-items: center; /* Added for robust centering */
+}
+
+.datalake-audit-ic-metric p { /* Target paragraphs within for better control if needed */
+  margin-bottom: 4px; /* Adjust spacing between lines if they are separate p tags */
+}
+
+.datalake-audit-ic-metric:hover { /* Refined hover */
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+  border-color: rgba(75, 225, 160, 0.5); 
+  background-color: #18325c; /* Slight background change on hover */
+}
+
+.datalake-audit-ic-value {
+  font-weight: 600;
+  /* color: #1890ff; */
+  color: #40a9ff; /* Accent color */
+}
+
+.datalake-audit-trend-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.datalake-audit-trend-card {
+  /* background: white; */
+  background: #15294e;
+  padding: 16px;
+  border: 1px solid transparent; /* Start with transparent border for smooth transition */
+  border-radius: 6px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center; 
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; /* Refined transition */
+  display: flex; /* Added for robust centering */
+  flex-direction: column; /* Added for robust centering */
+  justify-content: center; /* Added for robust centering */
+  align-items: center; /* Added for robust centering */
+}
+
+.datalake-audit-trend-card:hover { /* Refined hover */
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+  border-color: rgba(75, 225, 160, 0.5); 
+  background-color: #18325c; /* Slight background change on hover */
+}
+
+.datalake-audit-trend-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  /* color: #444; */
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-audit-trend-assessment {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #b3cfff; /* Light text */
+}
+
+.datalake-audit-trend-explanation {
+  margin: 0;
+  font-size: 14px;
+  /* color: #555; */
+  color: #8cb2d9; /* Softer light text */
+  line-height: 1.5;
+}
+
+.datalake-ratio-section {
+  margin-bottom: 20px;
+}
+
+.datalake-ratio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.datalake-ratio-card {
+  /* background: white; */
+  background: #15294e;
+  padding: 14px;
+  border: 1px solid transparent; /* Start with transparent border for smooth transition */
+  border-radius: 6px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center; /* Already has text-align: center */
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; /* Refined transition */
+  display: flex; /* Added for robust centering */
+  flex-direction: column; /* Added for robust centering */
+  justify-content: center; /* Added for robust centering */
+  align-items: center; /* Added for robust centering */
+}
+
+.datalake-ratio-card:hover { /* Refined hover */
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+  border-color: rgba(75, 225, 160, 0.5); 
+  background-color: #18325c; /* Slight background change on hover */
+}
+
+.datalake-ratio-title {
+  font-size: 14px;
+  /* color: #666; */
+  color: #8cb2d9; /* Softer light text */
+  margin-bottom: 8px;
+}
+
+.datalake-ratio-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #eaf6ff; /* Light text */
+  margin: 5px 0;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.datalake-ratio-card:hover .datalake-ratio-value {
+  text-shadow: 0 0 8px rgba(75, 225, 160, 0.6);
+  color: #5cffb0; /* Brighter on hover */
+}
+
+.datalake-audit-macro-section,
+.datalake-audit-external-section,
+.datalake-audit-operation-section,
+.datalake-audit-opinion-section {
+  margin-bottom: 24px;
+}
+
+.datalake-audit-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.datalake-audit-card {
+  /* background: white; */
+  background: #102142; /* Slightly darker than section for depth */
+  border: 1px solid #2a3c6e; /* Ensure border is visible */
+  border-radius: 6px;
+  padding: 16px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.05); */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out; /* Refined transition */
+}
+
+.datalake-audit-card:hover { /* Refined hover */
+  transform: translateY(-4px) scale(1.01); /* Subtle scale */
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  border-color: rgba(75, 225, 160, 0.7);
+  background-color: #132b50; /* Slightly lighter/more active background */
+}
+
+.datalake-audit-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  /* border-bottom: 1px solid #f0f0f0; */
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5); /* Darker border */
+  /* color: #444; */
+  color: #4be1a0; /* Accent color for card titles */
+}
+
+.datalake-audit-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center; /* Better align items vertically */
+}
+
+.datalake-audit-item-label {
+  font-weight: 500;
+  /* color: #666; */
+  color: #8cb2d9; /* Softer light text */
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.datalake-audit-item-value {
+  /* color: #333; */
+  color: #b3cfff; /* Light text */
+  line-height: 1.5; /* Improve readability */
+}
+
+.datalake-audit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.datalake-audit-tag {
+  /* background: #f5f5f5; */
+  background: rgba(75, 225, 160, 0.1); /* Accent background */
+  /* color: #666; */
+  color: #eaf6ff; /* Light text */
+  border: 1px solid rgba(75, 225, 160, 0.3); /* Accent border */
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.datalake-audit-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(75, 225, 160, 0.25);
+  cursor: pointer;
+}
+
+.datalake-audit-risk-assessment {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.datalake-audit-risk-item {
+  /* border: 1px solid #f0f0f0; */
+  border: 1px solid #2a3c6e;
+  border-radius: 6px;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  background: #15294e; /* Dark background for these items */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.datalake-audit-risk-item:hover { /* Added hover */
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.datalake-audit-risk-item.high {
+  /* border-left: 4px solid #ff5c5c; */
+  border-left: 4px solid #ff5c5c; /* Keep existing risk colors */
+}
+
+.datalake-audit-risk-item.medium {
+  /* border-left: 4px solid #ffd666; */
+  border-left: 4px solid #ffd666; /* Keep existing risk colors */
+}
+
+.datalake-audit-risk-item.low {
+  /* border-left: 4px solid #4be1a0; */
+  border-left: 4px solid #4be1a0; /* Keep existing risk colors */
+}
+
+.datalake-audit-risk-title {
+  font-weight: 500;
+  margin: 0 0 10px;
+  padding-right: 50px;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-audit-risk-level {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white; /* Keep white text, background is dynamic */
+}
+
+.datalake-audit-risk-level.high {
+  background-color: #ff5c5c;
+}
+
+.datalake-audit-risk-level.medium {
+  background-color: #ffd666;
+  color: #5c3c00; /* Keep contrast for medium */
+}
+
+.datalake-audit-risk-level.low {
+  background-color: #4be1a0;
+}
+
+.datalake-audit-risk-description { /* Already updated above, ensure consistency */
+  font-size: 13px;
+  color: #b3cfff; /* Light text */
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.datalake-audit-list { /* Style for <ul> elements if any */
+  color: #b3cfff;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.datalake-audit-list li {
+  margin-bottom: 6px;
+}
+
+.datalake-audit-compliance {
+  margin-top: 16px;
+}
+
+.datalake-compliance-summary {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  gap: 20px;
+}
+
+.datalake-compliance-score {
+  font-size: 28px;
+  font-weight: 600;
+  /* color: #1890ff; */
+  color: #40a9ff; /* Accent color */
+}
+
+.datalake-compliance-status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.datalake-compliance-status.compliant {
+  /* background-color: #e6f7ff; */
+  /* color: #1890ff; */
+  background-color: rgba(64, 169, 255, 0.2);
+  color: #40a9ff;
+  border: 1px solid #40a9ff;
+}
+
+.datalake-compliance-status.partial {
+  /* background-color: #fff7e6; */
+  /* color: #fa8c16; */
+  background-color: rgba(250, 140, 22, 0.2);
+  color: #fa8c16;
+  border: 1px solid #fa8c16;
+}
+
+.datalake-compliance-status.non-compliant {
+  /* background-color: #fff1f0; */
+  /* color: #f5222d; */
+  background-color: rgba(245, 34, 45, 0.2);
+  color: #f5222d;
+  border: 1px solid #f5222d;
+}
+
+/* End of Audit View Styles */
+
+/* Opinion Audit View Styles */
+.datalake-audit-sentiment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.datalake-sentiment-score-container {
+  display: flex;
+  align-items: center;
+}
+
+.datalake-score-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #fff; /* Keep white, background is dynamic */
+  margin-right: 8px;
+}
+
+.datalake-sentiment-trend {
+  font-size: 0.9em;
+  /* color: #8c8c8c; */
+  color: #8cb2d9; /* Softer light text */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.datalake-sentiment-trend:hover {
+  transform: translateX(2px);
+  color: #eaf6ff; /* Brighten on hover */
+}
+
+.datalake-audit-sentiment-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.datalake-sentiment-metric {
+  flex: 1;
+  min-width: 120px;
+}
+
+.datalake-sentiment-value {
+  font-weight: 500;
+  margin-left: 5px;
+  /* Colors for positive/neutral/negative will be handled by inline styles in component */
+}
+
+.datalake-audit-media-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.datalake-media-metric {
+  flex: 1;
+  min-width: 150px;
+}
+
+.datalake-media-value {
+  font-weight: 500;
+  display: block;
+  margin-top: 5px;
+  font-size: 1.1em;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-media-trend {
+  display: block;
+  font-size: 0.85em;
+  /* color: #8c8c8c; */
+  color: #8cb2d9; /* Softer light text */
+  margin-top: 3px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.datalake-media-trend:hover {
+  transform: translateX(2px);
+  color: #eaf6ff; /* Brighten on hover */
+}
+
+.datalake-daily-mentions {
+  display: flex;
+  align-items: flex-end;
+  height: 60px;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.datalake-mention-bar {
+  flex: 1;
+  min-width: 10px;
+  /* background-color: #1890ff; */ /* Will be styled inline */
+  border-radius: 2px 2px 0 0;
+  cursor: pointer;
+}
+
+.datalake-platform-distribution {
+  margin-top: 15px;
+}
+
+.datalake-platform-item {
+  margin-bottom: 12px;
+}
+
+.datalake-platform-name {
+  font-size: 0.9em;
+  margin-bottom: 4px;
+  color: #b3cfff; /* Light text */
+}
+
+.datalake-platform-bar-container {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+.datalake-platform-bar {
+  height: 20px;
+  /* background-color: #1890ff; */ /* Will be styled inline */
+  border-radius: 2px;
+}
+
+.datalake-platform-percentage {
+  margin-left: 8px;
+  font-size: 0.9em;
+  /* color: #595959; */
+  color: #8cb2d9; /* Softer light text */
+}
+
+.datalake-litigation-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.datalake-litigation-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.datalake-litigation-value {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #eaf6ff; /* Light text */
+}
+
+/* Macro Audit View Styles */
+.datalake-econ-indicators, 
+.datalake-industry-conditions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.datalake-econ-indicator,
+.datalake-industry-condition {
+  padding: 12px;
+  border-radius: 4px;
+  /* border: 1px solid #f0f0f0; */
+  border: 1px solid #2a3c6e;
+  /* background-color: #fafafa; */
+  background-color: #15294e; /* Darker item background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Added transition */
+}
+
+.datalake-econ-indicator:hover,
+.datalake-industry-condition:hover { /* Added hover */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(75, 225, 160, 0.4);
+}
+
+.datalake-econ-indicator-title,
+.datalake-industry-condition-title {
+  font-weight: 500;
+  margin-bottom: 8px;
+  /* color: #262626; */
+  color: #b3cfff; /* Light text */
+}
+
+.datalake-econ-indicator-value,
+.datalake-industry-condition-value {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  /* color: #1890ff; */
+  color: #40a9ff; /* Accent color */
+}
+
+.datalake-econ-indicator-trend,
+.datalake-industry-condition-trend {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  /* color: #595959; */
+  color: #8cb2d9; /* Softer light text */
+}
+
+.datalake-econ-indicator-impact,
+.datalake-industry-condition-impact {
+  font-size: 0.85em;
+  /* color: #8c8c8c; */
+  color: #8cb2d9; /* Softer light text */
+  line-height: 1.4;
+}
+
+.datalake-audit-grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.datalake-audit-scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.datalake-audit-scenario-card {
+  /* border: 1px solid #f0f0f0; */
+  border: 1px solid #2a3c6e;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #15294e; /* Darker item background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Added transition */
+}
+
+.datalake-audit-scenario-card:hover { /* Added hover */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: rgba(75, 225, 160, 0.4);
+}
+
+.datalake-audit-scenario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  /* border-bottom: 1px solid #f0f0f0; */
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  padding-bottom: 10px;
+}
+
+.datalake-audit-scenario-title {
+  margin: 0;
+  font-size: 1.1em;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-audit-scenario-probability {
+  font-size: 0.85em;
+  padding: 3px 8px;
+  /* background-color: #f5f5f5; */
+  background-color: #223366; /* Darker tag background */
+  color: #b3cfff; /* Light text */
+  border-radius: 12px;
+}
+
+.datalake-audit-policy-container {
+  margin-top: 20px;
+}
+
+.datalake-audit-policy-section {
+  margin-bottom: 25px;
+}
+
+/* External Audit View Styles */
+.datalake-market-share-container {
+  margin-top: 15px;
+}
+
+.datalake-market-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.datalake-market-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.datalake-market-value {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-competitor-bars {
+  margin-top: 15px;
+}
+
+.datalake-competitor-bar-container {
+  margin-bottom: 12px;
+}
+
+.datalake-competitor-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+  color: #b3cfff; /* Light text */
+}
+
+.datalake-competitor-trend {
+  font-size: 0.9em;
+  /* color: #8c8c8c; */
+  color: #8cb2d9; /* Softer light text */
+}
+
+.datalake-competitor-bar-wrapper {
+  width: 100%;
+  height: 20px;
+  /* background-color: #f5f5f5; */
+  background-color: #223366; /* Darker background for bar wrapper */
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.datalake-competitor-bar {
+  height: 100%;
+  /* background-color: #1890ff; */ /* Will be styled inline */
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  font-size: 0.85em;
+  color: #fff; /* Keep white, background is dynamic */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.datalake-competitor-bar-container:hover .datalake-competitor-bar {
+  transform: scaleX(1.02);
+  opacity: 0.9;
+}
+
+.datalake-growth-container {
+  margin-top: 20px;
+}
+
+.datalake-growth-metrics {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.datalake-growth-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.datalake-growth-value {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-audit-risk-assessment { /* Re-check this class name for External View if different */
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+  /* background-color: #f5f5f5; */
+  background-color: #223366; /* Darker tag background */
+  color: #b3cfff; /* Light text */
+}
+
+.datalake-audit-bullet-list {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+  font-size: 0.9em;
+  color: #b3cfff; /* Ensure list items are light */
+}
+
+.datalake-customer-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.datalake-customer-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.datalake-customer-value {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-customer-satisfaction {
+  margin-top: 15px;
+}
+
+.datalake-nps-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.datalake-nps-score {
+  font-weight: 500;
+  color: #eaf6ff; /* Light text */
+}
+
+.datalake-nps-trend {
+  font-size: 0.9em;
+  /* color: #8c8c8c; */
+  color: #8cb2d9; /* Softer light text */
+}
+
+.datalake-innovation-pipeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.datalake-pipeline-metric {
+  display: flex;
+  flex-direction: column;
+}
+
+.datalake-pipeline-value {
+  font-weight: 500;
+  margin-top: 5px;
+  color: #eaf6ff; /* Light text */
+}
+
+/* Make sure tables within audit views are also dark-themed */
+.datalake-audit-section .datalake-table-container {
+  background: #102142; /* Match audit card background */
+  border: 1px solid #2a3c6e;
+}
+
+.datalake-audit-section .datalake-table th {
+  background: #1e3a6d; /* Keep existing dark header */
+  color: #eaf6ff;
+  border-bottom: 1px solid #2a3c6e;
+}
+
+.datalake-audit-section .datalake-table td {
+  border-bottom: 1px solid rgba(42, 60, 110, 0.5);
+  color: #b3cfff;
+}
+
+.datalake-audit-section .datalake-table tr:hover td {
+  background: rgba(75, 225, 160, 0.1);
+}
+
+/* Specific styles for the 内部控制评估 section and similar data display items */
+.datalake-audit-header {
+  display: flex;
+  justify-content: center; /* Center contents horizontally */
+  align-items: center;
+  text-align: center; /* Center text */
+  margin-bottom: 16px;
+}
+
+.datalake-audit-value {
+  font-weight: 600;
+  color: #4be1a0; /* Use accent color for emphasis */
+  margin-left: 8px;
+}
+
+/* For items like "总体评估:有效" */
+.datalake-audit-key-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.datalake-audit-key-value .label {
+  color: #8cb2d9; /* Softer light text */
+  margin-right: 4px;
+}
+
+.datalake-audit-key-value .value {
+  color: #4be1a0; /* Accent color for value */
+  font-weight: 500;
+}
+
+/* Special styling for financial ratios and profit metrics */
+.profitability {
+  text-align: center;
+}
+
+.profitability .ratio-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4be1a0;
+  margin-bottom: 8px;
+}
+
+.profitability .ratio-label {
+  color: #8cb2d9;
+  font-size: 14px;
+}
+
+/* Make text inside trend cards aligned center and styled consistently */
+.datalake-audit-trend-title, 
+.datalake-audit-trend-assessment,
+.datalake-audit-trend-explanation {
+  text-align: center;
+  width: 100%;
+}
+
+/* For the metric items in the bottom of trend cards */
+.datalake-audit-item.center-item {
+  justify-content: center;
+  text-align: center;
+}
+.datalake-audit-item.center-item .datalake-audit-item-label {
+  text-align: right;
+  margin-right: 8px;
+}
+.datalake-audit-item.center-item .datalake-audit-item-value {
+  text-align: left;
+}
+
+/* Ensure the content inside .datalake-audit-ic-metric is properly centered */
+.datalake-audit-ic-metric-content {
+  width: 100%;
+  text-align: center;
+}
+
+/* Center and style risk assessment items specifically */
+.datalake-audit-risk-assessment {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 0 auto 20px;
+  max-width: 1200px;
+}
+
+/* Enhance financial metrics styling */
+.datalake-financial-metric {
+  text-align: center;
+  padding: 16px;
+  background: rgba(21, 41, 78, 0.5);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.datalake-financial-metric:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.datalake-financial-metric .value {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4be1a0;
+  margin: 10px 0;
+}
+
+.datalake-financial-metric .label {
+  color: #8cb2d9;
+  font-size: 14px;
+}
+
+/* Style for internal controls evaluation items that need alignment */
+.datalake-audit-ic-label {
+  width: 100%;
+  text-align: center;
+  color: #8cb2d9;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.datalake-audit-ic-value {
+  width: 100%;
+  text-align: center;
+  color: #eaf6ff;
+  font-weight: 600;
+}
+
+/* Make sure tables within audit views are also properly styled */
+.datalake-audit-section .datalake-table-container {
+  background: #102142; /* Match audit card background */
+  border: 1px solid #2a3c6e;
+  margin-top: 16px;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+.datalake-audit-section .datalake-table-container:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Advanced hover effects for dashboard cards */
+
+/* Glow effect on hover for important metrics */
+.datalake-ratio-value,
+.datalake-audit-ic-value,
+.profitability .ratio-number,
+.datalake-financial-metric .value {
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.datalake-ratio-card:hover .datalake-ratio-value,
+.datalake-audit-ic-metric:hover .datalake-audit-ic-value,
+.profitability:hover .ratio-number,
+.datalake-financial-metric:hover .value {
+  text-shadow: 0 0 8px rgba(75, 225, 160, 0.6);
+  color: #5cffb0; /* Brighter on hover */
+}
+
+/* Subtle pulsing animation for risk badges */
+.datalake-risk-badge {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datalake-risk-badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Highlight tags on hover */
+.datalake-audit-tag {
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.datalake-audit-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(75, 225, 160, 0.25);
+  cursor: pointer;
+}
+
+/* Enhance competitor bars with subtle animation */
+.datalake-competitor-bar {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.datalake-competitor-bar-container:hover .datalake-competitor-bar {
+  transform: scaleX(1.02);
+  opacity: 0.9;
+}
+
+/* Enhance chart containers with subtle border glow */
+.datalake-chart-container {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datalake-chart-container:hover {
+  border-color: rgba(75, 225, 160, 0.7);
+  box-shadow: 0 0 15px rgba(75, 225, 160, 0.2);
+}
+
+/* Make section headers more interactive */
+.datalake-audit-section-title {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: default;
+}
+
+.datalake-audit-section-title:hover {
+  color: #5cffb0; /* Brighter on hover */
+  text-shadow: 0 0 10px rgba(75, 225, 160, 0.3);
+}
+
+/* Add subtle animation to trend indicators */
+.datalake-sentiment-trend,
+.datalake-media-trend,
+.datalake-competitor-trend {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.datalake-sentiment-trend:hover,
+.datalake-media-trend:hover,
+.datalake-competitor-trend:hover {
+  transform: translateX(2px);
+  color: #eaf6ff; /* Brighten on hover */
+}
+
+/* Add depth effect to news items */
+.datalake-news-item {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.datalake-news-item:hover {
+  transform: translateX(5px);
+  background-color: rgba(75, 225, 160, 0.1);
+  box-shadow: -3px 0 0 rgba(75, 225, 160, 0.7);
+}
+
+/* Make table rows more interactive */
+.datalake-table tr {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.datalake-table tr:hover {
+  transform: translateX(5px);
+}
+
+/* Add focus state for the metric cards */
+.datalake-audit-metric:focus,
+.datalake-audit-ic-metric:focus,
+.datalake-ratio-card:focus,
+.datalake-audit-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(75, 225, 160, 0.7);
+}
+
+/* Interactive aspect for scenario cards */
+.datalake-audit-scenario-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.datalake-audit-scenario-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent 0%, rgba(75, 225, 160, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.datalake-audit-scenario-card:hover::before {
+  opacity: 1;
+}
+
+/* Animated border for active cards */
+@keyframes borderPulse {
+  0% { border-color: rgba(75, 225, 160, 0.4); }
+  50% { border-color: rgba(75, 225, 160, 0.8); }
+  100% { border-color: rgba(75, 225, 160, 0.4); }
+}
+
+.datalake-audit-card.active,
+.datalake-audit-ic-metric.active,
+.datalake-ratio-card.active {
+  border: 1px solid rgba(75, 225, 160, 0.6);
+  animation: borderPulse 2s infinite;
+}
+
+/* Specific styling for control assessment items like 总体评估:有效 */
+.control-assessment-item {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.control-assessment-item .item-label {
+  color: #8cb2d9;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.control-assessment-item .item-value {
+  color: #eaf6ff;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Container for the assessment items in the 内部控制评估 section */
+.control-assessment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Fix for the financial metrics section like shown in the last red box */
+.financial-metrics-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.financial-metric-item {
+  text-align: center;
+  min-width: 120px;
+  padding: 5px 15px;
+}
+
+.financial-metric-item .value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #40a9ff;
+  margin: 5px 0;
+}
+
+.financial-metric-item .label {
+  color: #8cb2d9;
+  font-size: 14px;
+}
+
+/* Override any flex layout that might interfere with text centering */
+.datalake-audit-ic-metric,
+.datalake-audit-trend-card,
+.datalake-ratio-card {
+  text-align: center !important;
+}
+
+.datalake-audit-ic-metric p,
+.datalake-audit-trend-card p,
+.datalake-ratio-card p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Ensure that key-value pairs display properly */
+.key-value-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.key-value-pair .key {
+  color: #8cb2d9;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.key-value-pair .value {
+  color: #eaf6ff;
+  text-align: left;
+  padding-left: 5px;
+  font-weight: 500;
+}
+
+/* Target specific metrics layout in audit view */
+.audit-metrics-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Fix table header alignment if needed */
+.datalake-audit-section table th {
+  text-align: center;
+}
+
+/* Make sure even display:flex doesn't mess with text alignment */
+.datalake-audit-ic-metric,
+.datalake-audit-trend-card {
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.datalake-audit-ic-metric > *,
+.datalake-audit-trend-card > * {
+  width: 100%;
+  text-align: center;
+}
+
+/* Override any specific ratio card layout issues */
+.ratio-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ratio-display .ratio-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #40a9ff;
+  margin: 5px 0;
+}
+
+.ratio-display .ratio-label {
+  color: #8cb2d9;
+  font-size: 14px;
+}

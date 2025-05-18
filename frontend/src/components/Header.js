@@ -76,6 +76,15 @@ const Header = ({ currentCompanyId, onSetCompany }) => {
             transition: 'all 0.18s', letterSpacing: 1
           }}>数智中台</button>
         </Link>
+        <Link to="/datalake">
+          <button style={{
+            background: location.pathname.startsWith('/datalake') ? '#4be1a0' : 'rgba(34,51,102,0.85)',
+            color: location.pathname.startsWith('/datalake') ? '#15294e' : '#b3cfff',
+            fontWeight: 700, fontSize: 16, border: 'none', borderRadius: 8, padding: '8px 22px', cursor: 'pointer',
+            boxShadow: location.pathname.startsWith('/datalake') ? '0 2px 8px #4be1a055' : 'none',
+            transition: 'all 0.18s', letterSpacing: 1
+          }}>数据湖</button>
+        </Link>
       </div>
       <h2 style={{ flex: 1, color: '#40a9ff', margin: 0, fontWeight: 800, letterSpacing: 2, fontSize: 28, textShadow: '0 2px 8px #00152955' }}>
         AURA 智能审计风险监控平台 DEMO
@@ -139,7 +148,7 @@ const Header = ({ currentCompanyId, onSetCompany }) => {
                     onClick={e => {
                       e.stopPropagation();
                       setShowMore(false);
-                      window.location.href = `/data-platform/${tab.key}`;
+                      navigate(`/data-platform/${tab.key}`);
                     }}
                   >{tab.label}</div>
                 ))}

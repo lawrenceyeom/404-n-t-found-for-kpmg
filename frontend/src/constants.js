@@ -1,5 +1,6 @@
 // src/constants.js
-export const API_BASE = 'https://four04-n-t-found-for-kpmg-1.onrender.com';
+export const API_BASE = 'http://127.0.0.1:8000';
+export const API_URL = API_BASE;
 
 export const COMPANIES = [
   { id: 'aura', name: 'AURA稳健', desc: 'AURA稳健公司描述' },
@@ -19,7 +20,48 @@ export const RISK_DIMENSIONS = [
 export const ASSET_ITEMS = [
   '货币资金', '应收账款', '存货', '固定资产', '在建工程',
   '无形资产', '长期股权投资', '其他应收款', '其他流动资产',
+  '投资性房地产', '长期应收款', '交易性金融资产', '预付款项',
+  '其他非流动资产'
 ];
+
+// Main items that can be selected for trend analysis
+export const MAIN_FINANCIAL_ITEMS = [
+  { key: 'cash', label: '货币资金', type: 'asset' },
+  { key: 'receivable', label: '应收账款', type: 'asset' },
+  { key: 'inventory', label: '存货', type: 'asset' },
+  { key: 'fixed_assets', label: '固定资产', type: 'asset' },
+  { key: 'construction', label: '在建工程', type: 'asset' },
+  { key: 'intangible', label: '无形资产', type: 'asset' },
+  { key: 'investment_property', label: '投资性房地产', type: 'asset' },
+  { key: 'long_term_equity', label: '长期股权投资', type: 'asset' },
+  { key: 'other_receivables', label: '其他应收款', type: 'asset' },
+  { key: 'total_current_assets', label: '流动资产合计', type: 'asset' },
+  { key: 'total_assets', label: '资产总计', type: 'asset' },
+  
+  { key: 'short_borrowings', label: '短期借款', type: 'liability' },
+  { key: 'accounts_payable', label: '应付账款', type: 'liability' },
+  { key: 'contract_liabilities', label: '合同负债', type: 'liability' },
+  { key: 'long_borrowings', label: '长期借款', type: 'liability' },
+  { key: 'bonds_payable', label: '应付债券', type: 'liability' },
+  { key: 'debt', label: '流动负债合计', type: 'liability' },
+  { key: 'non_current_liabilities', label: '非流动负债合计', type: 'liability' },
+  { key: 'total_liabilities', label: '负债合计', type: 'liability' },
+  
+  { key: 'share_capital', label: '实收资本（或股本）', type: 'equity' },
+  { key: 'capital_reserve', label: '资本公积', type: 'equity' },
+  { key: 'surplus_reserve', label: '盈余公积', type: 'equity' },
+  { key: 'undistributed_profit', label: '未分配利润', type: 'equity' },
+  { key: 'total_equity', label: '所有者权益合计', type: 'equity' },
+  
+  { key: 'revenue', label: '营业收入', type: 'income' },
+  { key: 'operating_costs', label: '营业成本', type: 'income' },
+  { key: 'operating_profit', label: '营业利润', type: 'income' },
+  { key: 'total_profit', label: '利润总额', type: 'income' },
+  { key: 'net_profit', label: '净利润', type: 'income' }
+];
+
+// Main items initially selected
+export const INITIAL_MAIN_ITEMS = ['cash', 'receivable', 'fixed_assets', 'accounts_payable', 'net_profit'];
 
 export const BIZ_MODULES_MAP = {
   aura: ['商品销售', '供应链金融', '物流服务', '海外贸易', '其他业务'],
@@ -43,7 +85,7 @@ export const ALL_RATIOS_CONFIG = [
 ];
 
 export const INITIAL_SELECTED_RATIOS = ['debt_ratio', 'current_ratio', 'roe', 'interest_debt_ratio'];
-export const INITIAL_TREND_METRIC_KEYS_MAIN = ['cash', 'receivable', 'debt'];
+export const INITIAL_TREND_METRIC_KEYS_MAIN = INITIAL_MAIN_ITEMS;
 
 export const RISK_DIM_EXPLAIN = {
   finance: { reason: '财务指标异常波动，存在偿债、盈利等风险。', advice: '建议重点关注资产负债表和利润表的异常变动，复核大额科目。' },

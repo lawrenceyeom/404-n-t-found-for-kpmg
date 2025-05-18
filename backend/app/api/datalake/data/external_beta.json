@@ -1,0 +1,142 @@
+{
+  "company": "BETA成长",
+  "type": "external",
+  "layer": "raw",
+  "data_format": "external_data",
+  "policies": [
+    {
+      "title": "关于促进房地产市场平稳健康发展的通知",
+      "content": "中央及地方政府强调坚持'房住不炒'定位，同时因城施策，支持刚性和改善性住房需求，优化调控政策。",
+      "date": "2024-05-10"
+    },
+    {
+      "title": "推动基础设施REITs市场高质量发展政策",
+      "content": "证监会、发改委鼓励将符合条件的商业地产、产业园区等纳入基础设施REITs试点范围，盘活存量资产。",
+      "date": "2024-04-15"
+    },
+    {
+      "title": "关于加快发展保障性租赁住房的意见",
+      "content": "国务院办公厅印发意见，明确保障性租赁住房的支持政策，鼓励各类市场主体参与投资建设。",
+      "date": "2024-03-01"
+    },
+    {
+      "title": "城市更新行动方案(2023-2027)",
+      "content": "住房和城乡建设部推动城市更新，鼓励对老旧小区、商业区进行改造升级，提升城市功能和品质。",
+      "date": "2023-11-20"
+    },
+    {
+      "title": "关于规范发展商业不动产私募基金的指导意见",
+      "content": "行业协会发布指导意见，旨在规范商业不动产私募基金运作，促进市场健康发展，为商业运营提供资金支持。",
+      "date": "2024-02-05"
+    },
+    {
+      "title": "促进平台经济规范健康持续发展的若干意见",
+      "content": "支持平台企业在引领发展、创造就业、国际竞争中大显身手，利好商业运营数字化转型及线上线下融合。",
+      "date": "2023-07-12"
+    },
+    {
+      "title": "上市公司并购重组管理办法修订",
+      "content": "证监会修订管理办法，优化并购重组流程，鼓励上市公司通过并购提升质量和投资价值。",
+      "date": "2023-10-08"
+    },
+    {
+      "title": "关于促进物业服务行业高质量发展的指导意见",
+      "content": "住建部等部门鼓励物业服务企业向智慧化、多元化方向发展，提升服务品质和运营效率。",
+      "date": "2023-09-01"
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_company_name": "卓越地产A集团",
+      "total_assets_billion_cny": 750.0,
+      "sales_revenue_billion_cny": 180.5,
+      "property_portfolio_sqm_million": 35.2,
+      "commercial_rental_income_billion_cny": 20.8,
+      "investment_focus_areas": "核心城市商业综合体、物流地产",
+      "sustainability_rating": "AA"
+    },
+    {
+      "benchmark_company_name": "城市生活B服务公司",
+      "total_assets_billion_cny": 300.2,
+      "sales_revenue_billion_cny": 50.1,
+      "property_portfolio_sqm_million": 150.0,
+      "commercial_rental_income_billion_cny": 8.5,
+      "investment_focus_areas": "智慧社区运营、增值服务",
+      "sustainability_rating": "A+"
+    },
+    {
+      "benchmark_company_name": "创新投资C资本",
+      "total_assets_billion_cny": 150.0,
+      "sales_revenue_billion_cny": 5.2, 
+      "property_portfolio_sqm_million": 2.5,
+      "commercial_rental_income_billion_cny": 1.2,
+      "investment_focus_areas": "地产科技、城市更新基金、REITs",
+      "sustainability_rating": "A"
+    },
+    {
+      "benchmark_company_name": "商业运营D管理集团",
+      "total_assets_billion_cny": 450.8,
+      "sales_revenue_billion_cny": 90.3,
+      "property_portfolio_sqm_million": 20.0,
+      "commercial_rental_income_billion_cny": 35.5,
+      "investment_focus_areas": "大型购物中心、连锁品牌孵化",
+      "sustainability_rating": "AA-"
+    },
+    {
+      "benchmark_company_name": "精品物业E公司",
+      "total_assets_billion_cny": 80.5,
+      "sales_revenue_billion_cny": 25.6,
+      "property_portfolio_sqm_million": 90.0, 
+      "commercial_rental_income_billion_cny": 3.1,
+      "investment_focus_areas": "高端住宅物业、资产管理服务",
+      "sustainability_rating": "A"
+    }
+  ],
+  "regulations": [
+    {
+      "title": "中华人民共和国城市房地产管理法",
+      "content": "规范房地产开发经营、房地产交易、房地产登记等活动，维护房地产市场秩序。",
+      "date": "2007-08-30"
+    },
+    {
+      "title": "中华人民共和国土地管理法",
+      "content": "加强土地管理，维护土地的社会主义公有制，保护、开发土地资源，合理利用土地。",
+      "date": "2019-08-26"
+    },
+    {
+      "title": "物业管理条例",
+      "content": "规范物业管理活动，维护业主和物业服务企业的合法权益，改善人民群众的生活和工作环境。",
+      "date": "2003-09-01"
+    },
+    {
+      "title": "中华人民共和国证券投资基金法",
+      "content": "规范证券投资基金活动，保护投资人及相关当事人的合法权益，促进证券投资基金和资本市场的健康发展 (涉及REITs)。",
+      "date": "2015-04-24"
+    },
+    {
+      "title": "上市公司收购管理办法",
+      "content": "规范上市公司的收购及相关股份权益变动活动，保护上市公司及其股东的合法权益。",
+      "date": "2020-03-20"
+    },
+    {
+      "title": "商业特许经营管理条例",
+      "content": "规范商业特许经营活动，促进商业特许经营健康、有序发展，适用于部分商业运营模式。",
+      "date": "2007-05-01"
+    },
+    {
+      "title": "关于进一步规范房地产经纪服务的意见",
+      "content": "规范房地产经纪机构和从业人员的行为，提高服务质量，保护交易当事人合法权益。",
+      "date": "2023-04-28"
+    },
+    {
+      "title": "绿色建筑评价标准",
+      "content": "国家标准，用于评价绿色建筑的性能，引导房地产开发向绿色、低碳、可持续方向发展。",
+      "date": "2019-08-01"
+    },
+    {
+      "title": "中华人民共和国反垄断法",
+      "content": "预防和制止垄断行为，保护市场公平竞争，提高经济运行效率，维护消费者利益和社会公共利益。在并购及商业运营中需关注。",
+      "date": "2022-08-01"
+    }
+  ]
+} 

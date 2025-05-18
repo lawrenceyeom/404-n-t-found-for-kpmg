@@ -1,0 +1,163 @@
+{
+  "company": "CRISIS压力",
+  "type": "opinion",
+  "layer": "raw",
+  "data_format": "text",
+  "news": [
+    {"title": "CRISIS压力公司生产线突发故障，多个项目交付延迟", "content": "6月1日，CRISIS压力公司主要生产基地因设备故障导致生产线中断，预计将影响5个在建项目的交付进度，公司股价应声下跌5.2%。", "sentiment": 0.32, "date": "2024-06-01", "source": "财经日报", "influence": 8.7},
+    {"title": "CRISIS压力公司面临流动性危机，寻求债务重组", "content": "多家媒体报道，CRISIS压力公司正与多家债权银行协商债务展期，以缓解短期流动性压力。公司发言人表示正在积极应对，但未否认存在资金紧张问题。", "sentiment": 0.28, "date": "2024-05-30", "source": "经济观察报", "influence": 9.1},
+    {"title": "政府项目招标违规？CRISIS压力公司陷入调查风波", "content": "CRISIS压力公司参与的某省重点基建项目招标过程被举报存在违规，相关部门已展开调查。公司发表声明表示将全力配合调查，坚信公司行为合规。", "sentiment": 0.30, "date": "2024-05-28", "source": "廉政观察", "influence": 8.5},
+    {"title": "CRISIS压力一季度业绩下滑35%，创三年新低", "content": "CRISIS压力公布2024年第一季度财报，营收同比下滑35%，净利润转为亏损，负债率升至78%，各项指标均不及市场预期。", "sentiment": 0.25, "date": "2024-05-25", "source": "证券日报", "influence": 9.3},
+    {"title": "CRISIS压力环保工程项目环评不达标遭叫停", "content": "CRISIS压力在西部开展的大型环保工程项目因环评报告多项指标不达标被当地环保部门叫停，公司面临整改和可能的处罚。", "sentiment": 0.31, "date": "2024-05-22", "source": "环境周报", "influence": 8.1},
+    {"title": "CRISIS压力大幅裁员15%，多位高管离职", "content": "内部消息人士透露，CRISIS压力近期已开始实施大规模裁员计划，计划裁减15%人员，同时多位高管已选择离职，引发市场对公司经营状况的担忧。", "sentiment": 0.24, "date": "2024-05-20", "source": "人力资源观察", "influence": 8.6},
+    {"title": "CRISIS压力设备出租率下降，闲置资产增加", "content": "行业数据显示，CRISIS压力的工程设备出租率过去半年持续下降，目前仅为65%，远低于行业平均水平，大量设备闲置导致成本负担加重。", "sentiment": 0.34, "date": "2024-05-18", "source": "工程机械周刊", "influence": 7.9},
+    {"title": "CRISIS压力被曝拖欠供应商货款达2亿元", "content": "多家供应商反映CRISIS压力拖欠货款问题严重，累计金额已达2亿元，部分供应商已暂停供货，影响公司正常生产经营。", "sentiment": 0.26, "date": "2024-05-15", "source": "供应链金融网", "influence": 8.3},
+    {"title": "分析师下调CRISIS压力评级，预计业绩持续承压", "content": "多家券商下调CRISIS压力的投资评级，认为公司短期内难以改善经营状况，预计业绩将持续下滑，建议投资者谨慎对待。", "sentiment": 0.29, "date": "2024-05-12", "source": "投资者参考", "influence": 8.8},
+    {"title": "CRISIS压力紧急召开投资者沟通会，承诺改善经营", "content": "面对股价连续下跌，CRISIS压力紧急召开投资者沟通会，公司高管承认经营面临挑战，但表示正在采取措施改善业务结构和财务状况。", "sentiment": 0.40, "date": "2024-05-10", "source": "资本市场日报", "influence": 8.4},
+    {"title": "CRISIS压力在手合同大幅缩水，新签约同比减少42%", "content": "CRISIS压力发布业务进展公告，一季度新签约合同金额同比减少42%，在手订单量创近五年新低，业务萎缩趋势明显。", "sentiment": 0.27, "date": "2024-05-08", "source": "产业经济观察", "influence": 8.5},
+    {"title": "信用评级机构下调CRISIS压力评级至'BB-'", "content": "国际评级机构将CRISIS压力的长期信用评级从'BB+'下调至'BB-'，评级展望为'负面'，理由是公司财务状况持续恶化以及市场竞争力减弱。", "sentiment": 0.25, "date": "2024-05-05", "source": "信用评级周报", "influence": 9.0},
+    {"title": "CRISIS压力旗下环保项目被指造假，内部人士举报", "content": "CRISIS压力在北方地区的环保工程项目被内部人士举报数据造假，监管部门已展开调查，项目暂时处于停滞状态。", "sentiment": 0.21, "date": "2024-05-03", "source": "商业调查", "influence": 8.7},
+    {"title": "CRISIS压力大型基建项目质量问题频发，引发质疑", "content": "CRISIS压力负责的多个基建项目接连暴露质量问题，引发业界和公众对公司工程质量管控能力的质疑，相关部门已要求全面排查隐患。", "sentiment": 0.28, "date": "2024-04-30", "source": "建筑质量调查", "influence": 8.3},
+    {"title": "CRISIS压力尝试资产出售，回笼资金自救", "content": "知情人士透露，CRISIS压力正计划出售部分非核心资产，包括闲置厂房和低效益项目，希望通过回笼资金改善现金流状况。", "sentiment": 0.38, "date": "2024-04-28", "source": "公司重组观察", "influence": 8.0},
+    {"title": "CRISIS压力被多家金融机构催收贷款", "content": "据报道，CRISIS压力已收到多家金融机构的贷款催收通知，部分银行已暂停新增授信，公司融资渠道受阻，偿债压力进一步加大。", "sentiment": 0.22, "date": "2024-04-25", "source": "金融街在线", "influence": 8.6},
+    {"title": "员工士气低迷，CRISIS压力人才流失现象严重", "content": "内部员工反映，CRISIS压力内部士气低迷，员工流失率高达30%，特别是核心技术和管理人才流失严重，影响公司运营效率。", "sentiment": 0.29, "date": "2024-04-22", "source": "人才管理观察", "influence": 7.8},
+    {"title": "CRISIS压力海外项目暂停，外汇风险敞口扩大", "content": "受国际形势影响，CRISIS压力在中东地区的多个项目被迫暂停，加之汇率波动，公司面临较大外汇风险敞口和潜在合同纠纷。", "sentiment": 0.30, "date": "2024-04-20", "source": "国际工程报", "influence": 8.2},
+    {"title": "CRISIS压力遭股东减持，管理层信心遭质疑", "content": "公司公告显示，CRISIS压力部分大股东和高管近期密集减持公司股票，引发市场对管理层对公司前景信心不足的质疑。", "sentiment": 0.26, "date": "2024-04-18", "source": "股市动态分析", "influence": 8.5},
+    {"title": "CRISIS压力设备安全事故频发，监管部门要求整改", "content": "CRISIS压力租赁的工程设备在多个项目现场接连发生安全事故，监管部门已约谈公司负责人并要求全面整改，否则将面临处罚。", "sentiment": 0.24, "date": "2024-04-15", "source": "安全生产监察", "influence": 8.0},
+    {"title": "CRISIS压力子公司破产清算，预计损失2.5亿", "content": "CRISIS压力位于西部的子公司因连年亏损，已进入破产清算程序，公司预计将确认约2.5亿元损失，进一步加重财务负担。", "sentiment": 0.20, "date": "2024-04-12", "source": "破产重组周刊", "influence": 8.9},
+    {"title": "CRISIS压力被环保部门处罚，环保形象受损", "content": "因多次违反环保法规，CRISIS压力被环保部门处以1200万元罚款，公司环保形象严重受损，相关项目被列入重点监管名单。", "sentiment": 0.27, "date": "2024-04-10", "source": "绿色观察", "influence": 8.4},
+    {"title": "CRISIS压力拟申请银行贷款展期，缓解短期还款压力", "content": "CRISIS压力正与多家银行协商贷款展期，希望通过调整还款计划缓解短期偿债压力，银行方面态度谨慎，要求公司提供额外担保。", "sentiment": 0.35, "date": "2024-04-08", "source": "银行业观察", "influence": 8.1},
+    {"title": "政府项目拖欠工程款，CRISIS压力资金链更加紧张", "content": "CRISIS压力承建的多个政府项目因财政拨款延迟而拖欠工程款，导致公司资金链更加紧张，已影响到其他项目的正常推进。", "sentiment": 0.28, "date": "2024-04-05", "source": "政府采购信息", "influence": 8.3},
+    {"title": "CRISIS压力计划大幅调整业务结构，聚焦核心领域", "content": "面对经营困境，CRISIS压力计划对业务结构进行大幅调整，未来将聚焦核心的环保工程和设备租赁业务，缩减低效益领域。", "sentiment": 0.45, "date": "2024-04-02", "source": "企业战略", "influence": 7.9},
+    {"title": "CRISIS压力遭遇多起合同违约索赔", "content": "因未能按期完成合同约定的工作，CRISIS压力面临多起违约索赔，累计金额达4.5亿元，公司已聘请律师团队应对法律风险。", "sentiment": 0.25, "date": "2024-03-30", "source": "法制经济报", "influence": 8.5},
+    {"title": "CRISIS压力考虑引入战略投资者，寻求转机", "content": "知情人士透露，CRISIS压力正在与多家投资机构洽谈，希望引入战略投资者注入资金和资源，帮助公司度过难关。", "sentiment": 0.47, "date": "2024-03-28", "source": "投资并购在线", "influence": 8.2},
+    {"title": "分析：CRISIS压力困境根源在于扩张过快，负债率高", "content": "行业分析人士指出，CRISIS压力当前困境主要源于前期扩张过快、负债率高企，加之行业周期性下行和项目管理不善等因素共同作用。", "sentiment": 0.32, "date": "2024-03-25", "source": "产业研究", "influence": 8.1},
+    {"title": "CRISIS压力拟出售部分在租设备，降低维护成本", "content": "为降低设备维护成本和更新资金压力，CRISIS压力计划出售部分老旧在租设备，同时适度缩减租赁业务规模。", "sentiment": 0.38, "date": "2024-03-22", "source": "设备租赁周刊", "influence": 7.6},
+    {"title": "CRISIS压力加快催收应收账款，缓解资金压力", "content": "CRISIS压力已成立专项小组，加大对历史应收账款的催收力度，希望通过回收欠款缓解公司当前的资金压力。", "sentiment": 0.42, "date": "2024-03-20", "source": "商业财务报", "influence": 7.5},
+    {"title": "CRISIS压力开启'过冬模式'，全面压缩成本", "content": "CRISIS压力内部发文要求全公司进入'过冬模式'，各部门压缩预算30%，严控差旅和招待费用，暂停所有非必要投资。", "sentiment": 0.36, "date": "2024-03-18", "source": "企业内参", "influence": 7.9},
+    {"title": "CRISIS压力中标新项目，盘整期现曙光？", "content": "近期低迷的CRISIS压力传来好消息，成功中标一个总额12亿元的政府环保项目，有分析认为这可能是公司走出困境的曙光。", "sentiment": 0.55, "date": "2024-03-15", "source": "工程招投标信息", "influence": 8.0},
+    {"title": "监管部门要求CRISIS压力说明财务状况", "content": "证券监管部门已向CRISIS压力发出问询函，要求公司说明当前财务状况、债务风险和持续经营能力，并进行风险提示。", "sentiment": 0.29, "date": "2024-03-12", "source": "证券监管动态", "influence": 8.7},
+    {"title": "CRISIS压力新任CEO上任，承诺改革重振信心", "content": "在公司面临困境之际，CRISIS压力任命新CEO陈明，他在就职讲话中承诺将进行全面改革，重点解决债务和业务效益问题。", "sentiment": 0.50, "date": "2024-03-10", "source": "高管变动", "influence": 8.4}
+  ],
+  "social_comments": [
+    {"user": "行业观察者", "comment": "CRISIS压力最近问题不少，生产线故障影响很大，投资需谨慎。", "sentiment": 0.35, "date": "2024-06-01", "platform": "微博", "followers": 15800},
+    {"user": "小张", "comment": "生产中断影响太大了，我朋友公司的项目因为CRISIS的设备问题都延期了。", "sentiment": 0.32, "date": "2024-06-01", "platform": "知乎", "followers": 3600},
+    {"user": "财经评论员", "comment": "CRISIS压力的流动性危机不是短期能解决的，公司负债率高企，管理层应对危机的能力有待提升。", "sentiment": 0.28, "date": "2024-05-30", "platform": "雪球", "followers": 28700},
+    {"user": "投资分析师", "comment": "CRISIS压力的问题是典型的现金流危机，一旦资金链断裂，后果不堪设想。", "sentiment": 0.30, "date": "2024-05-29", "platform": "雪球", "followers": 32500},
+    {"user": "法律从业者", "comment": "政府项目招标涉嫌违规是严重问题，如果调查属实，CRISIS压力可能面临处罚和禁入。", "sentiment": 0.25, "date": "2024-05-28", "platform": "知乎", "followers": 18900},
+    {"user": "职业投资人", "comment": "一季度业绩如此糟糕，远超市场预期的差，后续恐怕还有更多利空。", "sentiment": 0.22, "date": "2024-05-26", "platform": "雪球", "followers": 45800},
+    {"user": "环保专家", "comment": "CRISIS压力的环保项目一直存在问题，这次被叫停是迟早的事，技术和管理都跟不上。", "sentiment": 0.28, "date": "2024-05-23", "platform": "知乎", "followers": 22400},
+    {"user": "前员工", "comment": "公司裁员是无奈之举，内部管理混乱，项目亏损严重，现金流紧张是事实。", "sentiment": 0.26, "date": "2024-05-21", "platform": "脉脉", "followers": 1200},
+    {"user": "工程机械专家", "comment": "设备出租率这么低，说明市场对CRISIS的设备和服务不认可，恶性循环已经开始。", "sentiment": 0.31, "date": "2024-05-19", "platform": "知乎", "followers": 19600},
+    {"user": "供应链经理", "comment": "我们公司是CRISIS的供应商，确实存在拖欠货款的问题，已经限制供货了。", "sentiment": 0.24, "date": "2024-05-16", "platform": "微信", "followers": 5300},
+    {"user": "股票分析员", "comment": "多家券商下调评级，基本面持续恶化，建议投资者离场观望。", "sentiment": 0.27, "date": "2024-05-13", "platform": "雪球", "followers": 35600},
+    {"user": "小投资者", "comment": "参加了CRISIS的投资者沟通会，感觉管理层也没有很好的解决方案，听完更担心了。", "sentiment": 0.35, "date": "2024-05-11", "platform": "雪球", "followers": 2800},
+    {"user": "工程项目经理", "comment": "我们不再与CRISIS合作，他们的合同履约能力下降很多，项目延期严重影响我们的计划。", "sentiment": 0.29, "date": "2024-05-09", "platform": "领英", "followers": 7600},
+    {"user": "风险投资人", "comment": "信用评级下调是警报，公司融资成本会显著上升，债务危机可能加速到来。", "sentiment": 0.23, "date": "2024-05-06", "platform": "雪球", "followers": 28900},
+    {"user": "环保NGO工作者", "comment": "如果环保项目数据造假属实，CRISIS的企业声誉将遭受毁灭性打击。", "sentiment": 0.20, "date": "2024-05-04", "platform": "微博", "followers": 12600},
+    {"user": "建筑行业从业者", "comment": "去过CRISIS的几个工地，确实存在质量管控不严的问题，监理都反映多次了。", "sentiment": 0.26, "date": "2024-05-01", "platform": "抖音", "followers": 8900},
+    {"user": "资产重组专家", "comment": "CRISIS尝试资产出售是明智之举，但市场不好的情况下，能卖多少钱是个问题。", "sentiment": 0.40, "date": "2024-04-29", "platform": "知乎", "followers": 15700},
+    {"user": "银行信贷经理", "comment": "现在各家银行都对CRISIS类型的企业收紧授信，风险太大，催收贷款也是无奈之举。", "sentiment": 0.25, "date": "2024-04-26", "platform": "领英", "followers": 6200},
+    {"user": "企业人力总监", "comment": "CRISIS的人才流失问题确实严重，多位同行都收到他们员工的简历，尤其是骨干人才。", "sentiment": 0.27, "date": "2024-04-23", "platform": "脉脉", "followers": 9800},
+    {"user": "国际工程咨询师", "comment": "海外项目暂停对CRISIS是沉重打击，国际业务是他们过去几年的重要增长点。", "sentiment": 0.32, "date": "2024-04-21", "platform": "知乎", "followers": 16300},
+    {"user": "股市分析师", "comment": "股东和高管减持是最明显的信号，内部人最清楚公司状况，他们都在撤离，外部投资者更要小心。", "sentiment": 0.24, "date": "2024-04-19", "platform": "雪球", "followers": 42100},
+    {"user": "安全生产专家", "comment": "CRISIS的设备安全事故频发，主要是维护不及时、培训不到位导致的，存在重大隐患。", "sentiment": 0.22, "date": "2024-04-16", "platform": "微博", "followers": 13800},
+    {"user": "破产法律专家", "comment": "子公司破产只是开始，如果主业不能好转，可能会有更多单位进入破产程序。", "sentiment": 0.18, "date": "2024-04-13", "platform": "知乎", "followers": 22700},
+    {"user": "环保行业记者", "comment": "CRISIS这次环保处罚数额不小，反映出公司为了节约成本不惜违反环保法规，很难洗白了。", "sentiment": 0.25, "date": "2024-04-11", "platform": "微博", "followers": 18900},
+    {"user": "金融风控", "comment": "银行对CRISIS这类企业的贷款展期会非常谨慎，没有额外担保很难通过审批。", "sentiment": 0.33, "date": "2024-04-09", "platform": "雪球", "followers": 15600},
+    {"user": "政府采购专员", "comment": "拖欠工程款是普遍现象，但CRISIS现在的问题是已经没有缓冲能力，资金链绷得太紧。", "sentiment": 0.30, "date": "2024-04-06", "platform": "知乎", "followers": 8700},
+    {"user": "企业战略顾问", "comment": "业务调整是必要的，但CRISIS现在的问题是没有时间和资金支持转型，很难见效。", "sentiment": 0.42, "date": "2024-04-03", "platform": "领英", "followers": 11200},
+    {"user": "商业律师", "comment": "面临如此多的合同违约索赔，法律费用和赔偿金会成为CRISIS的又一负担，恶性循环啊。", "sentiment": 0.23, "date": "2024-03-31", "platform": "知乎", "followers": 17500},
+    {"user": "投资银行分析师", "comment": "引入战略投资者是条出路，但目前CRISIS的债务和经营问题，很难吸引到优质投资方。", "sentiment": 0.45, "date": "2024-03-29", "platform": "雪球", "followers": 32800},
+    {"user": "产业研究员", "comment": "CRISIS的困境确实如文章所说，根源在于前期盲目扩张，背负了过多债务，如今周期下行就显现出来了。", "sentiment": 0.35, "date": "2024-03-26", "platform": "知乎", "followers": 20600},
+    {"user": "设备租赁业内人士", "comment": "出售老旧设备是无奈之举，但在当前市场环境下，折价会很严重，损失不小。", "sentiment": 0.36, "date": "2024-03-23", "platform": "微信", "followers": 7800},
+    {"user": "财务总监", "comment": "催收应收账款在当前经济环境下难度很大，很多客户自身也面临资金压力。", "sentiment": 0.38, "date": "2024-03-21", "platform": "领英", "followers": 9500},
+    {"user": "企业内训师", "comment": "全面压缩成本是必须的，但要注意不要因此影响核心业务的质量和员工士气。", "sentiment": 0.40, "date": "2024-03-19", "platform": "脉脉", "followers": 6300},
+    {"user": "投标咨询顾问", "comment": "中标新项目是好消息，但能否顺利实施、按期收款才是关键，之前的项目执行就不理想。", "sentiment": 0.52, "date": "2024-03-16", "platform": "知乎", "followers": 11800},
+    {"user": "证券法律顾问", "comment": "监管问询意味着CRISIS需要公开更多财务信息，可能会让投资者看到更多风险。", "sentiment": 0.31, "date": "2024-03-13", "platform": "雪球", "followers": 18700},
+    {"user": "公司治理专家", "comment": "新CEO上任是个变数，如果有强力的改革措施和资源支持，或许能带来转机。", "sentiment": 0.48, "date": "2024-03-11", "platform": "知乎", "followers": 25900},
+    {"user": "设备操作员", "comment": "在CRISIS工作，设备确实维护不及时，故障率高，影响生产效率，还有安全隐患。", "sentiment": 0.25, "date": "2024-03-08", "platform": "抖音", "followers": 4200},
+    {"user": "工程监理", "comment": "负责过CRISIS的项目，质量控制确实有问题，经常为了赶进度忽视质量标准。", "sentiment": 0.27, "date": "2024-03-05", "platform": "微博", "followers": 7800},
+    {"user": "环保工程师", "comment": "CRISIS的环保项目设计理念落后，技术应用不到位，成本控制过度导致效果不佳。", "sentiment": 0.30, "date": "2024-03-02", "platform": "知乎", "followers": 13500}
+  ],
+  "sentiment_summary": {
+    "overall_score": 0.32,
+    "positive_rate": 0.05,
+    "neutral_rate": 0.25,
+    "negative_rate": 0.70,
+    "trending": "declining_negative",
+    "key_positive_topics": ["业务调整", "引入战略投资", "新CEO上任"],
+    "key_negative_topics": ["现金流危机", "债务压力", "项目质量问题", "环保违规", "设备安全隐患", "人才流失", "合同违约"]
+  },
+  "media_exposure": {
+    "daily_mentions": [58, 65, 72, 80, 75, 68, 70, 65, 72, 78, 82, 75, 68, 65, 70, 76, 72, 68, 75, 82, 78, 75, 70, 68, 72, 68, 65, 60, 62],
+    "platform_distribution": [
+      {"platform": "微博", "percentage": 25},
+      {"platform": "知乎", "percentage": 35},
+      {"platform": "微信", "percentage": 12},
+      {"platform": "抖音", "percentage": 8},
+      {"platform": "雪球", "percentage": 15},
+      {"platform": "领英", "percentage": 3},
+      {"platform": "其他", "percentage": 2}
+    ],
+    "sentiment_distribution": [
+      {"sentiment": "正面", "percentage": 5},
+      {"sentiment": "中性", "percentage": 28},
+      {"sentiment": "负面", "percentage": 67}
+    ]
+  },
+  "regional_sentiment": [
+    {"region": "华东", "sentiment_score": 0.35, "mention_count": 245},
+    {"region": "华北", "sentiment_score": 0.32, "mention_count": 268},
+    {"region": "华南", "sentiment_score": 0.34, "mention_count": 198},
+    {"region": "西南", "sentiment_score": 0.28, "mention_count": 175},
+    {"region": "东北", "sentiment_score": 0.30, "mention_count": 145},
+    {"region": "华中", "sentiment_score": 0.31, "mention_count": 162},
+    {"region": "西北", "sentiment_score": 0.26, "mention_count": 120},
+    {"region": "海外", "sentiment_score": 0.29, "mention_count": 85}
+  ],
+  "sentiment_trends": {
+    "weekly": [0.38, 0.36, 0.34, 0.32, 0.30, 0.28, 0.29, 0.31, 0.33, 0.30, 0.28, 0.32],
+    "monthly": [0.38, 0.34, 0.30, 0.28, 0.31, 0.33],
+    "quarterly": [0.40, 0.35, 0.30, 0.28]
+  },
+  "crisis_events": [
+    {
+      "event": "生产线突发故障导致多个项目延期",
+      "date": "2024-06-01",
+      "severity": "高",
+      "resolution": "正在抢修，预计需要两周时间恢复",
+      "sentiment_impact": -0.15,
+      "duration_days": 14
+    },
+    {
+      "event": "环保项目环评不达标被叫停",
+      "date": "2024-05-22",
+      "severity": "中",
+      "resolution": "正在整改，提交新的环评报告",
+      "sentiment_impact": -0.08,
+      "duration_days": 30
+    },
+    {
+      "event": "设备安全事故频发",
+      "date": "2024-04-15",
+      "severity": "高",
+      "resolution": "全面排查设备安全隐患，加强培训",
+      "sentiment_impact": -0.12,
+      "duration_days": 22
+    },
+    {
+      "event": "子公司破产清算",
+      "date": "2024-04-12",
+      "severity": "高",
+      "resolution": "进入法定程序，预计损失2.5亿元",
+      "sentiment_impact": -0.14,
+      "duration_days": 90
+    }
+  ],
+  "competitor_comparison": [
+    {"competitor": "环工建设", "our_sentiment": 0.32, "their_sentiment": 0.65, "date_range": "过去30天"},
+    {"competitor": "设备租赁王", "our_sentiment": 0.32, "their_sentiment": 0.68, "date_range": "过去30天"},
+    {"competitor": "政府工程专家", "our_sentiment": 0.32, "their_sentiment": 0.62, "date_range": "过去30天"}
+  ]
+} 

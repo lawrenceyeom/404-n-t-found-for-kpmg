@@ -1,3 +1,27 @@
+"""
+Mock Data Generation Module for AURA Platform
+
+This module provides API endpoints for generating simulated non-financial data including
+news sentiment, social media mentions, macroeconomic indicators, and operational metrics
+to demonstrate the multi-source data integration capabilities of the AURA platform.
+
+Key components:
+- Company profiles with different risk characteristics (stable, growth, distressed)
+- Mock news and social media data generation with sentiment analysis
+- Simulated macroeconomic indicators
+- Mock operational metrics with various warning indicators
+
+Main endpoints:
+- /fake/opinion_raw: Generates detailed news and social media mentions with sentiment analysis
+- /fake/opinion: Provides aggregated sentiment trends and hot topics
+- /fake/macro: Delivers macroeconomic indicators like GDP, CPI, and PMI
+- /fake/operation: Creates operational metrics with company-specific performance patterns
+
+This module complements the financial data module to create a complete mock data ecosystem
+for the AURA platform demonstration, illustrating how multiple data sources can be
+integrated for comprehensive risk analysis.
+"""
+
 from fastapi import APIRouter, Query
 from datetime import datetime, timedelta
 import random

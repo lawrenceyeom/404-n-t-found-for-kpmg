@@ -1,0 +1,198 @@
+{
+  "company": "AURA稳健",
+  "type": "external",
+  "layer": "raw",
+  "data_format": "external_data",
+  "policies": [
+    {
+      "title": "关于推动外贸质升量稳的若干政策措施",
+      "content": "国务院常务会议部署，进一步扩大开放，支持企业拓展多元化国际市场，优化跨境贸易便利化措施，鼓励发展外贸新业态。",
+      "date": "2024-05-15"
+    },
+    {
+      "title": "加快发展现代物流体系建设规划",
+      "content": "国家发改委发布规划，旨在构建内外联通、安全高效的现代物流网络，支持物流基础设施智能化升级和绿色转型。",
+      "date": "2024-04-20"
+    },
+    {
+      "title": "深化供应链金融服务实体经济指导意见",
+      "content": "中国人民银行等部门联合发文，鼓励金融机构依托核心企业，为上下游中小微企业提供创新型供应链金融产品和服务。",
+      "date": "2024-03-10"
+    },
+    {
+      "title": "大宗商品市场保供稳价系列政策",
+      "content": "国家层面持续关注大宗商品价格波动，出台措施保障国内供应，稳定市场预期，防范价格大幅波动风险。",
+      "date": "2024-05-01"
+    },
+    {
+      "title": "“一带一路”贸易畅通合作倡议",
+      "content": "商务部发布“一带一路”贸易畅通合作新倡议，推动与沿线国家深化经贸合作，简化通关流程，降低贸易壁垒。",
+      "date": "2024-02-18"
+    },
+    {
+      "title": "跨境电商综合试验区扩容政策",
+      "content": "国务院批准新设一批跨境电商综合试验区，鼓励企业利用线上平台开展国际贸易，优化海外仓布局。",
+      "date": "2024-01-25"
+    },
+    {
+      "title": "推动多式联运发展优化调整运输结构行动方案",
+      "content": "交通运输部印发方案，鼓励发展集装箱铁水联运、公铁联运等高效运输组织模式，降低综合物流成本。",
+      "date": "2023-12-05"
+    },
+    {
+      "title": "期货和衍生品法正式实施",
+      "content": "《中华人民共和国期货和衍生品法》正式实施，规范期货市场运作，为企业利用衍生品工具管理大宗商品价格风险提供法律保障。",
+      "date": "2023-08-01"
+    },
+    {
+      "title": "关于金融支持外贸企业发展的通知",
+      "content": "银保监会鼓励银行机构加大对外贸企业的信贷支持，优化出口信用保险服务，帮助企业应对国际市场不确定性。",
+      "date": "2024-03-28"
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_company_name": "环球贸易服务A公司",
+      "annual_revenue_billion_cny": 450.0,
+      "net_profit_margin_pct": 12.5,
+      "global_logistics_network_score": 8.8,
+      "supply_chain_finance_volume_billion_cny": 95.0,
+      "commodity_trading_segments": "能源、金属、农产品",
+      "digital_transformation_index": 7.5
+    },
+    {
+      "benchmark_company_name": "综合物流B集团",
+      "annual_revenue_billion_cny": 320.5,
+      "net_profit_margin_pct": 8.2,
+      "global_logistics_network_score": 9.1,
+      "supply_chain_finance_volume_billion_cny": 60.2,
+      "commodity_trading_segments": "化工、建材",
+      "digital_transformation_index": 8.1
+    },
+    {
+      "benchmark_company_name": "供应链金融C企业",
+      "annual_revenue_billion_cny": 180.2,
+      "net_profit_margin_pct": 15.3,
+      "global_logistics_network_score": 7.5,
+      "supply_chain_finance_volume_billion_cny": 180.0,
+      "commodity_trading_segments": "消费品、电子元器件",
+      "digital_transformation_index": 8.5
+    },
+    {
+      "benchmark_company_name": "大宗商品D贸易商",
+      "annual_revenue_billion_cny": 600.7,
+      "net_profit_margin_pct": 6.9,
+      "global_logistics_network_score": 8.0,
+      "supply_chain_finance_volume_billion_cny": 40.5,
+      "commodity_trading_segments": "全球多种大宗商品",
+      "digital_transformation_index": 7.2
+    },
+    {
+      "benchmark_company_name": "国际速运E物流",
+      "annual_revenue_billion_cny": 250.0,
+      "net_profit_margin_pct": 10.1,
+      "global_logistics_network_score": 8.9,
+      "supply_chain_finance_volume_billion_cny": 75.0,
+      "commodity_trading_segments": "高价值货物、医药",
+      "digital_transformation_index": 7.9
+    },
+    {
+      "benchmark_company_name": "区域贸易F解决方案公司",
+      "annual_revenue_billion_cny": 150.6,
+      "net_profit_margin_pct": 11.5,
+      "global_logistics_network_score": 7.2,
+      "supply_chain_finance_volume_billion_cny": 55.8,
+      "commodity_trading_segments": "纺织品、轻工",
+      "digital_transformation_index": 7.0
+    }
+  ],
+  "regulations": [
+    {
+      "title": "中华人民共和国对外贸易法",
+      "content": "规范对外贸易经营者行为，维护对外贸易秩序，促进对外贸易健康发展。",
+      "date": "2004-07-01" 
+    },
+    {
+      "title": "中华人民共和国海关法",
+      "content": "规定海关监管、关税征收以及查缉走私等制度，保障国家进出境管理秩序。",
+      "date": "2001-01-01"
+    },
+    {
+      "title": "国际贸易术语解释通则 (Incoterms 2020)",
+      "content": "国际商会制定的标准化贸易术语，明确买卖双方在国际贸易合同中的责任、成本和风险划分。",
+      "date": "2020-01-01"
+    },
+    {
+      "title": "商业银行办理供应链融资业务管理暂行办法",
+      "content": "规范商业银行供应链融资业务，防范金融风险，引导资金流向实体经济。",
+      "date": "2023-09-15"
+    },
+    {
+      "title": "中华人民共和国反洗钱法",
+      "content": "预防和遏制洗钱活动，维护金融秩序，规范金融机构及特定非金融机构的反洗钱义务。",
+      "date": "2007-01-01"
+    },
+    {
+      "title": "关于规范金融机构资产管理业务的指导意见 (资管新规)",
+      "content": "统一各类金融机构资产管理业务的监管标准，防范影子银行风险，要求金融产品净值化管理。",
+      "date": "2018-04-27"
+    },
+    {
+      "title": "多式联运经营者备案管理办法",
+      "content": "规范多式联运经营活动，明确经营者资质条件、权利义务和备案要求。",
+      "date": "2022-11-01"
+    },
+    {
+      "title": "出口管制法",
+      "content": "维护国家安全和利益，履行防扩散等国际义务，对特定物项的出口实行管制。",
+      "date": "2020-12-01"
+    },
+    {
+      "title": "数据安全法",
+      "content": "保障数据安全，促进数据开发利用，保护个人、组织在数据活动中的合法权益，维护国家主权、安全和发展利益，特别关注跨境数据传输。",
+      "date": "2021-09-01"
+    },
+    {
+      "title": "绿色债券支持项目目录",
+      "content": "明确界定绿色债券支持的项目范围，引导资金投向具有环境效益的绿色产业，物流行业的绿色仓储和新能源运输工具采购可适用。",
+      "date": "2021-07-01"
+    }
+  ],
+  "market_environment": {
+    "industry_overview": {
+      "market_size": 1580000,
+      "market_growth": 0.086,
+      "competition_intensity": 0.72,
+      "entry_barriers": 0.68,
+      "technology_maturity": 0.75,
+      "industry_lifecycle": "成长期"
+    },
+    "technology_trends": [
+      {"trend": "人工智能审计", "maturity": 0.65, "adoption_rate": 0.48, "relevance": 0.92},
+      {"trend": "区块链合同", "maturity": 0.55, "adoption_rate": 0.32, "relevance": 0.85},
+      {"trend": "数据中台", "maturity": 0.78, "adoption_rate": 0.58, "relevance": 0.95},
+      {"trend": "云原生架构", "maturity": 0.82, "adoption_rate": 0.64, "relevance": 0.88},
+      {"trend": "隐私计算", "maturity": 0.60, "adoption_rate": 0.35, "relevance": 0.82}
+    ],
+    "customer_behavior": {
+      "digital_adoption": 0.78,
+      "data_driven_decision": 0.72,
+      "service_preference": ["合规审计", "风险监控", "数据分析", "智能决策"],
+      "purchase_factors": ["技术先进性", "服务质量", "价格", "安全性", "易用性"]
+    }
+  },
+  "risk_factors": {
+    "external_risks": [
+      {"risk": "国际贸易摩擦", "probability": 0.45, "impact": 0.68, "mitigation_level": 0.75},
+      {"risk": "行业监管趋严", "probability": 0.62, "impact": 0.72, "mitigation_level": 0.82},
+      {"risk": "技术迭代加速", "probability": 0.75, "impact": 0.65, "mitigation_level": 0.78},
+      {"risk": "人才竞争加剧", "probability": 0.80, "impact": 0.70, "mitigation_level": 0.75},
+      {"risk": "宏观经济波动", "probability": 0.55, "impact": 0.60, "mitigation_level": 0.85}
+    ],
+    "industry_specific_risks": [
+      {"risk": "数据安全事件", "probability": 0.35, "impact": 0.90, "mitigation_level": 0.92},
+      {"risk": "技术服务商整合", "probability": 0.50, "impact": 0.65, "mitigation_level": 0.78},
+      {"risk": "新进入者威胁", "probability": 0.42, "impact": 0.58, "mitigation_level": 0.85}
+    ]
+  }
+} 

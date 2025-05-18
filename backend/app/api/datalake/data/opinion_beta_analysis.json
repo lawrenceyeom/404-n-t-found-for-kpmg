@@ -1,0 +1,152 @@
+{
+  "company": "BETA成长",
+  "type": "opinion",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "sentiment_summary": {
+    "overall_score": 8.2,
+    "trending": "improving",
+    "positive_rate": 0.72,
+    "neutral_rate": 0.21,
+    "negative_rate": 0.07,
+    "key_positive_topics": ["技术创新", "产品体验", "企业成长性", "行业领先地位"],
+    "key_negative_topics": ["价格策略", "服务响应速度"],
+    "historical_comparison": "明显提升",
+    "industry_position": "领先"
+  },
+  "media_exposure": {
+    "total_mentions": 4850,
+    "total_reach": 42600000,
+    "mentions_trend": "快速上升",
+    "reach_trend": "显著增长",
+    "platform_distribution": [
+      {"platform": "新闻媒体", "percentage": 0.28},
+      {"platform": "社交媒体", "percentage": 0.52},
+      {"platform": "行业论坛", "percentage": 0.15},
+      {"platform": "视频平台", "percentage": 0.05}
+    ],
+    "daily_mentions": [175, 198, 212, 225, 248, 182, 165]
+  },
+  "audit_analysis": {
+    "disclosure_compliance": {
+      "assessment": "基本合规",
+      "key_findings": [
+        "信息披露及时性良好",
+        "重大事项披露基本完整",
+        "信息披露渠道多元化"
+      ],
+      "improvement_areas": [
+        "创新成果相关信息披露可能过于乐观",
+        "部分风险因素未充分披露",
+        "预测性信息表述应更谨慎"
+      ],
+      "recommendation": "完善信息披露审核机制，增强风险因素的完整披露，对前瞻性陈述增加必要的限定语"
+    },
+    "litigation_risk_assessment": {
+      "current_litigation": {
+        "count": 4,
+        "potential_impact": "低",
+        "material_cases": 1,
+        "provisions_adequacy": "充足"
+      },
+      "emerging_litigation_risks": [
+        {
+          "area": "知识产权纠纷",
+          "probability": "中等",
+          "potential_impact": "中等",
+          "mitigation_status": "已开展专利布局优化，建立IP风险预警机制"
+        },
+        {
+          "area": "消费者权益保护",
+          "probability": "低",
+          "potential_impact": "低",
+          "mitigation_status": "已完善用户协议，增强产品说明透明度"
+        }
+      ],
+      "recommendation": "加强知识产权管理体系，对高风险领域的创新技术进行专利侵权风险分析"
+    },
+    "reputation_risk": {
+      "overall_assessment": "低风险",
+      "brand_perception": {
+        "strength": 8.8,
+        "stability": "高",
+        "vulnerabilities": ["品牌成长迅速但尚未完全稳固", "高期望值可能导致用户期望落差"]
+      },
+      "industry_comparison": "领先",
+      "key_reputation_drivers": [
+        "产品创新能力",
+        "技术领先优势",
+        "用户体验",
+        "企业成长性"
+      ],
+      "recommendation": "建立完善的用户期望管理体系，谨慎宣传产品功能以避免过高期望导致的落差"
+    },
+    "regulatory_monitoring": {
+      "recent_developments": [
+        {
+          "regulation": "数据安全与个人信息保护法规",
+          "impact_assessment": "中等",
+          "compliance_status": "需调整",
+          "action_plan": "完善用户数据处理流程，升级隐私保护措施"
+        },
+        {
+          "regulation": "人工智能伦理准则",
+          "impact_assessment": "中等",
+          "compliance_status": "积极适应中",
+          "action_plan": "成立AI伦理委员会，制定内部伦理审核标准"
+        }
+      ],
+      "emerging_regulatory_trends": [
+        "平台经济反垄断监管趋严",
+        "数字经济税收监管体系构建"
+      ],
+      "recommendation": "加强对新兴技术领域的法规监测，前瞻性调整产品开发和市场策略"
+    },
+    "crisis_management": {
+      "past_crisis_handling": {
+        "assessment": "较好",
+        "response_time": "迅速",
+        "public_perception": "积极"
+      },
+      "potential_crisis_areas": [
+        {
+          "area": "产品安全漏洞",
+          "preparedness": "良好",
+          "response_plan": "已建立安全应急响应团队和流程"
+        },
+        {
+          "area": "数据泄露",
+          "preparedness": "较好",
+          "response_plan": "已制定数据安全事件应急预案"
+        },
+        {
+          "area": "媒体负面报道",
+          "preparedness": "一般",
+          "response_plan": "需加强媒体危机应对能力培训"
+        }
+      ],
+      "recommendation": "定期更新危机管理预案并进行模拟演练，完善媒体沟通策略"
+    },
+    "ESG_analysis": {
+      "environmental": {
+        "score": 7.6,
+        "strengths": ["绿色数据中心建设", "减少碳排放承诺"],
+        "weaknesses": ["环境信息披露不够系统化", "供应链环境管理有待加强"],
+        "public_perception": "中性偏积极"
+      },
+      "social": {
+        "score": 8.4,
+        "strengths": ["员工福利优厚", "多元化就业", "科技公益项目"],
+        "weaknesses": ["工作压力较大", "部分岗位流动率高"],
+        "public_perception": "积极"
+      },
+      "governance": {
+        "score": 7.8,
+        "strengths": ["管理层年轻化", "创新激励机制"],
+        "weaknesses": ["治理结构仍在完善阶段", "内控体系有待加强"],
+        "public_perception": "积极"
+      },
+      "recommendation": "建立完整的ESG战略和报告体系，将可持续发展理念融入企业长期战略"
+    }
+  }
+} 

@@ -1,7 +1,8 @@
 import React, { useState, memo, useRef, useEffect } from 'react';
 import TrendChart from './TrendChart';
-import { API_BASE } from '../../constants';
+import { API_BASE, MAIN_FINANCIAL_ITEMS, INITIAL_MAIN_ITEMS } from '../../constants';
 import { createPortal } from 'react-dom';
+import MainItemsSelector from './MainItemsSelector';
 
 const ALL_RATIOS = [
   { key: 'debt_ratio', label: '资产负债率' },
@@ -20,27 +21,37 @@ const HistoricalTrendAnalysis = ({
   company,
   trendData,
   financeISData,
+  financeData,
   trendPeriods,
   isLoading,
   allRatiosConfig,
   initialSelectedRatios,
-  initialTrendMetricKeysMain,
+  initialMainItems,
 }) => {
   // 控制指标切换、模式切换等本地状态
   const [trendMode, setTrendMode] = useState('value');
   const [trendMetricMode, setTrendMetricMode] = useState('main');
   const [selectedRatios, setSelectedRatios] = useState(initialSelectedRatios || ['debt_ratio', 'current_ratio', 'roe', 'interest_debt_ratio']);
-  const [trendMetricKeys, setTrendMetricKeys] = useState(initialTrendMetricKeysMain || ['cash', 'receivable', 'debt']);
+  const [selectedMainItems, setSelectedMainItems] = useState(initialMainItems || INITIAL_MAIN_ITEMS);
+  const [trendMetricKeys, setTrendMetricKeys] = useState(initialMainItems || INITIAL_MAIN_ITEMS);
+  
   const [showRatioDropdown, setShowRatioDropdown] = useState(false);
+  const [showMainItemsDropdown, setShowMainItemsDropdown] = useState(false);
+  
   const [drilldown, setDrilldown] = useState(null);
   const [drilldownLoading, setDrilldownLoading] = useState(false);
-  const dropdownBtnRef = useRef();
-  const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0, width: 180 });
+  
+  const ratioDropdownBtnRef = useRef();
+  const mainItemsDropdownBtnRef = useRef();
+  
+  const [ratioDropdownPos, setRatioDropdownPos] = useState({ top: 0, left: 0, width: 180 });
+  const [mainItemsDropdownPos, setMainItemsDropdownPos] = useState({ top: 0, left: 0, width: 180 });
 
+  // Position ratio dropdown
   useEffect(() => {
-    if (showRatioDropdown && dropdownBtnRef.current) {
-      const rect = dropdownBtnRef.current.getBoundingClientRect();
-      setDropdownPos({
+    if (showRatioDropdown && ratioDropdownBtnRef.current) {
+      const rect = ratioDropdownBtnRef.current.getBoundingClientRect();
+      setRatioDropdownPos({
         top: rect.bottom + 4,
         left: rect.left,
         width: rect.width || 180
@@ -48,22 +59,60 @@ const HistoricalTrendAnalysis = ({
     }
   }, [showRatioDropdown]);
 
-  // 点击外部关闭
+  // Position main items dropdown
   useEffect(() => {
-    if (!showRatioDropdown) return;
+    if (showMainItemsDropdown && mainItemsDropdownBtnRef.current) {
+      const rect = mainItemsDropdownBtnRef.current.getBoundingClientRect();
+      setMainItemsDropdownPos({
+        top: rect.bottom + 4,
+        left: rect.left,
+        width: rect.width || 180
+      });
+    }
+  }, [showMainItemsDropdown]);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    if (!showRatioDropdown && !showMainItemsDropdown) return;
+    
     const handleClick = (e) => {
-      if (
-        dropdownBtnRef.current &&
-        !dropdownBtnRef.current.contains(e.target) &&
-        document.getElementById('ratio-dropdown-portal') &&
-        !document.getElementById('ratio-dropdown-portal').contains(e.target)
+      // Handle ratio dropdown
+      if (showRatioDropdown && 
+          ratioDropdownBtnRef.current &&
+          !ratioDropdownBtnRef.current.contains(e.target) &&
+          document.getElementById('ratio-dropdown-portal') &&
+          !document.getElementById('ratio-dropdown-portal').contains(e.target)
       ) {
         setShowRatioDropdown(false);
       }
+      
+      // Handle main items dropdown
+      if (showMainItemsDropdown && 
+          mainItemsDropdownBtnRef.current &&
+          !mainItemsDropdownBtnRef.current.contains(e.target) &&
+          document.getElementById('main-items-dropdown-portal') &&
+          !document.getElementById('main-items-dropdown-portal').contains(e.target)
+      ) {
+        setShowMainItemsDropdown(false);
+      }
     };
+    
     document.addEventListener('mousedown', handleClick);
     return () => document.removeEventListener('mousedown', handleClick);
-  }, [showRatioDropdown]);
+  }, [showRatioDropdown, showMainItemsDropdown]);
+
+  // Pass either balance sheet data or financial ratios data based on the current mode
+  const getActiveData = () => {
+    return trendMetricMode === 'main' ? financeData : trendData;
+  };
+
+  // Group main financial items by type for the dropdown
+  const groupedMainItems = {
+    asset: MAIN_FINANCIAL_ITEMS.filter(item => item.type === 'asset'),
+    liability: MAIN_FINANCIAL_ITEMS.filter(item => item.type === 'liability'),
+    equity: MAIN_FINANCIAL_ITEMS.filter(item => item.type === 'equity'),
+    income: MAIN_FINANCIAL_ITEMS.filter(item => item.type === 'income')
+  };
 
   // 指标切换区块和趋势模式切换
   return (
@@ -87,14 +136,18 @@ const HistoricalTrendAnalysis = ({
       {/* 指标切换区块 */}
       <div style={{ color: '#b3cfff', fontWeight: 600, fontSize: 15, display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
         指标选择：
-        <button onClick={() => {
-          setTrendMetricMode('main');
-          setTrendMetricKeys(['cash', 'receivable', 'debt']);
-        }} style={{
-          margin: '0 2px', padding: '4px 12px', borderRadius: 8, border: trendMetricMode === 'main' ? '2px solid #40a9ff' : '1.5px solid #223366', background: trendMetricMode === 'main' ? 'linear-gradient(90deg, #40a9ff 60%, #1e90ff 100%)' : '#223366', color: trendMetricMode === 'main' ? '#fff' : '#b3cfff', fontWeight: 700, fontSize: 15, cursor: 'pointer', boxShadow: trendMetricMode === 'main' ? '0 0 8px #40a9ff55' : 'none', transition: 'all 0.18s', outline: 'none', letterSpacing: 1,
-        }}>主要项目</button>
+        <MainItemsSelector 
+          selectedItems={selectedMainItems} 
+          onChange={(items) => {
+            setSelectedMainItems(items);
+            setTrendMetricMode('main');
+            setTrendMetricKeys(items);
+          }}
+          company={company}
+          isActive={trendMetricMode === 'main'}
+        />
         <div style={{ position: 'relative', display: 'inline-block' }}>
-          <button ref={dropdownBtnRef} onClick={() => {
+          <button ref={ratioDropdownBtnRef} onClick={() => {
             setTrendMetricMode('ratio');
             setTrendMetricKeys(selectedRatios);
             setShowRatioDropdown(v => !v);
@@ -102,7 +155,7 @@ const HistoricalTrendAnalysis = ({
             margin: '0 2px', padding: '4px 12px', borderRadius: 8, border: trendMetricMode === 'ratio' ? '2px solid #40a9ff' : '1.5px solid #223366', background: trendMetricMode === 'ratio' ? 'linear-gradient(90deg, #40a9ff 60%, #1e90ff 100%)' : '#223366', color: trendMetricMode === 'ratio' ? '#fff' : '#b3cfff', fontWeight: 700, fontSize: 15, cursor: 'pointer', boxShadow: trendMetricMode === 'ratio' ? '0 0 8px #40a9ff55' : 'none', transition: 'all 0.18s', outline: 'none', letterSpacing: 1,
           }}>财务比率 ▾</button>
           {showRatioDropdown && createPortal(
-            <div id="ratio-dropdown-portal" style={{ position: 'fixed', top: dropdownPos.top, left: dropdownPos.left, background: '#223366', border: '1.5px solid #40a9ff', borderRadius: 10, boxShadow: '0 2px 12px #22336655', zIndex: 9999, minWidth: dropdownPos.width, padding: 8 }}>
+            <div id="ratio-dropdown-portal" style={{ position: 'fixed', top: ratioDropdownPos.top, left: ratioDropdownPos.left, background: '#223366', border: '1.5px solid #40a9ff', borderRadius: 10, boxShadow: '0 2px 12px #22336655', zIndex: 9999, minWidth: ratioDropdownPos.width, padding: 8 }}>
               {ALL_RATIOS.map(r => (
                 <label key={r.key} style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#eaf6ff', fontWeight: 600, fontSize: 15, margin: '4px 0', cursor: 'pointer' }}>
                   <input type="checkbox" checked={selectedRatios.includes(r.key)} onChange={e => {
@@ -120,7 +173,7 @@ const HistoricalTrendAnalysis = ({
       </div>
       <div style={{ color: '#ffd666', fontWeight: 600, fontSize: 14, marginBottom: 8 }}>点击数据点可下钻查看详细报表。异常高亮模式下，红点为同比/环比大于±20%的异常点。</div>
       <TrendChart
-        trendData={trendData}
+        trendData={getActiveData()}
         financeISData={financeISData}
         trendPeriods={trendPeriods}
         trendMode={trendMode}
@@ -130,7 +183,7 @@ const HistoricalTrendAnalysis = ({
         onDrilldown={(year, item) => {
           console.log('Drilldown triggered in HistoricalTrendAnalysis:', year, item);
           setDrilldownLoading(true);
-          fetch(`${API_BASE}/finance/table?sheet=合并-bs&company=${company}&periods=${year}`)
+          fetch(`${API_BASE}/finance_data?sheet=合并-bs&company=${company}&request_periods=${year}`)
             .then(res => {
               if (!res.ok) {
                 throw new Error(`HTTP error! status: ${res.status}`);

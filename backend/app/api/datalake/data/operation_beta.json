@@ -1,0 +1,747 @@
+{
+  "company_info": {
+    "id": "beta",
+    "name": "BETA成长",
+    "industry": "投资并购、商业运营、物业管理、房地产开发",
+    "established": "2015-08-12",
+    "employees": 2750,
+    "headquarters": "深圳市南山区"
+  },
+  "timeseries": {
+    "dates": [
+      "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", 
+      "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12",
+      "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06"
+    ],
+    "sales": [
+      8520, 8840, 9250, 9680, 10210, 10850,
+      11420, 12080, 12750, 13380, 14150, 14980,
+      15680, 16520, 17250, 17980, 18560, 19250
+    ],
+    "production": [
+      8190, 8480, 8920, 9380, 9950, 10580,
+      11050, 11680, 12240, 12850, 13620, 14350,
+      15140, 15860, 16580, 17250, 17820, 18450
+    ],
+    "inventory_levels": [
+      4250, 4350, 4480, 4620, 4850, 5120,
+      5450, 5780, 6150, 6480, 6820, 7180,
+      7520, 7850, 8150, 8420, 8650, 8940
+    ],
+    "property_occupancy_rate": [
+      85.2, 86.8, 88.5, 89.7, 91.5, 92.8,
+      93.7, 94.5, 95.2, 95.8, 96.1, 96.5,
+      96.8, 97.2, 97.5, 97.8, 98.1, 98.4
+    ],
+    "customer_satisfaction": [
+      82.5, 83.1, 84.2, 84.8, 85.3, 84.9,
+      85.6, 86.1, 86.5, 87.2, 86.8, 87.5,
+      87.9, 88.3, 87.8, 88.5, 88.9, 89.2
+    ],
+    "project_completion_rate": [
+      91.2, 92.5, 93.1, 92.8, 93.5, 94.2,
+      93.8, 94.5, 95.1, 94.8, 95.4, 95.8,
+      96.2, 95.7, 96.3, 96.8, 97.2, 97.5
+    ],
+    "operational_costs": [
+      6250, 6520, 6850, 7180, 7580, 8020,
+      8480, 8950, 9380, 9850, 10420, 10980,
+      11480, 11980, 12520, 13080, 13580, 14150
+    ],
+    "employee_productivity": [
+      98.5, 99.2, 100.4, 101.2, 102.5, 103.8,
+      104.5, 105.2, 106.1, 107.5, 108.2, 109.5,
+      110.8, 112.4, 113.5, 114.8, 116.2, 117.5
+    ],
+    "maintenance_costs": [
+      780, 805, 835, 860, 890, 925,
+      945, 980, 1025, 1070, 1120, 1170,
+      1210, 1260, 1320, 1380, 1430, 1490
+    ],
+    "project_delay_days": [
+      18.5, 17.8, 16.5, 15.2, 17.8, 16.2,
+      14.8, 15.5, 14.2, 13.8, 14.5, 13.2,
+      12.5, 13.8, 12.2, 11.5, 10.8, 10.2
+    ]
+  },
+  "kpi_summary": {
+    "sales_target": 18000,
+    "sales_actual": 19250,
+    "sales_achievement": 106.9,
+    "production_target": 17500,
+    "production_actual": 18450,
+    "production_achievement": 105.4,
+    "property_occupancy_target": 96.0,
+    "property_occupancy_actual": 98.4,
+    "property_occupancy_achievement": 102.5,
+    "customer_satisfaction_target": 88.0,
+    "customer_satisfaction_actual": 89.2,
+    "satisfaction_achievement": 101.4,
+    "project_completion_target": 95.0,
+    "project_completion_actual": 97.5,
+    "project_completion_achievement": 102.6,
+    "cost_efficiency_target": 3.0,
+    "cost_efficiency_actual": 2.5,
+    "cost_efficiency_achievement": 83.3,
+    "employee_productivity_target": 115.0,
+    "employee_productivity_actual": 117.5,
+    "productivity_achievement": 102.2,
+    "project_delay_target": 12.0,
+    "project_delay_actual": 10.2,
+    "project_delay_achievement": 117.6
+  },
+  "department_metrics": [
+    {
+      "department": "商业运营部",
+      "metrics": [
+        {
+          "name": "商业项目收益率",
+          "value": 15.8,
+          "unit": "%",
+          "target": 14.0,
+          "status": "良好"
+        },
+        {
+          "name": "商铺出租率",
+          "value": 97.8,
+          "unit": "%",
+          "target": 95.0,
+          "status": "良好"
+        },
+        {
+          "name": "客流量增长",
+          "value": 18.5,
+          "unit": "%",
+          "target": 15.0,
+          "status": "良好"
+        },
+        {
+          "name": "商户满意度",
+          "value": 88.5,
+          "unit": "分",
+          "target": 85.0,
+          "status": "良好"
+        },
+        {
+          "name": "招商周期",
+          "value": 32.5,
+          "unit": "天",
+          "target": 45.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "物业管理部",
+      "metrics": [
+        {
+          "name": "物业费收缴率",
+          "value": 96.2,
+          "unit": "%",
+          "target": 95.0,
+          "status": "良好"
+        },
+        {
+          "name": "业主满意度",
+          "value": 86.4,
+          "unit": "分",
+          "target": 85.0,
+          "status": "良好"
+        },
+        {
+          "name": "投诉解决率",
+          "value": 97.5,
+          "unit": "%",
+          "target": 95.0,
+          "status": "良好"
+        },
+        {
+          "name": "设备完好率",
+          "value": 98.2,
+          "unit": "%",
+          "target": 97.0,
+          "status": "良好"
+        },
+        {
+          "name": "管理成本率",
+          "value": 20.5,
+          "unit": "%",
+          "target": 22.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "投资并购部",
+      "metrics": [
+        {
+          "name": "投资回报率",
+          "value": 18.4,
+          "unit": "%",
+          "target": 15.0,
+          "status": "良好"
+        },
+        {
+          "name": "并购项目数",
+          "value": 8,
+          "unit": "个",
+          "target": 6,
+          "status": "良好"
+        },
+        {
+          "name": "投资决策准确率",
+          "value": 87.5,
+          "unit": "%",
+          "target": 85.0,
+          "status": "良好"
+        },
+        {
+          "name": "尽职调查完成率",
+          "value": 100.0,
+          "unit": "%",
+          "target": 100.0,
+          "status": "达标"
+        },
+        {
+          "name": "投资金额",
+          "value": 28.5,
+          "unit": "亿元",
+          "target": 25.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "房地产开发部",
+      "metrics": [
+        {
+          "name": "在建项目数",
+          "value": 12,
+          "unit": "个",
+          "target": 10,
+          "status": "良好"
+        },
+        {
+          "name": "销售回款率",
+          "value": 91.8,
+          "unit": "%",
+          "target": 90.0,
+          "status": "良好"
+        },
+        {
+          "name": "工程质量合格率",
+          "value": 98.8,
+          "unit": "%",
+          "target": 98.0,
+          "status": "良好"
+        },
+        {
+          "name": "销售均价",
+          "value": 28500,
+          "unit": "元/平方米",
+          "target": 25000,
+          "status": "良好"
+        },
+        {
+          "name": "库存周转天数",
+          "value": 185,
+          "unit": "天",
+          "target": 200,
+          "status": "良好"
+        }
+      ]
+    }
+  ],
+  "risk_indicators": [
+    {
+      "category": "项目风险",
+      "indicators": [
+        {
+          "name": "项目延期风险",
+          "value": 3.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "成本超支风险",
+          "value": 4.2,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "警告"
+        },
+        {
+          "name": "质量风险",
+          "value": 2.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "设计变更频率",
+          "value": 3.8,
+          "unit": "次/项目",
+          "threshold": 5.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "财务风险",
+      "indicators": [
+        {
+          "name": "现金流紧张度",
+          "value": 3.2,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "应收账款风险",
+          "value": 3.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "融资依赖度",
+          "value": 4.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "警告"
+        },
+        {
+          "name": "资金周转风险",
+          "value": 3.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "运营风险",
+      "indicators": [
+        {
+          "name": "人员流动率",
+          "value": 15.2,
+          "unit": "%",
+          "threshold": 15.0,
+          "status": "警告"
+        },
+        {
+          "name": "系统稳定性风险",
+          "value": 2.1,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "客户投诉率",
+          "value": 1.85,
+          "unit": "%",
+          "threshold": 3.0,
+          "status": "安全"
+        },
+        {
+          "name": "运营中断风险",
+          "value": 1.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "外部风险",
+      "indicators": [
+        {
+          "name": "市场波动风险",
+          "value": 4.2,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "警告"
+        },
+        {
+          "name": "政策监管风险",
+          "value": 3.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "竞争加剧风险",
+          "value": 3.6,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "宏观经济风险",
+          "value": 3.9,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        }
+      ]
+    }
+  ],
+  "business_processes": [
+    {
+      "process_name": "项目开发流程",
+      "metrics": [
+        {
+          "name": "平均开发周期",
+          "value": 18.5,
+          "unit": "月",
+          "benchmark": 24.0,
+          "status": "优良"
+        },
+        {
+          "name": "审批通过率",
+          "value": 92.5,
+          "unit": "%",
+          "benchmark": 85.0,
+          "status": "优良"
+        },
+        {
+          "name": "项目综合收益率",
+          "value": 18.2,
+          "unit": "%",
+          "benchmark": 15.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "销售流程",
+      "metrics": [
+        {
+          "name": "签约周期",
+          "value": 42.5,
+          "unit": "天",
+          "benchmark": 60.0,
+          "status": "优良"
+        },
+        {
+          "name": "客户转化率",
+          "value": 38.5,
+          "unit": "%",
+          "benchmark": 30.0,
+          "status": "优良"
+        },
+        {
+          "name": "销售佣金率",
+          "value": 1.8,
+          "unit": "%",
+          "benchmark": 2.5,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "物业管理流程",
+      "metrics": [
+        {
+          "name": "服务响应时间",
+          "value": 2.5,
+          "unit": "小时",
+          "benchmark": 4.0,
+          "status": "优良"
+        },
+        {
+          "name": "物业管理成本",
+          "value": 4.2,
+          "unit": "元/平方米",
+          "benchmark": 5.0,
+          "status": "优良"
+        },
+        {
+          "name": "设备故障修复率",
+          "value": 97.8,
+          "unit": "%",
+          "benchmark": 95.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "投资评审流程",
+      "metrics": [
+        {
+          "name": "尽调完成时间",
+          "value": 18.5,
+          "unit": "工作日",
+          "benchmark": 25.0,
+          "status": "优良"
+        },
+        {
+          "name": "风险评估准确率",
+          "value": 92.5,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "优良"
+        },
+        {
+          "name": "决策周期",
+          "value": 8.5,
+          "unit": "工作日",
+          "benchmark": 15.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "资金管理流程",
+      "metrics": [
+        {
+          "name": "资金使用效率",
+          "value": 92.8,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "优良"
+        },
+        {
+          "name": "融资成功率",
+          "value": 87.5,
+          "unit": "%",
+          "benchmark": 80.0,
+          "status": "优良"
+        },
+        {
+          "name": "资金周转天数",
+          "value": 45.5,
+          "unit": "天",
+          "benchmark": 60.0,
+          "status": "优良"
+        }
+      ]
+    }
+  ],
+  "development_projects": [
+    {
+      "category": "在建项目",
+      "projects": [
+        {
+          "name": "海岸城二期",
+          "location": "深圳南山",
+          "area": 185000,
+          "unit": "平方米",
+          "completion": 78.5,
+          "status": "按计划进行"
+        },
+        {
+          "name": "星光大厦",
+          "location": "上海浦东",
+          "area": 125000,
+          "unit": "平方米",
+          "completion": 62.8,
+          "status": "按计划进行"
+        },
+        {
+          "name": "中央公园",
+          "location": "杭州滨江",
+          "area": 220000,
+          "unit": "平方米",
+          "completion": 45.2,
+          "status": "轻微延期"
+        },
+        {
+          "name": "科技园区",
+          "location": "成都高新",
+          "area": 315000,
+          "unit": "平方米",
+          "completion": 28.5,
+          "status": "按计划进行"
+        }
+      ]
+    },
+    {
+      "category": "规划项目",
+      "projects": [
+        {
+          "name": "未来之城",
+          "location": "广州天河",
+          "area": 250000,
+          "unit": "平方米",
+          "approval": 95.0,
+          "status": "即将开工"
+        },
+        {
+          "name": "东方明珠",
+          "location": "南京建邺",
+          "area": 180000,
+          "unit": "平方米",
+          "approval": 85.0,
+          "status": "审批中"
+        },
+        {
+          "name": "智慧社区",
+          "location": "重庆江北",
+          "area": 165000,
+          "unit": "平方米",
+          "approval": 70.0,
+          "status": "规划中"
+        }
+      ]
+    },
+    {
+      "category": "已完成项目",
+      "projects": [
+        {
+          "name": "金融中心",
+          "location": "北京朝阳",
+          "area": 145000,
+          "unit": "平方米",
+          "occupancy": 92.5,
+          "return_rate": 16.8
+        },
+        {
+          "name": "滨海广场",
+          "location": "青岛市南",
+          "area": 135000,
+          "unit": "平方米",
+          "occupancy": 95.8,
+          "return_rate": 18.2
+        },
+        {
+          "name": "山水花园",
+          "location": "苏州工业园",
+          "area": 225000,
+          "unit": "平方米",
+          "occupancy": 98.2,
+          "return_rate": 19.5
+        }
+      ]
+    }
+  ],
+  "operational_events": [
+    {
+      "date": "2024-06-08",
+      "event": "成功收购南方商业地产集团",
+      "type": "并购扩张",
+      "impact": "积极",
+      "description": "收购总金额15亿元，预计年增收入3.5亿元，扩大区域市场份额"
+    },
+    {
+      "date": "2024-05-20",
+      "event": "中央公园项目工期延误",
+      "type": "项目风险",
+      "impact": "轻微不利",
+      "description": "因供应链问题导致延期15天，正采取措施追赶进度"
+    },
+    {
+      "date": "2024-04-15",
+      "event": "智能物业管理系统全面上线",
+      "type": "技术升级",
+      "impact": "积极",
+      "description": "服务响应时间减少40%，用户满意度提升12%"
+    },
+    {
+      "date": "2024-03-28",
+      "event": "获批三项大型城市更新项目",
+      "type": "业务扩展",
+      "impact": "积极",
+      "description": "总投资额约85亿元，预计未来5年贡献25%营收增长"
+    },
+    {
+      "date": "2024-02-25",
+      "event": "融资成本上升",
+      "type": "财务风险",
+      "impact": "不利",
+      "description": "银行贷款利率上调30个基点，增加年度财务成本约1.8亿元"
+    },
+    {
+      "date": "2024-01-18",
+      "event": "完成股权激励计划",
+      "type": "人才管理",
+      "impact": "积极",
+      "description": "覆盖核心管理团队及技术骨干150人，提升团队稳定性"
+    },
+    {
+      "date": "2023-12-10",
+      "event": "获得绿色建筑五星认证",
+      "type": "荣誉资质",
+      "impact": "积极",
+      "description": "三个项目同时获认证，提升品牌价值及市场竞争力"
+    },
+    {
+      "date": "2023-11-05",
+      "event": "北方区域市场销售下滑",
+      "type": "市场风险",
+      "impact": "不利",
+      "description": "受区域政策调整影响，季度销售下滑15%，正调整营销策略"
+    },
+    {
+      "date": "2023-10-12",
+      "event": "推出新型商业地产经营模式",
+      "type": "业务创新",
+      "impact": "积极",
+      "description": "首个轻资产运营项目投入运营，ROI提升25%"
+    },
+    {
+      "date": "2023-09-08",
+      "event": "高管团队调整",
+      "type": "组织变革",
+      "impact": "中性",
+      "description": "任命新CFO和CTO，加强财务管控和技术创新"
+    }
+  ],
+  "benchmarking": {
+    "industry_average": {
+      "property_occupancy_rate": 92.5,
+      "project_completion_rate": 94.0,
+      "investment_return_rate": 12.5,
+      "customer_satisfaction": 85.0,
+      "operating_margin": 14.2
+    },
+    "company_performance": {
+      "property_occupancy_rate": 98.4,
+      "project_completion_rate": 97.5,
+      "investment_return_rate": 18.4,
+      "customer_satisfaction": 89.2,
+      "operating_margin": 17.8
+    },
+    "performance_gap": {
+      "property_occupancy_rate": 5.9,
+      "project_completion_rate": 3.5,
+      "investment_return_rate": 5.9,
+      "customer_satisfaction": 4.2,
+      "operating_margin": 3.6
+    }
+  },
+  "historical_data": [
+    {
+      "year": "2020",
+      "sales_growth": 15.8,
+      "operational_efficiency": 87.5,
+      "customer_satisfaction": 80.2,
+      "employee_productivity": 95.8,
+      "profit_margin": 12.5
+    },
+    {
+      "year": "2021",
+      "sales_growth": 18.5,
+      "operational_efficiency": 89.2,
+      "customer_satisfaction": 82.8,
+      "employee_productivity": 99.5,
+      "profit_margin": 14.2
+    },
+    {
+      "year": "2022",
+      "sales_growth": 22.5,
+      "operational_efficiency": 91.8,
+      "customer_satisfaction": 85.5,
+      "employee_productivity": 104.2,
+      "profit_margin": 15.8
+    },
+    {
+      "year": "2023",
+      "sales_growth": 26.8,
+      "operational_efficiency": 94.5,
+      "customer_satisfaction": 87.5,
+      "employee_productivity": 109.5,
+      "profit_margin": 17.2
+    }
+  ]
+} 

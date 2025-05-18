@@ -1,0 +1,158 @@
+{
+  "company": "CRISIS压力",
+  "type": "opinion",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "sentiment_summary": {
+    "overall_score": 4.2,
+    "trending": "declining",
+    "positive_rate": 0.22,
+    "neutral_rate": 0.35,
+    "negative_rate": 0.43,
+    "key_positive_topics": ["历史品牌积累", "产品基础质量"],
+    "key_negative_topics": ["财务危机", "产品缺陷", "服务投诉", "裁员风波", "供应链纠纷"],
+    "historical_comparison": "显著下降",
+    "industry_position": "落后"
+  },
+  "media_exposure": {
+    "total_mentions": 6280,
+    "total_reach": 58900000,
+    "mentions_trend": "急剧上升",
+    "reach_trend": "负面扩散",
+    "platform_distribution": [
+      {"platform": "新闻媒体", "percentage": 0.42},
+      {"platform": "社交媒体", "percentage": 0.38},
+      {"platform": "行业论坛", "percentage": 0.12},
+      {"platform": "视频平台", "percentage": 0.08}
+    ],
+    "daily_mentions": [235, 362, 515, 475, 428, 380, 342]
+  },
+  "audit_analysis": {
+    "disclosure_compliance": {
+      "assessment": "存在问题",
+      "key_findings": [
+        "重大风险事项披露不及时",
+        "财务困境信息披露不充分",
+        "预警性信息不足"
+      ],
+      "improvement_areas": [
+        "经营困难及时透明披露",
+        "风险预警信息强化",
+        "重大事项及时公告"
+      ],
+      "recommendation": "重建信息披露审核机制，提高风险披露的及时性和透明度，避免选择性披露"
+    },
+    "litigation_risk_assessment": {
+      "current_litigation": {
+        "count": 28,
+        "potential_impact": "高",
+        "material_cases": 12,
+        "provisions_adequacy": "不足"
+      },
+      "emerging_litigation_risks": [
+        {
+          "area": "产品质量索赔",
+          "probability": "高",
+          "potential_impact": "高",
+          "mitigation_status": "应对方案不足，缺乏足够准备金"
+        },
+        {
+          "area": "劳资纠纷",
+          "probability": "高",
+          "potential_impact": "中等",
+          "mitigation_status": "正在开展集体谈判，但解决方案存在分歧"
+        },
+        {
+          "area": "合同违约",
+          "probability": "高",
+          "potential_impact": "高",
+          "mitigation_status": "尝试重新协商，但多数供应商不接受延期付款条件"
+        }
+      ],
+      "recommendation": "组建专门的诉讼应对团队，对高风险案件制定分类处理策略，增加诉讼准备金"
+    },
+    "reputation_risk": {
+      "overall_assessment": "高风险",
+      "brand_perception": {
+        "strength": 4.3,
+        "stability": "低",
+        "vulnerabilities": ["品牌信任度大幅下降", "负面新闻持续发酵", "用户忠诚度明显降低"]
+      },
+      "industry_comparison": "落后",
+      "key_reputation_drivers": [
+        "产品质量问题",
+        "财务健康状况",
+        "员工关系",
+        "供应商关系"
+      ],
+      "recommendation": "制定全面的声誉修复计划，优先解决产品质量问题，加强与核心利益相关方沟通"
+    },
+    "regulatory_monitoring": {
+      "recent_developments": [
+        {
+          "regulation": "消费者权益保护法规强化",
+          "impact_assessment": "高",
+          "compliance_status": "不合规",
+          "action_plan": "紧急调整产品质量控制措施，完善售后服务流程"
+        },
+        {
+          "regulation": "劳动法规监管加强",
+          "impact_assessment": "高",
+          "compliance_status": "部分不合规",
+          "action_plan": "改进裁员程序，确保补偿方案符合法规要求"
+        }
+      ],
+      "emerging_regulatory_trends": [
+        "产品安全责任加严",
+        "环保合规要求提高"
+      ],
+      "recommendation": "加强合规管理团队建设，进行全面合规风险评估和整改"
+    },
+    "crisis_management": {
+      "past_crisis_handling": {
+        "assessment": "不足",
+        "response_time": "迟缓",
+        "public_perception": "消极"
+      },
+      "potential_crisis_areas": [
+        {
+          "area": "大规模产品召回",
+          "preparedness": "薄弱",
+          "response_plan": "应急预案不完善，资源储备不足"
+        },
+        {
+          "area": "财务违规指控",
+          "preparedness": "不足",
+          "response_plan": "缺乏系统性防范和应对机制"
+        },
+        {
+          "area": "破产重组传闻",
+          "preparedness": "一般",
+          "response_plan": "初步方案制定中，沟通策略不明确"
+        }
+      ],
+      "recommendation": "建立危机预警和快速反应机制，预先准备关键危机情景的应对方案"
+    },
+    "ESG_analysis": {
+      "environmental": {
+        "score": 5.8,
+        "strengths": ["基础环保合规体系"],
+        "weaknesses": ["环保投入减少", "排放管理不严", "环境风险管控弱化"],
+        "public_perception": "中性偏负面"
+      },
+      "social": {
+        "score": 3.5,
+        "strengths": ["历史社区关系基础"],
+        "weaknesses": ["大规模裁员影响", "员工福利减少", "社区关系恶化"],
+        "public_perception": "负面"
+      },
+      "governance": {
+        "score": 3.2,
+        "strengths": ["正在寻求重组和改善"],
+        "weaknesses": ["管理层频繁变动", "决策透明度不足", "内控失效"],
+        "public_perception": "极为负面"
+      },
+      "recommendation": "优先恢复基本的公司治理和社会责任，将ESG风险纳入企业重组计划"
+    }
+  }
+} 

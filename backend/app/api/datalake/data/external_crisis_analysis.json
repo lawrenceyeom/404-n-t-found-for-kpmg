@@ -1,0 +1,326 @@
+{
+  "company": "CRISIS压力",
+  "type": "external",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "market_position": {
+    "market_share": {
+      "current": 0.072,
+      "trend": "快速下滑",
+      "industry_rank": 8
+    },
+    "competitive_landscape": {
+      "major_competitors": [
+        {"name": "行业领导者A", "market_share": 0.28, "trend": "稳定增长"},
+        {"name": "创新企业B", "market_share": 0.186, "trend": "快速增长"},
+        {"name": "传统企业C", "market_share": 0.142, "trend": "小幅下滑"},
+        {"name": "新进入者D", "market_share": 0.098, "trend": "增长"},
+        {"name": "CRISIS压力", "market_share": 0.072, "trend": "快速下滑"}
+      ],
+      "competitive_advantage": ["部分传统客户关系", "历史积累的专利", "低成本制造能力"],
+      "competitive_disadvantage": ["产品技术老旧", "品牌声誉受损", "产品质量不稳定", "创新能力不足"]
+    },
+    "growth_trajectory": {
+      "historical_cagr": -0.185,
+      "projected_growth": -0.22,
+      "growth_barriers": ["资金短缺", "人才流失", "产品竞争力下降", "市场信任缺失"],
+      "potential_turnaround_factors": ["核心业务重组", "技术合作引入", "低价策略吸引价格敏感客户"]
+    }
+  },
+  "customer_analysis": {
+    "customer_segments": [
+      {
+        "segment": "传统大客户",
+        "revenue_percentage": 0.48,
+        "growth_rate": -0.22,
+        "retention_rate": 0.62,
+        "profitability": "中低"
+      },
+      {
+        "segment": "中小企业",
+        "revenue_percentage": 0.32,
+        "growth_rate": -0.18,
+        "retention_rate": 0.45,
+        "profitability": "低"
+      },
+      {
+        "segment": "价格敏感客户",
+        "revenue_percentage": 0.20,
+        "growth_rate": 0.05,
+        "retention_rate": 0.38,
+        "profitability": "极低"
+      }
+    ],
+    "geographical_distribution": [
+      {"region": "华东", "percentage": 0.35},
+      {"region": "华北", "percentage": 0.28},
+      {"region": "华南", "percentage": 0.22},
+      {"region": "西部", "percentage": 0.13},
+      {"region": "海外", "percentage": 0.02}
+    ],
+    "customer_acquisition": {
+      "cac": 12800,
+      "cac_trend": "持续上升",
+      "acquisition_channels": [
+        {"channel": "传统销售渠道", "effectiveness": "低", "cost_efficiency": "低"},
+        {"channel": "价格促销", "effectiveness": "中", "cost_efficiency": "低"},
+        {"channel": "行业关系", "effectiveness": "中低", "cost_efficiency": "中"},
+        {"channel": "数字营销", "effectiveness": "低", "cost_efficiency": "低"}
+      ]
+    }
+  },
+  "product_portfolio": {
+    "product_lines": [
+      {
+        "name": "传统核心产品A",
+        "revenue_share": 0.58,
+        "growth_rate": -0.25,
+        "market_position": "衰退",
+        "life_cycle_stage": "衰退期"
+      },
+      {
+        "name": "低端产品B",
+        "revenue_share": 0.28,
+        "growth_rate": -0.12,
+        "market_position": "弱势",
+        "life_cycle_stage": "衰退期"
+      },
+      {
+        "name": "新尝试产品C",
+        "revenue_share": 0.08,
+        "growth_rate": 0.15,
+        "market_position": "追随者",
+        "life_cycle_stage": "导入期"
+      },
+      {
+        "name": "配套服务D",
+        "revenue_share": 0.06,
+        "growth_rate": -0.08,
+        "market_position": "弱势",
+        "life_cycle_stage": "成熟期"
+      }
+    ],
+    "innovation_pipeline": {
+      "r_and_d_investment": "收入的3.2%",
+      "new_products_in_development": 2,
+      "average_time_to_market": "18个月",
+      "success_rate": 0.35
+    }
+  },
+  "audit_analysis": {
+    "strategic_risk_assessment": {
+      "business_model_obsolescence": {
+        "assessment": "高风险",
+        "key_findings": [
+          "核心产品线技术落后",
+          "传统业务模式面临颠覆",
+          "创新转型资源不足"
+        ],
+        "potential_impact": "持续市场份额流失，无法维持足够营收规模支撑运营",
+        "recommendation": "专注特定细分市场，寻求战略合作或并购，考虑业务重组"
+      },
+      "market_relevance_risk": {
+        "assessment": "极高风险",
+        "key_findings": [
+          "客户需求已显著变化",
+          "产品定位与市场期望脱节",
+          "品牌认知度和美誉度大幅下降"
+        ],
+        "potential_impact": "加速客户流失，获客成本持续攀升，盈利能力进一步恶化",
+        "recommendation": "进行彻底的市场重新定位，产品线精简和聚焦，重建品牌认知"
+      },
+      "financial_sustainability_risk": {
+        "assessment": "极高风险",
+        "key_findings": [
+          "现金流持续为负",
+          "债务负担沉重",
+          "融资渠道受限"
+        ],
+        "potential_impact": "流动性危机，可能导致经营中断或破产重组",
+        "recommendation": "实施紧急资产变现计划，推动债务重组，削减非核心业务支出"
+      }
+    },
+    "competitive_dynamics_analysis": {
+      "competitive_pressure_assessment": {
+        "current_state": "极度不利",
+        "trend": "持续恶化",
+        "key_competitive_fronts": [
+          "产品技术水平",
+          "质量稳定性",
+          "价格压力",
+          "创新能力"
+        ]
+      },
+      "competitor_strategies": [
+        {
+          "competitor": "行业领导者A",
+          "strategy": "持续创新，高端定位",
+          "impact_on_crisis": "抢占高价值客户，压缩高端市场空间",
+          "threat_level": "高"
+        },
+        {
+          "competitor": "创新企业B",
+          "strategy": "技术差异化，体验优先",
+          "impact_on_crisis": "技术对比鲜明，加速产品老化感知",
+          "threat_level": "高"
+        },
+        {
+          "competitor": "新进入者D",
+          "strategy": "低成本高性价比",
+          "impact_on_crisis": "侵蚀价格敏感客户，削弱最后竞争优势",
+          "threat_level": "极高"
+        }
+      ],
+      "competitive_response_options": [
+        {
+          "strategy": "战略收缩与聚焦",
+          "description": "放弃非核心市场，专注少数有竞争力领域",
+          "feasibility": "中",
+          "potential_effectiveness": "中",
+          "resource_requirements": "中等"
+        },
+        {
+          "strategy": "极致成本控制",
+          "description": "大幅精简结构，通过低价策略保留市场份额",
+          "feasibility": "高",
+          "potential_effectiveness": "低",
+          "resource_requirements": "低"
+        },
+        {
+          "strategy": "寻求战略合作",
+          "description": "与互补企业合作，获取技术或市场资源",
+          "feasibility": "低",
+          "potential_effectiveness": "高",
+          "resource_requirements": "中高"
+        }
+      ]
+    },
+    "customer_relationship_issues": {
+      "customer_attrition_analysis": {
+        "churn_rate": 0.38,
+        "trend": "上升",
+        "key_churning_segments": ["高价值企业客户", "成长型中小企业"],
+        "main_churn_reasons": [
+          "产品质量问题",
+          "技术落后",
+          "服务响应慢",
+          "竞争对手积极挖掘"
+        ]
+      },
+      "brand_perception_analysis": {
+        "brand_value_trend": "显著下降",
+        "net_promoter_score": -28,
+        "key_perception_issues": [
+          "质量不可靠",
+          "技术陈旧",
+          "创新不足",
+          "财务问题传闻"
+        ]
+      },
+      "contract_risk_analysis": {
+        "at_risk_contracts_value": "年收入的58%",
+        "contract_renewal_rate": 0.42,
+        "contract_fulfillment_issues": [
+          "交付延期",
+          "质量不达标",
+          "服务响应不及时"
+        ],
+        "potential_litigation_risks": "中高"
+      },
+      "audit_recommendations": [
+        "优先挽留高价值战略客户，提供个性化解决方案",
+        "主动重新谈判问题合同，控制履约风险",
+        "正视质量问题，制定透明的改进路线图",
+        "对流失高风险客户实施挽留计划"
+      ]
+    },
+    "market_dependencies_assessment": {
+      "critical_market_factors": [
+        {
+          "factor": "行业整体需求",
+          "trend": "稳定偏下",
+          "impact": "加剧市场竞争，提高客户获取难度"
+        },
+        {
+          "factor": "价格敏感度",
+          "trend": "上升",
+          "impact": "压缩利润空间，难以支撑必要投入"
+        },
+        {
+          "factor": "技术标准变化",
+          "trend": "加速",
+          "impact": "加速现有产品淘汰，增加研发压力"
+        }
+      ],
+      "key_dependencies": [
+        {
+          "dependency": "核心供应商稳定性",
+          "risk_level": "高",
+          "contingency_options": "有限",
+          "risk_mitigation_strategy": "清理欠款，重新建立信任，寻找替代供应商"
+        },
+        {
+          "dependency": "银行信贷支持",
+          "risk_level": "极高",
+          "contingency_options": "几乎无",
+          "risk_mitigation_strategy": "提供额外担保，寻求股东增资，申请政府支持"
+        },
+        {
+          "dependency": "核心人才保留",
+          "risk_level": "高",
+          "contingency_options": "有限",
+          "risk_mitigation_strategy": "针对关键岗位制定保留计划，提供股权激励"
+        }
+      ],
+      "audit_recommendations": [
+        "建立关键依赖的风险预警机制",
+        "发展多元供应渠道，降低对单一供应商依赖",
+        "加强关键客户关系管理，避免进一步流失"
+      ]
+    },
+    "restructuring_audit_considerations": {
+      "business_viability_assessment": {
+        "viable_business_segments": ["部分传统产品线", "细分行业解决方案"],
+        "non-viable_segments": ["通用低端产品", "高研发投入新产品"],
+        "key_survival_conditions": [
+          "大幅减少经营规模",
+          "剥离亏损业务",
+          "债务重组成功",
+          "核心客户稳定"
+        ]
+      },
+      "asset_quality_review": {
+        "undervalued_assets": ["专利组合", "部分客户关系", "生产设施"],
+        "overvalued_assets": ["商誉", "存货", "应收账款"],
+        "potential_impairments": "账面资产价值可能需下调25-40%",
+        "liquidation_value_assessment": "显著低于账面价值"
+      },
+      "restructuring_options": [
+        {
+          "option": "业务缩减与聚焦",
+          "feasibility": "高",
+          "financial_impact": "短期亏损增加，中期可能实现盈亏平衡",
+          "key_requirements": "明确业务聚焦方向，控制转型成本"
+        },
+        {
+          "option": "寻求战略投资者",
+          "feasibility": "低",
+          "financial_impact": "可能获得资金支持，但需接受大幅估值下调",
+          "key_requirements": "梳理核心资产，准备尽职调查，确定保留价值"
+        },
+        {
+          "option": "债务重组与破产保护",
+          "feasibility": "中",
+          "financial_impact": "缓解短期债务压力，但信用受损",
+          "key_requirements": "制定可行重组方案，获得主要债权人支持"
+        }
+      ],
+      "audit_recommendations": [
+        "进行详细的业务线盈利能力分析，识别必须保留的核心业务",
+        "评估资产真实价值，为可能的业务出售或重组做准备",
+        "制定现实的财务预测，避免过度乐观",
+        "关注重组过程中的合规风险和信息披露"
+      ]
+    }
+  }
+} 

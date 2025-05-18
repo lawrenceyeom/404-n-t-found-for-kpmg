@@ -1,0 +1,768 @@
+{
+  "company_info": {
+    "id": "aura",
+    "name": "AURA稳健",
+    "industry": "海外贸易、物流服务、供应链金融、商品销售",
+    "established": "2010-05-18",
+    "employees": 3285,
+    "headquarters": "上海市浦东新区"
+  },
+  "timeseries": {
+    "dates": [
+      "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", 
+      "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12",
+      "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06"
+    ],
+    "sales": [
+      10250, 10380, 10520, 10680, 10790, 10940,
+      11080, 11230, 11390, 11580, 11720, 11890,
+      11950, 12080, 12240, 12390, 12560, 12690
+    ],
+    "production": [
+      9850, 9920, 10050, 10180, 10320, 10450,
+      10590, 10740, 10860, 11020, 11140, 11290,
+      11350, 11480, 11620, 11780, 11920, 12050
+    ],
+    "inventory_levels": [
+      3250, 3280, 3320, 3290, 3310, 3340,
+      3380, 3410, 3440, 3470, 3430, 3460,
+      3490, 3520, 3480, 3510, 3540, 3570
+    ],
+    "logistics_efficiency": [
+      92.4, 92.8, 93.1, 92.9, 93.3, 93.6,
+      93.8, 94.1, 93.9, 94.2, 94.5, 94.3,
+      94.7, 94.9, 95.2, 95.0, 95.3, 95.5
+    ],
+    "customer_satisfaction": [
+      88.2, 88.5, 88.9, 89.1, 88.7, 89.3,
+      89.6, 89.8, 90.1, 90.4, 90.6, 90.9,
+      91.2, 91.0, 91.3, 91.5, 91.8, 92.0
+    ],
+    "order_fulfillment_rate": [
+      96.8, 97.1, 97.3, 97.2, 97.5, 97.7,
+      97.6, 97.9, 98.1, 98.3, 98.2, 98.4,
+      98.5, 98.7, 98.6, 98.9, 99.0, 99.2
+    ],
+    "operational_costs": [
+      7240, 7310, 7350, 7420, 7480, 7530,
+      7590, 7650, 7710, 7780, 7840, 7890,
+      7950, 8010, 8070, 8140, 8190, 8260
+    ],
+    "employee_productivity": [
+      103.2, 103.5, 103.8, 104.1, 104.5, 104.8,
+      105.2, 105.5, 105.8, 106.2, 106.5, 106.9,
+      107.2, 107.5, 107.9, 108.2, 108.6, 108.9
+    ],
+    "maintenance_costs": [
+      458, 452, 467, 460, 472, 465,
+      476, 468, 480, 473, 484, 478,
+      487, 482, 490, 485, 492, 489
+    ],
+    "supply_chain_delay_hours": [
+      12.4, 12.2, 11.8, 11.5, 11.2, 10.9,
+      10.7, 10.4, 10.2, 9.9, 9.7, 9.5,
+      9.3, 9.1, 8.9, 8.7, 8.5, 8.3
+    ]
+  },
+  "kpi_summary": {
+    "sales_target": 12500,
+    "sales_actual": 12690,
+    "sales_achievement": 101.5,
+    "production_target": 12000,
+    "production_actual": 12050,
+    "production_achievement": 100.4,
+    "logistics_efficiency_target": 95.0,
+    "logistics_efficiency_actual": 95.5,
+    "logistics_achievement": 100.5,
+    "customer_satisfaction_target": 90.0,
+    "customer_satisfaction_actual": 92.0,
+    "satisfaction_achievement": 102.2,
+    "order_fulfillment_target": 98.5,
+    "order_fulfillment_actual": 99.2,
+    "fulfillment_achievement": 100.7,
+    "cost_reduction_target": 2.0,
+    "cost_reduction_actual": 1.8,
+    "cost_reduction_achievement": 90.0,
+    "employee_productivity_target": 107.0,
+    "employee_productivity_actual": 108.9,
+    "productivity_achievement": 101.8,
+    "supply_chain_delay_target": 9.0,
+    "supply_chain_delay_actual": 8.3,
+    "supply_chain_achievement": 108.4
+  },
+  "department_metrics": [
+    {
+      "department": "物流部",
+      "metrics": [
+        {
+          "name": "运输成本率",
+          "value": 4.8,
+          "unit": "%",
+          "target": 5.0,
+          "status": "良好"
+        },
+        {
+          "name": "准时交付率",
+          "value": 97.5,
+          "unit": "%",
+          "target": 96.0,
+          "status": "良好"
+        },
+        {
+          "name": "仓储周转率",
+          "value": 12.4,
+          "unit": "次/年",
+          "target": 12.0,
+          "status": "良好"
+        },
+        {
+          "name": "运输里程",
+          "value": 1285000,
+          "unit": "公里",
+          "target": 1300000,
+          "status": "良好"
+        },
+        {
+          "name": "车辆利用率",
+          "value": 86.7,
+          "unit": "%",
+          "target": 85.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "销售部",
+      "metrics": [
+        {
+          "name": "销售增长率",
+          "value": 6.7,
+          "unit": "%",
+          "target": 6.0,
+          "status": "良好"
+        },
+        {
+          "name": "客户留存率",
+          "value": 94.2,
+          "unit": "%",
+          "target": 92.0,
+          "status": "良好"
+        },
+        {
+          "name": "新客户数",
+          "value": 187,
+          "unit": "个",
+          "target": 180,
+          "status": "良好"
+        },
+        {
+          "name": "平均订单金额",
+          "value": 78500,
+          "unit": "元",
+          "target": 75000,
+          "status": "良好"
+        },
+        {
+          "name": "销售转化率",
+          "value": 28.4,
+          "unit": "%",
+          "target": 25.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "供应链金融部",
+      "metrics": [
+        {
+          "name": "融资服务客户数",
+          "value": 152,
+          "unit": "个",
+          "target": 150,
+          "status": "良好"
+        },
+        {
+          "name": "融资服务费用收入",
+          "value": 3780,
+          "unit": "万元",
+          "target": 3500,
+          "status": "良好"
+        },
+        {
+          "name": "应收账款周转天数",
+          "value": 43.2,
+          "unit": "天",
+          "target": 45.0,
+          "status": "良好"
+        },
+        {
+          "name": "风险贷款比率",
+          "value": 0.82,
+          "unit": "%",
+          "target": 1.0,
+          "status": "良好"
+        },
+        {
+          "name": "供应商融资满意度",
+          "value": 92.7,
+          "unit": "分",
+          "target": 90.0,
+          "status": "良好"
+        }
+      ]
+    },
+    {
+      "department": "人力资源部",
+      "metrics": [
+        {
+          "name": "员工流失率",
+          "value": 8.3,
+          "unit": "%",
+          "target": 10.0,
+          "status": "良好"
+        },
+        {
+          "name": "人均培训时长",
+          "value": 42.5,
+          "unit": "小时",
+          "target": 40.0,
+          "status": "良好"
+        },
+        {
+          "name": "招聘效率",
+          "value": 22.4,
+          "unit": "天/岗",
+          "target": 25.0,
+          "status": "良好"
+        },
+        {
+          "name": "员工满意度",
+          "value": 86.2,
+          "unit": "分",
+          "target": 85.0,
+          "status": "良好"
+        },
+        {
+          "name": "人力成本占收入比",
+          "value": 18.7,
+          "unit": "%",
+          "target": 20.0,
+          "status": "良好"
+        }
+      ]
+    }
+  ],
+  "risk_indicators": [
+    {
+      "category": "供应链风险",
+      "indicators": [
+        {
+          "name": "关键供应商依赖度",
+          "value": 22.5,
+          "unit": "%",
+          "threshold": 30.0,
+          "status": "安全"
+        },
+        {
+          "name": "供应商履约风险",
+          "value": 0.8,
+          "unit": "%",
+          "threshold": 2.0,
+          "status": "安全"
+        },
+        {
+          "name": "物流延误率",
+          "value": 2.4,
+          "unit": "%",
+          "threshold": 5.0,
+          "status": "安全"
+        },
+        {
+          "name": "库存周转风险",
+          "value": 1.2,
+          "unit": "分",
+          "threshold": 3.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "财务风险",
+      "indicators": [
+        {
+          "name": "现金流紧张度",
+          "value": 0.7,
+          "unit": "分",
+          "threshold": 3.0,
+          "status": "安全"
+        },
+        {
+          "name": "应收账款逾期率",
+          "value": 2.1,
+          "unit": "%",
+          "threshold": 5.0,
+          "status": "安全"
+        },
+        {
+          "name": "融资依赖度",
+          "value": 32.4,
+          "unit": "%",
+          "threshold": 50.0,
+          "status": "安全"
+        },
+        {
+          "name": "成本超支率",
+          "value": 1.1,
+          "unit": "%",
+          "threshold": 3.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "运营风险",
+      "indicators": [
+        {
+          "name": "系统故障频率",
+          "value": 0.5,
+          "unit": "次/月",
+          "threshold": 2.0,
+          "status": "安全"
+        },
+        {
+          "name": "关键人员流失率",
+          "value": 3.2,
+          "unit": "%",
+          "threshold": 8.0,
+          "status": "安全"
+        },
+        {
+          "name": "客户投诉率",
+          "value": 0.68,
+          "unit": "%",
+          "threshold": 2.0,
+          "status": "安全"
+        },
+        {
+          "name": "项目延期率",
+          "value": 7.5,
+          "unit": "%",
+          "threshold": 15.0,
+          "status": "安全"
+        }
+      ]
+    },
+    {
+      "category": "外部风险",
+      "indicators": [
+        {
+          "name": "汇率波动风险",
+          "value": 2.8,
+          "unit": "分",
+          "threshold": 5.0,
+          "status": "安全"
+        },
+        {
+          "name": "政策监管风险",
+          "value": 1.9,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "贸易摩擦风险",
+          "value": 2.6,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "安全"
+        },
+        {
+          "name": "市场竞争风险",
+          "value": 3.2,
+          "unit": "分",
+          "threshold": 5.0,
+          "status": "安全"
+        }
+      ]
+    }
+  ],
+  "business_processes": [
+    {
+      "process_name": "订单处理流程",
+      "metrics": [
+        {
+          "name": "平均处理时间",
+          "value": 1.2,
+          "unit": "天",
+          "benchmark": 1.5,
+          "status": "优良"
+        },
+        {
+          "name": "处理异常率",
+          "value": 0.8,
+          "unit": "%",
+          "benchmark": 2.0,
+          "status": "优良"
+        },
+        {
+          "name": "系统自动化率",
+          "value": 92.4,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "采购流程",
+      "metrics": [
+        {
+          "name": "采购周期",
+          "value": 5.3,
+          "unit": "天",
+          "benchmark": 6.0,
+          "status": "优良"
+        },
+        {
+          "name": "采购成本节约率",
+          "value": 4.2,
+          "unit": "%",
+          "benchmark": 3.0,
+          "status": "优良"
+        },
+        {
+          "name": "供应商交付准时率",
+          "value": 95.6,
+          "unit": "%",
+          "benchmark": 93.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "仓储流程",
+      "metrics": [
+        {
+          "name": "入库处理效率",
+          "value": 457,
+          "unit": "件/小时",
+          "benchmark": 420,
+          "status": "优良"
+        },
+        {
+          "name": "库存准确率",
+          "value": 99.2,
+          "unit": "%",
+          "benchmark": 98.0,
+          "status": "优良"
+        },
+        {
+          "name": "仓储空间利用率",
+          "value": 87.5,
+          "unit": "%",
+          "benchmark": 85.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "配送流程",
+      "metrics": [
+        {
+          "name": "平均配送时间",
+          "value": 1.8,
+          "unit": "天",
+          "benchmark": 2.0,
+          "status": "优良"
+        },
+        {
+          "name": "配送准时率",
+          "value": 97.8,
+          "unit": "%",
+          "benchmark": 95.0,
+          "status": "优良"
+        },
+        {
+          "name": "货物完好率",
+          "value": 99.5,
+          "unit": "%",
+          "benchmark": 99.0,
+          "status": "优良"
+        }
+      ]
+    },
+    {
+      "process_name": "客户服务流程",
+      "metrics": [
+        {
+          "name": "客户问题响应时间",
+          "value": 2.3,
+          "unit": "小时",
+          "benchmark": 4.0,
+          "status": "优良"
+        },
+        {
+          "name": "问题一次解决率",
+          "value": 88.5,
+          "unit": "%",
+          "benchmark": 85.0,
+          "status": "优良"
+        },
+        {
+          "name": "客户满意度",
+          "value": 92.7,
+          "unit": "分",
+          "benchmark": 90.0,
+          "status": "优良"
+        }
+      ]
+    }
+  ],
+  "supply_chain_metrics": [
+    {
+      "category": "供应商管理",
+      "metrics": [
+        {
+          "name": "核心供应商数量",
+          "value": 48,
+          "unit": "个",
+          "comment": "稳定"
+        },
+        {
+          "name": "供应商准时交付率",
+          "value": 96.8,
+          "unit": "%",
+          "comment": "良好"
+        },
+        {
+          "name": "供应商质量合格率",
+          "value": 98.5,
+          "unit": "%",
+          "comment": "稳定"
+        },
+        {
+          "name": "平均付款周期",
+          "value": 32.4,
+          "unit": "天",
+          "comment": "正常"
+        }
+      ]
+    },
+    {
+      "category": "库存管理",
+      "metrics": [
+        {
+          "name": "库存周转率",
+          "value": 12.4,
+          "unit": "次/年",
+          "comment": "高效"
+        },
+        {
+          "name": "平均库存水平",
+          "value": 3540,
+          "unit": "万元",
+          "comment": "适中"
+        },
+        {
+          "name": "缺货率",
+          "value": 0.82,
+          "unit": "%",
+          "comment": "低"
+        },
+        {
+          "name": "库存准确率",
+          "value": 99.2,
+          "unit": "%",
+          "comment": "高"
+        }
+      ]
+    },
+    {
+      "category": "物流配送",
+      "metrics": [
+        {
+          "name": "配送及时率",
+          "value": 97.8,
+          "unit": "%",
+          "comment": "良好"
+        },
+        {
+          "name": "平均配送成本",
+          "value": 580,
+          "unit": "元/单",
+          "comment": "合理"
+        },
+        {
+          "name": "运输损耗率",
+          "value": 0.28,
+          "unit": "%",
+          "comment": "低"
+        },
+        {
+          "name": "运输工具利用率",
+          "value": 86.7,
+          "unit": "%",
+          "comment": "高"
+        }
+      ]
+    },
+    {
+      "category": "订单管理",
+      "metrics": [
+        {
+          "name": "订单履行周期",
+          "value": 3.2,
+          "unit": "天",
+          "comment": "快"
+        },
+        {
+          "name": "订单履行准确率",
+          "value": 99.2,
+          "unit": "%",
+          "comment": "高"
+        },
+        {
+          "name": "退货率",
+          "value": 0.85,
+          "unit": "%",
+          "comment": "低"
+        },
+        {
+          "name": "订单处理成本",
+          "value": 42.5,
+          "unit": "元/单",
+          "comment": "合理"
+        }
+      ]
+    }
+  ],
+  "operational_events": [
+    {
+      "date": "2024-06-15",
+      "event": "新开设华南地区物流配送中心",
+      "type": "业务扩展",
+      "impact": "积极",
+      "description": "新中心投入使用，提高华南地区物流响应速度约25%"
+    },
+    {
+      "date": "2024-05-22",
+      "event": "完成物流管理系统升级",
+      "type": "系统优化",
+      "impact": "积极",
+      "description": "系统处理能力提升30%，稳定性显著增强"
+    },
+    {
+      "date": "2024-04-18",
+      "event": "与南亚五国贸易伙伴签署物流协议",
+      "type": "战略合作",
+      "impact": "积极",
+      "description": "扩大南亚市场覆盖，预计年增收2800万元"
+    },
+    {
+      "date": "2024-03-05",
+      "event": "引入新型智能仓储设备",
+      "type": "技术升级",
+      "impact": "积极",
+      "description": "仓储效率提升18%，人力成本下降12%"
+    },
+    {
+      "date": "2024-02-12",
+      "event": "华东地区暴雨导致配送延迟",
+      "type": "外部影响",
+      "impact": "轻微不利",
+      "description": "部分区域配送延迟1-2天，影响约5%订单"
+    },
+    {
+      "date": "2024-01-08",
+      "event": "推出供应链金融新产品",
+      "type": "业务创新",
+      "impact": "积极",
+      "description": "为中小供应商提供更灵活的融资方案，提高供应链稳定性"
+    },
+    {
+      "date": "2023-12-20",
+      "event": "获得国家级绿色物流认证",
+      "type": "荣誉资质",
+      "impact": "积极",
+      "description": "行业认可度提升，有利于品牌建设和市场开拓"
+    },
+    {
+      "date": "2023-11-15",
+      "event": "完成年度安全生产演练",
+      "type": "常规活动",
+      "impact": "中性",
+      "description": "提高员工安全意识和应急处理能力"
+    },
+    {
+      "date": "2023-10-26",
+      "event": "燃油成本小幅上涨",
+      "type": "成本变动",
+      "impact": "轻微不利",
+      "description": "运输成本增加约2%，已通过优化路线部分抵消"
+    },
+    {
+      "date": "2023-09-18",
+      "event": "启动员工效能提升计划",
+      "type": "内部管理",
+      "impact": "积极",
+      "description": "通过培训和流程优化，人均效能提升8%"
+    }
+  ],
+  "benchmarking": {
+    "industry_average": {
+      "logistics_efficiency": 92.1,
+      "order_fulfillment_rate": 96.5,
+      "inventory_turnover": 10.8,
+      "customer_satisfaction": 87.5,
+      "operating_margin": 5.8
+    },
+    "company_performance": {
+      "logistics_efficiency": 95.5,
+      "order_fulfillment_rate": 99.2,
+      "inventory_turnover": 12.4,
+      "customer_satisfaction": 92.0,
+      "operating_margin": 6.7
+    },
+    "performance_gap": {
+      "logistics_efficiency": 3.4,
+      "order_fulfillment_rate": 2.7,
+      "inventory_turnover": 1.6,
+      "customer_satisfaction": 4.5,
+      "operating_margin": 0.9
+    }
+  },
+  "historical_data": [
+    {
+      "year": "2020",
+      "sales_growth": 4.2,
+      "operational_efficiency": 91.8,
+      "customer_satisfaction": 86.5,
+      "employee_productivity": 98.7,
+      "profit_margin": 5.8
+    },
+    {
+      "year": "2021",
+      "sales_growth": 4.8,
+      "operational_efficiency": 92.6,
+      "customer_satisfaction": 87.4,
+      "employee_productivity": 100.5,
+      "profit_margin": 6.0
+    },
+    {
+      "year": "2022",
+      "sales_growth": 5.5,
+      "operational_efficiency": 93.8,
+      "customer_satisfaction": 88.9,
+      "employee_productivity": 102.8,
+      "profit_margin": 6.3
+    },
+    {
+      "year": "2023",
+      "sales_growth": 6.2,
+      "operational_efficiency": 94.7,
+      "customer_satisfaction": 90.9,
+      "employee_productivity": 106.9,
+      "profit_margin": 6.5
+    }
+  ]
+} 

@@ -1,0 +1,12 @@
+{
+  "company": "BETA成长",
+  "type": "operation",
+  "layer": "feature",
+  "data_format": "feature",
+  "features": [
+    {"name": "销售额", "importance": 0.41},
+    {"name": "生产量", "importance": 0.29},
+    {"name": "库存", "importance": 0.16},
+    {"name": "创新事件", "importance": 0.14}
+  ]
+} 

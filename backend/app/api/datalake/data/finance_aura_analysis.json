@@ -1,0 +1,102 @@
+{
+  "company": "AURA稳健",
+  "type": "finance",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "financial_ratios": {
+    "profitability": {
+      "gross_margin": 0.328,
+      "operating_margin": 0.175,
+      "net_profit_margin": 0.142,
+      "return_on_equity": 0.158
+    },
+    "liquidity": {
+      "current_ratio": 2.35,
+      "quick_ratio": 1.82
+    },
+    "solvency": {
+      "debt_ratio": 0.425,
+      "interest_coverage": 8.6
+    },
+    "efficiency": {
+      "asset_turnover": 0.72,
+      "inventory_turnover": 5.8,
+      "receivables_turnover": 9.2,
+      "payables_turnover": 7.5
+    }
+  },
+  "audit_analysis": {
+    "key_risk_areas": [
+      {
+        "area": "收入确认",
+        "risk_level": "中等",
+        "description": "公司存在部分大型长期合同，收入确认涉及较多管理层判断",
+        "audit_focus": "关注收入确认时点的准确性，特别是跨期合同的分期确认",
+        "potential_misstatement": "可能导致跨期收入确认不准确，影响财务报表公允性",
+        "recommendation": "建议完善合同管理系统，明确分阶段验收和确认标准"
+      },
+      {
+        "area": "应收账款减值",
+        "risk_level": "低",
+        "description": "应收账款周转良好，主要客户多为优质企业，但账龄结构有待优化",
+        "audit_focus": "关注应收账款账龄分析及减值测试方法的适当性",
+        "potential_misstatement": "可能导致坏账准备计提不足，高估资产价值",
+        "recommendation": "优化信用政策，完善应收账款催收机制"
+      },
+      {
+        "area": "存货估值",
+        "risk_level": "低",
+        "description": "存货周转率高于行业平均水平，但部分原材料价格波动较大",
+        "audit_focus": "关注存货跌价准备计提的充分性，特别是对于价格波动大的原材料",
+        "potential_misstatement": "可能导致存货跌价准备计提不充分，高估资产价值",
+        "recommendation": "完善供应链采购策略，降低原材料价格波动风险"
+      },
+      {
+        "area": "商誉减值",
+        "risk_level": "中等",
+        "description": "近年有多次收购形成商誉，需关注其减值风险",
+        "audit_focus": "关注商誉减值测试关键假设的合理性，包括增长率和折现率的选择",
+        "potential_misstatement": "可能存在商誉减值迹象未被及时识别，高估资产价值",
+        "recommendation": "加强被收购企业的整合管理，定期评估商誉相关资产组的业绩表现"
+      }
+    ],
+    "going_concern": {
+      "status": "无重大疑虑",
+      "liquidity_assessment": "充足，速动比率1.82处于行业优良水平",
+      "debt_service_capability": "良好，利息覆盖率8.6倍，债务风险可控",
+      "operational_indicators": "稳健增长，核心业务板块保持8-10%年增长率",
+      "analysis": "公司经营稳健，财务指标良好，短期和长期偿债能力均处于行业优良水平，未发现可能导致持续经营能力产生重大疑虑的事项或情况。"
+    },
+    "internal_control": {
+      "overall_assessment": "有效",
+      "control_environment": "良好，组织结构清晰，职责分离充分",
+      "risk_assessment_process": "完善，定期进行风险评估并及时应对",
+      "information_system": "较为先进，ERP系统运行稳定，数据一致性良好",
+      "significant_deficiencies": [
+        {
+          "area": "供应链管理",
+          "description": "供应商评估周期过长，可能影响材料质量风险的及时识别",
+          "impact": "中等",
+          "recommendation": "缩短供应商评估周期，增加问题供应商的实时预警机制"
+        }
+      ]
+    },
+    "analytical_procedures": {
+      "revenue_trend": {
+        "assessment": "合理",
+        "explanation": "收入增长与行业发展趋势一致，各季度波动符合历史规律和业务特点"
+      },
+      "expense_trend": {
+        "assessment": "合理",
+        "explanation": "费用率总体稳定，销售费用率略有上升主要由于拓展新业务区域所致"
+      },
+      "unusual_transactions": [
+        {
+          "description": "第三季度一次性处置非核心业务资产",
+          "materiality": "低",
+          "conclusion": "交易具有商业实质，定价公允，披露充分"
+        }
+      ]
+    }
+  }
+} 

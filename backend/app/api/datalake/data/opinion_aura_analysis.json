@@ -1,0 +1,139 @@
+{
+  "company": "AURA稳健",
+  "type": "opinion",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "sentiment_summary": {
+    "overall_score": 7.8,
+    "trending": "stable_positive",
+    "positive_rate": 0.65,
+    "neutral_rate": 0.28,
+    "negative_rate": 0.07,
+    "key_positive_topics": ["供应链管理", "国际业务拓展", "企业社会责任"],
+    "key_negative_topics": ["物流延误", "部分地区服务体验"],
+    "historical_comparison": "持平",
+    "industry_position": "领先"
+  },
+  "media_exposure": {
+    "total_mentions": 3450,
+    "total_reach": 28500000,
+    "mentions_trend": "稳定",
+    "reach_trend": "上升",
+    "platform_distribution": [
+      {"platform": "新闻媒体", "percentage": 0.35},
+      {"platform": "社交媒体", "percentage": 0.42},
+      {"platform": "行业论坛", "percentage": 0.18},
+      {"platform": "视频平台", "percentage": 0.05}
+    ],
+    "daily_mentions": [145, 132, 158, 143, 165, 122, 115]
+  },
+  "audit_analysis": {
+    "disclosure_compliance": {
+      "assessment": "合规",
+      "key_findings": [
+        "信息披露内容与实际经营情况一致",
+        "财务信息披露及时全面",
+        "重大事项披露符合监管要求"
+      ],
+      "improvement_areas": [
+        "部分业务分部数据披露不够详细"
+      ],
+      "recommendation": "增加业务细分数据披露，提高透明度"
+    },
+    "litigation_risk_assessment": {
+      "current_litigation": {
+        "count": 3,
+        "potential_impact": "低",
+        "material_cases": 0,
+        "provisions_adequacy": "充足"
+      },
+      "emerging_litigation_risks": [
+        {
+          "area": "物流合同纠纷",
+          "probability": "低",
+          "potential_impact": "不重大",
+          "mitigation_status": "合同条款已优化"
+        }
+      ],
+      "recommendation": "持续监控供应链合同履行情况，完善争议解决机制"
+    },
+    "reputation_risk": {
+      "overall_assessment": "低风险",
+      "brand_perception": {
+        "strength": 8.5,
+        "stability": "高",
+        "vulnerabilities": ["部分地区消费者服务体验不一致"]
+      },
+      "industry_comparison": "领先",
+      "key_reputation_drivers": [
+        "产品质量",
+        "企业社会责任",
+        "服务体验",
+        "创新能力"
+      ],
+      "recommendation": "加强区域服务标准化，提升全国服务一致性"
+    },
+    "regulatory_monitoring": {
+      "recent_developments": [
+        {
+          "regulation": "跨境电商新税收政策",
+          "impact_assessment": "中等",
+          "compliance_status": "已适应",
+          "action_plan": "已调整内部流程适应新规"
+        },
+        {
+          "regulation": "数据安全与隐私保护法规",
+          "impact_assessment": "中等",
+          "compliance_status": "合规",
+          "action_plan": "持续监控法规更新，及时调整合规措施"
+        }
+      ],
+      "emerging_regulatory_trends": [
+        "物流碳排放监管趋严",
+        "消费者权益保护要求提高"
+      ],
+      "recommendation": "持续关注物流碳排放相关法规，提前布局低碳物流解决方案"
+    },
+    "crisis_management": {
+      "past_crisis_handling": {
+        "assessment": "有效",
+        "response_time": "迅速",
+        "public_perception": "积极"
+      },
+      "potential_crisis_areas": [
+        {
+          "area": "信息安全事件",
+          "preparedness": "较好",
+          "response_plan": "已制定详细应急预案"
+        },
+        {
+          "area": "产品质量问题",
+          "preparedness": "充分",
+          "response_plan": "召回机制健全，危机沟通流程完善"
+        }
+      ],
+      "recommendation": "定期演练危机应对预案，加强媒体沟通技巧培训"
+    },
+    "ESG_analysis": {
+      "environmental": {
+        "score": 8.2,
+        "strengths": ["能源消耗管理", "废弃物减量"],
+        "weaknesses": ["碳足迹披露不够详细"],
+        "public_perception": "积极"
+      },
+      "social": {
+        "score": 8.5,
+        "strengths": ["员工关怀", "社区投资", "供应商管理"],
+        "weaknesses": ["供应链深度审查有待加强"],
+        "public_perception": "非常积极"
+      },
+      "governance": {
+        "score": 8.7,
+        "strengths": ["治理结构透明", "风险管理完善"],
+        "weaknesses": ["董事会多元化有待提升"],
+        "public_perception": "积极"
+      },
+      "recommendation": "完善ESG信息披露机制，增加量化指标"
+    }
+  }
+} 

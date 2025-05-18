@@ -1,0 +1,199 @@
+{
+  "company": "CRISIS压力",
+  "type": "operation",
+  "layer": "analysis",
+  "data_format": "analysis_dashboard",
+  "kpi_summary": {
+    "sales_target": 180000,
+    "sales_actual": 142000,
+    "sales_achievement": 0.789,
+    "production_target": 165000,
+    "production_actual": 138000,
+    "production_achievement": 0.836,
+    "efficiency_target": 0.80,
+    "efficiency_actual": 0.68,
+    "efficiency_achievement": 0.850,
+    "defect_target": 0.03,
+    "defect_actual": 0.048,
+    "defect_achievement": 0.625
+  },
+  "departments": [
+    {
+      "name": "销售部",
+      "headcount": 95,
+      "performance": 0.73,
+      "cost": 9800000,
+      "kpi_achievement": 0.78,
+      "risk_level": "高"
+    },
+    {
+      "name": "生产部",
+      "headcount": 165,
+      "performance": 0.82,
+      "cost": 14500000,
+      "kpi_achievement": 0.84,
+      "risk_level": "中等"
+    },
+    {
+      "name": "研发部",
+      "headcount": 42,
+      "performance": 0.85,
+      "cost": 5600000,
+      "kpi_achievement": 0.88,
+      "risk_level": "中等"
+    },
+    {
+      "name": "财务部",
+      "headcount": 24,
+      "performance": 0.80,
+      "cost": 2900000,
+      "kpi_achievement": 0.82,
+      "risk_level": "中等"
+    },
+    {
+      "name": "人力资源部",
+      "headcount": 18,
+      "performance": 0.75,
+      "cost": 2100000,
+      "kpi_achievement": 0.80,
+      "risk_level": "高"
+    },
+    {
+      "name": "物流部",
+      "headcount": 52,
+      "performance": 0.70,
+      "cost": 5800000,
+      "kpi_achievement": 0.75,
+      "risk_level": "高"
+    },
+    {
+      "name": "IT部",
+      "headcount": 26,
+      "performance": 0.83,
+      "cost": 3200000,
+      "kpi_achievement": 0.86,
+      "risk_level": "中等"
+    }
+  ],
+  "audit_analysis": {
+    "operational_risks": [
+      {
+        "area": "产能利用率",
+        "risk_level": "高",
+        "description": "产能利用率低于58%，固定成本分摊压力大，亏损严重",
+        "audit_focus": "关注产能调整计划的合理性及成本控制措施的有效性",
+        "potential_impact": "持续低利用率可能导致现金流枯竭，资产减值，员工流失加剧",
+        "recommendation": "评估精简产能方案，关闭低效生产线，重组生产布局"
+      },
+      {
+        "area": "质量控制",
+        "risk_level": "高",
+        "description": "产品缺陷率达4.8%，远高于行业平均水平，客户投诉增加",
+        "audit_focus": "关注质量问题根源分析及质量管理体系运行状况",
+        "potential_impact": "质量问题加剧客户流失，增加退换货成本，损害品牌声誉",
+        "recommendation": "重建质量控制流程，加强关键工序质量检测，优化供应商管理"
+      },
+      {
+        "area": "库存管理",
+        "risk_level": "高",
+        "description": "库存水平持续攀升，周转率低，呆滞料占比达28%",
+        "audit_focus": "关注库存结构和库存成本管理及销售预测的准确性",
+        "potential_impact": "过高库存占用大量资金，增加存货减值风险，加剧资金紧张",
+        "recommendation": "全面清理呆滞库存，优化采购策略，建立需求预测与库存管理联动机制"
+      },
+      {
+        "area": "供应链稳定性",
+        "risk_level": "中等",
+        "description": "因付款延迟导致多家供应商暂停供货，部分原材料断供",
+        "audit_focus": "关注供应商关系管理及付款安排的合理性",
+        "potential_impact": "供应链中断影响生产计划执行，增加采购成本和应急处理费用",
+        "recommendation": "与核心供应商重建信任关系，制定债务和付款计划，寻找替代供应商"
+      },
+      {
+        "area": "员工流失",
+        "risk_level": "高",
+        "description": "员工离职率超过30%，人才流失严重，尤其是技术和销售骨干",
+        "audit_focus": "关注人才保留措施和关键岗位继任计划",
+        "potential_impact": "核心人才流失导致业务连续性风险，客户资源流失，技术能力下降",
+        "recommendation": "针对核心员工制定保留计划，建立关键岗位知识共享机制"
+      }
+    ],
+    "internal_control_assessment": {
+      "procurement_cycle": {
+        "control_effectiveness": "较弱",
+        "key_controls": ["供应商管理", "采购申请审批", "验收入库"],
+        "weaknesses": ["供应商评估流于形式", "未严格执行付款审批", "采购价格波动大"],
+        "recommendation": "重建采购控制流程，强化付款审批管理，提高采购价格透明度"
+      },
+      "production_cycle": {
+        "control_effectiveness": "较弱",
+        "key_controls": ["生产计划编制", "物料领用控制", "生产进度监控", "质量检验"],
+        "weaknesses": ["生产计划频繁变更", "物料超领现象严重", "质检标准执行不一致"],
+        "recommendation": "稳定生产计划，严格物料领用控制，统一质检标准并强化执行"
+      },
+      "inventory_cycle": {
+        "control_effectiveness": "薄弱",
+        "key_controls": ["库存管理", "定期盘点", "存货价值评估"],
+        "weaknesses": ["账实不符比例高", "库存分类管理混乱", "呆滞物料识别不及时"],
+        "recommendation": "落实月度全面盘点，重建库存分类管理体系，及时识别处理呆滞物料"
+      },
+      "sales_cycle": {
+        "control_effectiveness": "一般",
+        "key_controls": ["客户授信管理", "销售合同审批", "回款控制"],
+        "weaknesses": ["授信管理宽松导致坏账增加", "销售折扣审批不严格"],
+        "recommendation": "收紧客户信用政策，严格控制销售折扣审批，加强应收账款管理"
+      }
+    },
+    "efficiency_analysis": {
+      "capacity_utilization": {
+        "current": "57.6%",
+        "industry_benchmark": "82.0%",
+        "trend": "持续下降",
+        "assessment": "远低于行业平均水平，形成严重产能浪费",
+        "recommendation": "果断关闭低效产线，集中资源提高核心产品线利用率"
+      },
+      "labor_productivity": {
+        "current": "人均产值72.5万元",
+        "industry_benchmark": "人均产值98.5万元",
+        "trend": "持续下滑",
+        "assessment": "显著低于行业水平，组织效率问题明显",
+        "recommendation": "精简冗余人员，重构组织架构，提高核心业务人员占比"
+      },
+      "equipment_effectiveness": {
+        "current": "设备综合效率63%",
+        "industry_benchmark": "行业平均78%",
+        "trend": "波动下降",
+        "assessment": "设备故障率高，维护不及时，效率低下",
+        "recommendation": "加强设备维护保养，淘汰老旧设备，优化设备运行管理"
+      },
+      "energy_consumption": {
+        "current": "单位产值能耗0.68千瓦时",
+        "industry_benchmark": "行业平均0.48千瓦时",
+        "trend": "不断恶化",
+        "assessment": "远高于行业平均水平，成本劣势明显",
+        "recommendation": "排查高能耗设备使用情况，实施节能改造，淘汰低效设备"
+      }
+    },
+    "business_continuity": {
+      "risk_assessment": "高风险",
+      "key_dependencies": [
+        "现金流状况",
+        "核心客户稳定性",
+        "关键供应商关系",
+        "骨干员工稳定性"
+      ],
+      "mitigation_measures": [
+        "资产处置计划",
+        "债务重组方案",
+        "客户关系修复",
+        "供应商付款安排"
+      ],
+      "improvement_areas": [
+        "产能优化和资源聚焦",
+        "质量管理体系重建",
+        "成本控制强化",
+        "组织架构精简"
+      ]
+    }
+  }
+} 

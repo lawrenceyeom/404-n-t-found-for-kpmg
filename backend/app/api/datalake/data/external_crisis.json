@@ -1,0 +1,152 @@
+{
+  "company": "CRISIS压力",
+  "type": "external",
+  "layer": "raw",
+  "data_format": "external_data",
+  "policies": [
+    {
+      "title": "国家'十四五'新型基础设施建设规划",
+      "content": "规划强调加快建设信息基础设施、融合基础设施、创新基础设施，为基建工程和相关设备租赁带来巨大市场。",
+      "date": "2024-01-15"
+    },
+    {
+      "title": "关于深入打好污染防治攻坚战的意见",
+      "content": "中央明确提出持续改善生态环境质量，加强环保督察力度，推动环保产业发展，利好环保工程业务。",
+      "date": "2024-03-05"
+    },
+    {
+      "title": "政府和社会资本合作(PPP)模式规范发展的指导意见",
+      "content": "财政部、发改委规范PPP项目运作，鼓励社会资本参与基础设施和公共服务项目建设运营。",
+      "date": "2023-11-01"
+    },
+    {
+      "title": "推动大规模设备更新和消费品以旧换新行动方案",
+      "content": "国务院印发方案，鼓励工业、建筑、市政等领域设备更新，将带动设备租赁市场需求增长。",
+      "date": "2024-03-13"
+    },
+    {
+      "title": "关于促进融资租赁行业健康发展的通知",
+      "content": "银保监会引导融资租赁公司服务实体经济，提升专业化水平，规范经营行为。",
+      "date": "2023-09-20"
+    },
+    {
+      "title": "'无废城市'建设试点工作方案",
+      "content": "生态环境部在全国范围内推广'无废城市'建设，推动固体废物资源化利用，拓展环保工程市场。",
+      "date": "2024-02-10"
+    },
+    {
+      "title": "国家重大水利工程建设基金管理办法",
+      "content": "支持国家确定的重大水利工程建设，相关基建工程项目可获得专项资金支持。",
+      "date": "2023-08-01"
+    },
+    {
+      "title": "关于进一步加强地方政府专项债券发行及项目配套融资的指导意见",
+      "content": "引导地方政府合规使用专项债券资金，重点支持交通、能源、农林水利、生态环保等领域基础设施项目。",
+      "date": "2024-04-01"
+    },
+    {
+      "title": "政府采购支持绿色建材促进建筑品质提升试点工作方案",
+      "content": "财政部、住建部推动在政府采购工程中优先采用绿色建材，利好环保工程及相关政府项目。",
+      "date": "2023-10-15"
+    }
+  ],
+  "benchmarks": [
+    {
+      "benchmark_company_name": "基建工程X集团",
+      "annual_revenue_billion_cny": 950.0,
+      "net_profit_margin_pct": 5.5,
+      "order_backlog_billion_cny": 2500.0,
+      "equipment_leasing_revenue_billion_cny": 30.2,
+      "environmental_projects_segment_pct": 15.0,
+      "gov_project_experience_score": 9.2
+    },
+    {
+      "benchmark_company_name": "环保科技Y公司",
+      "annual_revenue_billion_cny": 80.5,
+      "net_profit_margin_pct": 12.8,
+      "order_backlog_billion_cny": 150.0,
+      "equipment_leasing_revenue_billion_cny": 5.1,
+      "environmental_projects_segment_pct": 70.0,
+      "gov_project_experience_score": 7.8
+    },
+    {
+      "benchmark_company_name": "设备租赁Z服务商",
+      "annual_revenue_billion_cny": 120.0,
+      "net_profit_margin_pct": 18.2,
+      "order_backlog_billion_cny": 40.0, 
+      "equipment_leasing_revenue_billion_cny": 110.0,
+      "environmental_projects_segment_pct": 2.0,
+      "gov_project_experience_score": 6.5
+    },
+    {
+      "benchmark_company_name": "综合建设W控股",
+      "annual_revenue_billion_cny": 500.3,
+      "net_profit_margin_pct": 7.1,
+      "order_backlog_billion_cny": 1200.0,
+      "equipment_leasing_revenue_billion_cny": 15.5,
+      "environmental_projects_segment_pct": 25.0,
+      "gov_project_experience_score": 8.5
+    },
+    {
+      "benchmark_company_name": "绿色能源V工程",
+      "annual_revenue_billion_cny": 200.7,
+      "net_profit_margin_pct": 9.5,
+      "order_backlog_billion_cny": 450.0,
+      "equipment_leasing_revenue_billion_cny": 8.2,
+      "environmental_projects_segment_pct": 55.0,
+      "gov_project_experience_score": 8.1
+    }
+  ],
+  "regulations": [
+    {
+      "title": "中华人民共和国招标投标法",
+      "content": "规范招标投标活动，保护国家利益、社会公共利益和招标投标活动当事人的合法权益。",
+      "date": "2000-01-01"
+    },
+    {
+      "title": "中华人民共和国环境保护法",
+      "content": "确立环境保护基本原则和基本制度，明确政府、企业及公民在环境保护方面的责任和义务。",
+      "date": "2015-01-01"
+    },
+    {
+      "title": "中华人民共和国政府采购法",
+      "content": "规范政府采购行为，提高政府采购资金的使用效益，维护国家利益和社会公共利益。",
+      "date": "2003-01-01"
+    },
+    {
+      "title": "融资租赁公司监督管理暂行办法",
+      "content": "规范融资租赁公司的经营行为，防范风险，促进融资租赁行业健康发展。",
+      "date": "2020-05-26"
+    },
+    {
+      "title": "基础设施和公用事业特许经营管理办法",
+      "content": "规范基础设施和公用事业特许经营活动，保障社会公共利益和投资者合法权益。",
+      "date": "2015-06-01"
+    },
+    {
+      "title": "中华人民共和国安全生产法",
+      "content": "加强安全生产工作，防止和减少生产安全事故，保障人民群众生命和财产安全，尤其在基建和工程项目中需严格遵守。",
+      "date": "2021-09-01"
+    },
+    {
+      "title": "排污许可管理条例",
+      "content": "规范排污单位的排污行为，控制污染物排放，改善生态环境质量。",
+      "date": "2021-03-01"
+    },
+    {
+      "title": "建设工程质量管理条例",
+      "content": "加强对建设工程质量的管理，保证建设工程质量，保护人民生命和财产安全。",
+      "date": "2000-01-30"
+    },
+    {
+      "title": "关于促进平台经济规范健康发展的指导意见",
+      "content": "规范和引导平台经济发展，鼓励创新，同时也强调公平竞争和数据安全，可能涉及大型设备在线租赁平台。",
+      "date": "2022-01-19"
+    },
+    {
+      "title": "中华人民共和国反垄断法",
+      "content": "预防和制止垄断行为，保护市场公平竞争，提高经济运行效率，维护消费者利益和社会公共利益。在政府项目招标及大型基建项目中需重点关注。",
+      "date": "2022-08-01"
+    }
+  ]
+} 

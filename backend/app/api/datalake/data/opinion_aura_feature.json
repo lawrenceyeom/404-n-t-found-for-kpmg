@@ -1,0 +1,12 @@
+{
+  "company": "AURA稳健",
+  "type": "opinion",
+  "layer": "feature",
+  "data_format": "feature",
+  "features": [
+    {"name": "正面新闻占比", "importance": 0.40},
+    {"name": "负面评论占比", "importance": 0.25},
+    {"name": "舆情热度指数", "importance": 0.20},
+    {"name": "关键词提及频次", "importance": 0.15}
+  ]
+} 

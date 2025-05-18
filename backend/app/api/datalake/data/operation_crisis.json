@@ -1,0 +1,747 @@
+{
+  "company_info": {
+    "id": "crisis",
+    "name": "CRISIS压力",
+    "industry": "设备租赁、环保工程、政府项目、基建工程",
+    "established": "2008-11-06",
+    "employees": 2150,
+    "headquarters": "武汉市江汉区"
+  },
+  "timeseries": {
+    "dates": [
+      "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", 
+      "2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12",
+      "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06"
+    ],
+    "sales": [
+      9850, 9780, 9680, 9520, 9380, 9210,
+      9080, 8950, 8820, 8680, 8520, 8350,
+      8280, 8180, 8050, 7950, 7850, 7750
+    ],
+    "production": [
+      9620, 9580, 9420, 9250, 9150, 8980,
+      8850, 8720, 8650, 8520, 8350, 8240,
+      8120, 8050, 7920, 7850, 7720, 7650
+    ],
+    "inventory_levels": [
+      5280, 5350, 5480, 5620, 5720, 5850,
+      5980, 6120, 6250, 6380, 6480, 6580,
+      6680, 6750, 6820, 6920, 7050, 7150
+    ],
+    "equipment_utilization_rate": [
+      82.5, 81.8, 80.5, 79.2, 78.5, 77.2,
+      76.8, 75.5, 74.8, 73.5, 72.2, 71.5,
+      70.8, 69.5, 68.2, 67.5, 66.8, 65.5
+    ],
+    "customer_satisfaction": [
+      75.8, 74.5, 73.8, 72.5, 71.8, 70.5,
+      69.8, 68.5, 67.2, 66.5, 65.8, 64.5,
+      63.8, 62.5, 61.8, 60.5, 59.8, 58.5
+    ],
+    "project_completion_rate": [
+      82.5, 81.8, 80.5, 79.2, 78.5, 77.2,
+      76.5, 75.8, 74.5, 73.2, 72.5, 71.8,
+      70.5, 69.8, 68.5, 67.2, 66.5, 65.2
+    ],
+    "operational_costs": [
+      8250, 8320, 8420, 8520, 8650, 8780,
+      8850, 8980, 9120, 9280, 9380, 9520,
+      9650, 9780, 9850, 9950, 10080, 10150
+    ],
+    "employee_productivity": [
+      85.5, 84.2, 83.5, 82.8, 81.5, 80.2,
+      79.5, 78.2, 77.5, 76.8, 75.5, 74.2,
+      73.5, 72.8, 71.5, 70.2, 69.5, 68.2
+    ],
+    "maintenance_costs": [
+      1250, 1280, 1320, 1380, 1420, 1480,
+      1520, 1580, 1650, 1720, 1780, 1850,
+      1920, 1980, 2050, 2120, 2180, 2250
+    ],
+    "project_delay_days": [
+      25.5, 26.8, 27.5, 28.2, 29.5, 30.8,
+      31.5, 32.8, 33.5, 34.8, 35.5, 36.8,
+      37.5, 38.8, 39.5, 40.8, 41.5, 42.8
+    ]
+  },
+  "kpi_summary": {
+    "sales_target": 8500,
+    "sales_actual": 7750,
+    "sales_achievement": 91.2,
+    "production_target": 8200,
+    "production_actual": 7650,
+    "production_achievement": 93.3,
+    "equipment_utilization_target": 75.0,
+    "equipment_utilization_actual": 65.5,
+    "equipment_utilization_achievement": 87.3,
+    "customer_satisfaction_target": 70.0,
+    "customer_satisfaction_actual": 58.5,
+    "satisfaction_achievement": 83.6,
+    "project_completion_target": 75.0,
+    "project_completion_actual": 65.2,
+    "project_completion_achievement": 86.9,
+    "cost_reduction_target": 5.0,
+    "cost_reduction_actual": -8.3,
+    "cost_reduction_achievement": -166.0,
+    "employee_productivity_target": 75.0,
+    "employee_productivity_actual": 68.2,
+    "productivity_achievement": 90.9,
+    "project_delay_target": 25.0,
+    "project_delay_actual": 42.8,
+    "project_delay_achievement": 58.4
+  },
+  "department_metrics": [
+    {
+      "department": "设备租赁部",
+      "metrics": [
+        {
+          "name": "设备租赁收入",
+          "value": 3850,
+          "unit": "万元",
+          "target": 4500,
+          "status": "未达标"
+        },
+        {
+          "name": "设备利用率",
+          "value": 65.5,
+          "unit": "%",
+          "target": 75.0,
+          "status": "未达标"
+        },
+        {
+          "name": "设备完好率",
+          "value": 78.5,
+          "unit": "%",
+          "target": 90.0,
+          "status": "未达标"
+        },
+        {
+          "name": "租赁合同续签率",
+          "value": 62.8,
+          "unit": "%",
+          "target": 80.0,
+          "status": "未达标"
+        },
+        {
+          "name": "设备维修周期",
+          "value": 12.5,
+          "unit": "天",
+          "target": 7.0,
+          "status": "未达标"
+        }
+      ]
+    },
+    {
+      "department": "环保工程部",
+      "metrics": [
+        {
+          "name": "项目数量",
+          "value": 7,
+          "unit": "个",
+          "target": 12,
+          "status": "未达标"
+        },
+        {
+          "name": "项目利润率",
+          "value": 5.8,
+          "unit": "%",
+          "target": 12.0,
+          "status": "未达标"
+        },
+        {
+          "name": "环保达标率",
+          "value": 88.5,
+          "unit": "%",
+          "target": 95.0,
+          "status": "未达标"
+        },
+        {
+          "name": "项目完成率",
+          "value": 65.2,
+          "unit": "%",
+          "target": 90.0,
+          "status": "未达标"
+        },
+        {
+          "name": "技术人员流失率",
+          "value": 18.5,
+          "unit": "%",
+          "target": 10.0,
+          "status": "未达标"
+        }
+      ]
+    },
+    {
+      "department": "政府项目部",
+      "metrics": [
+        {
+          "name": "招投标中标率",
+          "value": 22.5,
+          "unit": "%",
+          "target": 35.0,
+          "status": "未达标"
+        },
+        {
+          "name": "项目回款率",
+          "value": 68.5,
+          "unit": "%",
+          "target": 85.0,
+          "status": "未达标"
+        },
+        {
+          "name": "质量验收合格率",
+          "value": 85.5,
+          "unit": "%",
+          "target": 95.0,
+          "status": "未达标"
+        },
+        {
+          "name": "预算执行偏差率",
+          "value": 15.8,
+          "unit": "%",
+          "target": 5.0,
+          "status": "未达标"
+        },
+        {
+          "name": "监管评分",
+          "value": 72.5,
+          "unit": "分",
+          "target": 85.0,
+          "status": "未达标"
+        }
+      ]
+    },
+    {
+      "department": "基建工程部",
+      "metrics": [
+        {
+          "name": "在建项目数",
+          "value": 5,
+          "unit": "个",
+          "target": 8,
+          "status": "未达标"
+        },
+        {
+          "name": "项目质量事故率",
+          "value": 4.2,
+          "unit": "%",
+          "target": 1.0,
+          "status": "未达标"
+        },
+        {
+          "name": "工期延误率",
+          "value": 38.5,
+          "unit": "%",
+          "target": 15.0,
+          "status": "未达标"
+        },
+        {
+          "name": "安全事故发生率",
+          "value": 2.8,
+          "unit": "%",
+          "target": 0.5,
+          "status": "未达标"
+        },
+        {
+          "name": "材料成本超支率",
+          "value": 12.5,
+          "unit": "%",
+          "target": 3.0,
+          "status": "未达标"
+        }
+      ]
+    }
+  ],
+  "risk_indicators": [
+    {
+      "category": "项目风险",
+      "indicators": [
+        {
+          "name": "项目延期风险",
+          "value": 8.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "成本超支风险",
+          "value": 7.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "质量风险",
+          "value": 6.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "技术风险",
+          "value": 5.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        }
+      ]
+    },
+    {
+      "category": "财务风险",
+      "indicators": [
+        {
+          "name": "现金流紧张度",
+          "value": 8.2,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "应收账款风险",
+          "value": 7.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "融资困难度",
+          "value": 8.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "资产减值风险",
+          "value": 6.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        }
+      ]
+    },
+    {
+      "category": "运营风险",
+      "indicators": [
+        {
+          "name": "人员流动率",
+          "value": 23.5,
+          "unit": "%",
+          "threshold": 15.0,
+          "status": "高危"
+        },
+        {
+          "name": "设备故障率",
+          "value": 12.8,
+          "unit": "%",
+          "threshold": 5.0,
+          "status": "高危"
+        },
+        {
+          "name": "客户投诉率",
+          "value": 8.5,
+          "unit": "%",
+          "threshold": 3.0,
+          "status": "高危"
+        },
+        {
+          "name": "安全事故率",
+          "value": 3.2,
+          "unit": "%",
+          "threshold": 1.0,
+          "status": "高危"
+        }
+      ]
+    },
+    {
+      "category": "外部风险",
+      "indicators": [
+        {
+          "name": "行业竞争加剧",
+          "value": 7.8,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "政策监管变化",
+          "value": 6.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "原材料价格波动",
+          "value": 7.2,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        },
+        {
+          "name": "宏观经济下行",
+          "value": 8.5,
+          "unit": "分",
+          "threshold": 4.0,
+          "status": "高危"
+        }
+      ]
+    }
+  ],
+  "business_processes": [
+    {
+      "process_name": "设备租赁流程",
+      "metrics": [
+        {
+          "name": "合同签订周期",
+          "value": 15.8,
+          "unit": "天",
+          "benchmark": 7.0,
+          "status": "不良"
+        },
+        {
+          "name": "设备调配时间",
+          "value": 5.5,
+          "unit": "天",
+          "benchmark": 2.0,
+          "status": "不良"
+        },
+        {
+          "name": "租赁订单履行率",
+          "value": 75.5,
+          "unit": "%",
+          "benchmark": 95.0,
+          "status": "不良"
+        }
+      ]
+    },
+    {
+      "process_name": "工程项目管理",
+      "metrics": [
+        {
+          "name": "项目计划准确率",
+          "value": 62.5,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "不良"
+        },
+        {
+          "name": "资源调配效率",
+          "value": 68.2,
+          "unit": "%",
+          "benchmark": 85.0,
+          "status": "不良"
+        },
+        {
+          "name": "进度管理偏差",
+          "value": 28.5,
+          "unit": "%",
+          "benchmark": 10.0,
+          "status": "不良"
+        }
+      ]
+    },
+    {
+      "process_name": "设备维修保养",
+      "metrics": [
+        {
+          "name": "预防性维护执行率",
+          "value": 65.5,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "不良"
+        },
+        {
+          "name": "维修响应时间",
+          "value": 8.5,
+          "unit": "小时",
+          "benchmark": 4.0,
+          "status": "不良"
+        },
+        {
+          "name": "备件库存充足率",
+          "value": 72.8,
+          "unit": "%",
+          "benchmark": 95.0,
+          "status": "不良"
+        }
+      ]
+    },
+    {
+      "process_name": "投标流程",
+      "metrics": [
+        {
+          "name": "投标文件准备周期",
+          "value": 18.5,
+          "unit": "天",
+          "benchmark": 10.0,
+          "status": "不良"
+        },
+        {
+          "name": "投标准备质量",
+          "value": 75.8,
+          "unit": "分",
+          "benchmark": 90.0,
+          "status": "不良"
+        },
+        {
+          "name": "投标成功率",
+          "value": 22.5,
+          "unit": "%",
+          "benchmark": 40.0,
+          "status": "不良"
+        }
+      ]
+    },
+    {
+      "process_name": "财务管理流程",
+      "metrics": [
+        {
+          "name": "应收账款回收率",
+          "value": 68.5,
+          "unit": "%",
+          "benchmark": 90.0,
+          "status": "不良"
+        },
+        {
+          "name": "成本预算偏差",
+          "value": 18.5,
+          "unit": "%",
+          "benchmark": 5.0,
+          "status": "不良"
+        },
+        {
+          "name": "现金流预测准确率",
+          "value": 62.5,
+          "unit": "%",
+          "benchmark": 85.0,
+          "status": "不良"
+        }
+      ]
+    }
+  ],
+  "engineering_projects": [
+    {
+      "category": "在建项目",
+      "projects": [
+        {
+          "name": "湖北省环保处理厂",
+          "location": "武汉江夏",
+          "budget": 18500,
+          "unit": "万元",
+          "completion": 45.8,
+          "status": "严重延期"
+        },
+        {
+          "name": "城市基础设施更新",
+          "location": "长沙岳麓",
+          "budget": 12500,
+          "unit": "万元",
+          "completion": 38.5,
+          "status": "成本超支"
+        },
+        {
+          "name": "产业园区建设",
+          "location": "郑州高新",
+          "budget": 22800,
+          "unit": "万元",
+          "completion": 25.5,
+          "status": "暂停中"
+        },
+        {
+          "name": "污水处理工程",
+          "location": "合肥蜀山",
+          "budget": 8500,
+          "unit": "万元",
+          "completion": 62.5,
+          "status": "质量问题"
+        }
+      ]
+    },
+    {
+      "category": "招投标项目",
+      "projects": [
+        {
+          "name": "城市地下管网改造",
+          "location": "南昌西湖",
+          "budget": 15800,
+          "unit": "万元",
+          "bidding_progress": 85.0,
+          "status": "报价偏高"
+        },
+        {
+          "name": "市政道路建设",
+          "location": "太原小店",
+          "budget": 11500,
+          "unit": "万元",
+          "bidding_progress": 65.0,
+          "status": "材料成本上涨"
+        },
+        {
+          "name": "学校改建工程",
+          "location": "西安雁塔",
+          "budget": 7800,
+          "unit": "万元",
+          "bidding_progress": 45.0,
+          "status": "方案不确定"
+        }
+      ]
+    },
+    {
+      "category": "问题项目",
+      "projects": [
+        {
+          "name": "高速公路维修",
+          "location": "襄阳襄州",
+          "budget": 9500,
+          "unit": "万元",
+          "problem_level": "严重",
+          "status": "客户纠纷"
+        },
+        {
+          "name": "垃圾焚烧发电",
+          "location": "宜昌夷陵",
+          "budget": 28500,
+          "unit": "万元",
+          "problem_level": "严重",
+          "status": "环评未通过"
+        },
+        {
+          "name": "农村饮水工程",
+          "location": "黄冈红安",
+          "budget": 6500,
+          "unit": "万元",
+          "problem_level": "中度",
+          "status": "资金短缺"
+        }
+      ]
+    }
+  ],
+  "operational_events": [
+    {
+      "date": "2024-06-12",
+      "event": "湖北省环保处理厂项目停工",
+      "type": "项目风险",
+      "impact": "严重不利",
+      "description": "因资金链断裂导致项目停工，面临违约赔偿约2500万元"
+    },
+    {
+      "date": "2024-05-25",
+      "event": "大型设备租赁合同流失",
+      "type": "客户流失",
+      "impact": "严重不利",
+      "description": "失去年收入约1800万元的重要客户，市场份额下降5%"
+    },
+    {
+      "date": "2024-04-18",
+      "event": "银行抽贷通知",
+      "type": "财务风险",
+      "impact": "严重不利",
+      "description": "主要贷款银行要求提前偿还1.2亿元贷款，现金流面临严峻挑战"
+    },
+    {
+      "date": "2024-03-22",
+      "event": "技术骨干团队离职",
+      "type": "人才流失",
+      "impact": "严重不利",
+      "description": "环保工程部5名核心技术人员集体离职，技术能力受损"
+    },
+    {
+      "date": "2024-02-28",
+      "event": "设备安全事故",
+      "type": "安全风险",
+      "impact": "严重不利",
+      "description": "租赁设备操作不当导致重大事故，造成直接经济损失约500万元"
+    },
+    {
+      "date": "2024-01-15",
+      "event": "环保项目被勒令整改",
+      "type": "合规风险",
+      "impact": "严重不利",
+      "description": "污水处理工程环保指标不达标，被环保部门处罚并要求停工整改"
+    },
+    {
+      "date": "2023-12-20",
+      "event": "大额应收账款逾期",
+      "type": "财务风险",
+      "impact": "严重不利",
+      "description": "政府项目3200万元应收账款逾期超过180天，回收困难"
+    },
+    {
+      "date": "2023-11-08",
+      "event": "投标保证金被扣",
+      "type": "投标风险",
+      "impact": "不利",
+      "description": "因投标文件问题导致保证金800万元被扣，影响企业声誉"
+    },
+    {
+      "date": "2023-10-15",
+      "event": "设备库存积压",
+      "type": "资产闲置",
+      "impact": "不利",
+      "description": "约2500万元租赁设备长期闲置，维护成本高企"
+    },
+    {
+      "date": "2023-09-05",
+      "event": "管理层内部冲突",
+      "type": "治理风险",
+      "impact": "不利",
+      "description": "高管团队战略分歧导致决策效率低下，错失市场机会"
+    }
+  ],
+  "benchmarking": {
+    "industry_average": {
+      "equipment_utilization_rate": 82.5,
+      "project_completion_rate": 88.0,
+      "operating_margin": 10.5,
+      "customer_satisfaction": 85.0,
+      "safety_incident_rate": 1.2
+    },
+    "company_performance": {
+      "equipment_utilization_rate": 65.5,
+      "project_completion_rate": 65.2,
+      "operating_margin": -3.8,
+      "customer_satisfaction": 58.5,
+      "safety_incident_rate": 3.2
+    },
+    "performance_gap": {
+      "equipment_utilization_rate": -17.0,
+      "project_completion_rate": -22.8,
+      "operating_margin": -14.3,
+      "customer_satisfaction": -26.5,
+      "safety_incident_rate": -2.0
+    }
+  },
+  "historical_data": [
+    {
+      "year": "2020",
+      "sales_growth": 5.8,
+      "operational_efficiency": 78.5,
+      "customer_satisfaction": 76.8,
+      "employee_productivity": 85.5,
+      "profit_margin": 4.5
+    },
+    {
+      "year": "2021",
+      "sales_growth": 2.5,
+      "operational_efficiency": 75.2,
+      "customer_satisfaction": 72.5,
+      "employee_productivity": 82.8,
+      "profit_margin": 2.8
+    },
+    {
+      "year": "2022",
+      "sales_growth": -3.2,
+      "operational_efficiency": 71.8,
+      "customer_satisfaction": 68.5,
+      "employee_productivity": 78.5,
+      "profit_margin": 0.5
+    },
+    {
+      "year": "2023",
+      "sales_growth": -8.5,
+      "operational_efficiency": 67.5,
+      "customer_satisfaction": 64.5,
+      "employee_productivity": 74.2,
+      "profit_margin": -2.8
+    }
+  ]
+} 

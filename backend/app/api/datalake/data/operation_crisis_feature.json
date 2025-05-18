@@ -1,0 +1,12 @@
+{
+  "company": "CRISIS压力",
+  "type": "operation",
+  "layer": "feature",
+  "data_format": "feature",
+  "features": [
+    {"name": "销售额", "importance": 0.33},
+    {"name": "生产量", "importance": 0.27},
+    {"name": "库存", "importance": 0.22},
+    {"name": "负面事件", "importance": 0.18}
+  ]
+} 

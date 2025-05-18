@@ -1,0 +1,657 @@
+{
+  "company": "BETA成长",
+  "type": "finance",
+  "layer": "raw",
+  "data_format": "table",
+  "table": [
+    {"date": "2024-06-01", "revenue": 400000, "profit": 60800, "gross_margin": 0.310, "operating_margin": 0.190, "net_margin": 0.152, "roe": 0.180, "cashflow": 74555, "assets": 335000000, "liabilities": 217750000, "equity": 117250000, "debt_ratio": 0.650, "current_ratio": 3.060, "quick_ratio": 1.240, "inventory_turnover": 3.400, "receivable_turnover": 5.900},
+    {"date": "2024-05-31", "revenue": 396014, "profit": 60090, "gross_margin": 0.308, "operating_margin": 0.188, "net_margin": 0.151, "roe": 0.179, "cashflow": 73455, "assets": 334070480, "liabilities": 217145830, "equity": 116924650, "debt_ratio": 0.650, "current_ratio": 3.051, "quick_ratio": 1.234, "inventory_turnover": 3.380, "receivable_turnover": 5.879},
+    {"date": "2024-05-30", "revenue": 392028, "profit": 59385, "gross_margin": 0.306, "operating_margin": 0.186, "net_margin": 0.150, "roe": 0.178, "cashflow": 72355, "assets": 333140960, "liabilities": 216541660, "equity": 116599300, "debt_ratio": 0.650, "current_ratio": 3.042, "quick_ratio": 1.229, "inventory_turnover": 3.360, "receivable_turnover": 5.858},
+    {"date": "2024-05-29", "revenue": 388042, "profit": 58685, "gross_margin": 0.304, "operating_margin": 0.185, "net_margin": 0.149, "roe": 0.177, "cashflow": 71255, "assets": 332211440, "liabilities": 215937490, "equity": 116273950, "debt_ratio": 0.650, "current_ratio": 3.032, "quick_ratio": 1.223, "inventory_turnover": 3.340, "receivable_turnover": 5.837},
+    {"date": "2024-05-28", "revenue": 384056, "profit": 57989, "gross_margin": 0.302, "operating_margin": 0.183, "net_margin": 0.148, "roe": 0.176, "cashflow": 70155, "assets": 331281920, "liabilities": 215333320, "equity": 115948600, "debt_ratio": 0.650, "current_ratio": 3.023, "quick_ratio": 1.218, "inventory_turnover": 3.319, "receivable_turnover": 5.816},
+    {"date": "2024-05-27", "revenue": 380070, "profit": 57298, "gross_margin": 0.300, "operating_margin": 0.181, "net_margin": 0.147, "roe": 0.175, "cashflow": 69055, "assets": 330352400, "liabilities": 214729150, "equity": 115623250, "debt_ratio": 0.650, "current_ratio": 3.014, "quick_ratio": 1.212, "inventory_turnover": 3.299, "receivable_turnover": 5.795},
+    {"date": "2024-05-26", "revenue": 376084, "profit": 56612, "gross_margin": 0.298, "operating_margin": 0.179, "net_margin": 0.146, "roe": 0.174, "cashflow": 67955, "assets": 329422880, "liabilities": 214124980, "equity": 115297900, "debt_ratio": 0.650, "current_ratio": 3.005, "quick_ratio": 1.207, "inventory_turnover": 3.279, "receivable_turnover": 5.774},
+    {"date": "2024-05-25", "revenue": 372098, "profit": 55930, "gross_margin": 0.296, "operating_margin": 0.178, "net_margin": 0.145, "roe": 0.173, "cashflow": 66855, "assets": 328493360, "liabilities": 213520810, "equity": 114972550, "debt_ratio": 0.650, "current_ratio": 2.996, "quick_ratio": 1.201, "inventory_turnover": 3.259, "receivable_turnover": 5.753},
+    {"date": "2024-05-24", "revenue": 368112, "profit": 55254, "gross_margin": 0.294, "operating_margin": 0.176, "net_margin": 0.144, "roe": 0.172, "cashflow": 65755, "assets": 327563840, "liabilities": 212916640, "equity": 114647200, "debt_ratio": 0.650, "current_ratio": 2.987, "quick_ratio": 1.196, "inventory_turnover": 3.239, "receivable_turnover": 5.732},
+    {"date": "2024-05-23", "revenue": 364126, "profit": 54582, "gross_margin": 0.292, "operating_margin": 0.174, "net_margin": 0.143, "roe": 0.171, "cashflow": 64655, "assets": 326634320, "liabilities": 212312470, "equity": 114321850, "debt_ratio": 0.650, "current_ratio": 2.978, "quick_ratio": 1.190, "inventory_turnover": 3.219, "receivable_turnover": 5.711},
+    {"date": "2024-05-22", "revenue": 360140, "profit": 53915, "gross_margin": 0.290, "operating_margin": 0.173, "net_margin": 0.142, "roe": 0.170, "cashflow": 63555, "assets": 325704800, "liabilities": 211708300, "equity": 113996500, "debt_ratio": 0.650, "current_ratio": 2.969, "quick_ratio": 1.185, "inventory_turnover": 3.198, "receivable_turnover": 5.690},
+    {"date": "2024-05-21", "revenue": 356154, "profit": 53252, "gross_margin": 0.288, "operating_margin": 0.171, "net_margin": 0.141, "roe": 0.169, "cashflow": 62455, "assets": 324775280, "liabilities": 211104130, "equity": 113671150, "debt_ratio": 0.650, "current_ratio": 2.959, "quick_ratio": 1.179, "inventory_turnover": 3.178, "receivable_turnover": 5.669},
+    {"date": "2024-05-20", "revenue": 352168, "profit": 52594, "gross_margin": 0.286, "operating_margin": 0.169, "net_margin": 0.139, "roe": 0.168, "cashflow": 61355, "assets": 323845760, "liabilities": 210499960, "equity": 113345800, "debt_ratio": 0.650, "current_ratio": 2.950, "quick_ratio": 1.174, "inventory_turnover": 3.158, "receivable_turnover": 5.648},
+    {"date": "2024-05-19", "revenue": 348182, "profit": 51940, "gross_margin": 0.284, "operating_margin": 0.168, "net_margin": 0.138, "roe": 0.167, "cashflow": 60255, "assets": 322916240, "liabilities": 209895790, "equity": 113020450, "debt_ratio": 0.650, "current_ratio": 2.941, "quick_ratio": 1.168, "inventory_turnover": 3.138, "receivable_turnover": 5.627},
+    {"date": "2024-05-18", "revenue": 344196, "profit": 51291, "gross_margin": 0.282, "operating_margin": 0.166, "net_margin": 0.137, "roe": 0.166, "cashflow": 59155, "assets": 321986720, "liabilities": 209291620, "equity": 112695100, "debt_ratio": 0.650, "current_ratio": 2.932, "quick_ratio": 1.163, "inventory_turnover": 3.118, "receivable_turnover": 5.606},
+    {"date": "2024-05-17", "revenue": 340210, "profit": 50646, "gross_margin": 0.280, "operating_margin": 0.165, "net_margin": 0.136, "roe": 0.165, "cashflow": 58055, "assets": 321057200, "liabilities": 208687450, "equity": 112369750, "debt_ratio": 0.650, "current_ratio": 2.923, "quick_ratio": 1.157, "inventory_turnover": 3.098, "receivable_turnover": 5.585},
+    {"date": "2024-05-16", "revenue": 336224, "profit": 50006, "gross_margin": 0.278, "operating_margin": 0.163, "net_margin": 0.134, "roe": 0.164, "cashflow": 56955, "assets": 320127680, "liabilities": 208083280, "equity": 112044400, "debt_ratio": 0.650, "current_ratio": 2.914, "quick_ratio": 1.152, "inventory_turnover": 3.077, "receivable_turnover": 5.564},
+    {"date": "2024-05-15", "revenue": 332238, "profit": 49370, "gross_margin": 0.276, "operating_margin": 0.161, "net_margin": 0.133, "roe": 0.163, "cashflow": 55855, "assets": 319198160, "liabilities": 207479110, "equity": 111719050, "debt_ratio": 0.650, "current_ratio": 2.905, "quick_ratio": 1.146, "inventory_turnover": 3.057, "receivable_turnover": 5.543},
+    {"date": "2024-05-14", "revenue": 328252, "profit": 48739, "gross_margin": 0.274, "operating_margin": 0.160, "net_margin": 0.131, "roe": 0.162, "cashflow": 54755, "assets": 318268640, "liabilities": 206874940, "equity": 111393700, "debt_ratio": 0.650, "current_ratio": 2.895, "quick_ratio": 1.140, "inventory_turnover": 3.037, "receivable_turnover": 5.522},
+    {"date": "2024-05-13", "revenue": 324266, "profit": 48112, "gross_margin": 0.272, "operating_margin": 0.158, "net_margin": 0.130, "roe": 0.161, "cashflow": 53655, "assets": 317339120, "liabilities": 206270770, "equity": 111068350, "debt_ratio": 0.650, "current_ratio": 2.886, "quick_ratio": 1.135, "inventory_turnover": 3.017, "receivable_turnover": 5.501},
+    {"date": "2024-05-12", "revenue": 320280, "profit": 47490, "gross_margin": 0.270, "operating_margin": 0.156, "net_margin": 0.129, "roe": 0.160, "cashflow": 52555, "assets": 316409600, "liabilities": 205666600, "equity": 110743000, "debt_ratio": 0.650, "current_ratio": 2.877, "quick_ratio": 1.129, "inventory_turnover": 2.997, "receivable_turnover": 5.480},
+    {"date": "2024-05-11", "revenue": 316294, "profit": 46872, "gross_margin": 0.268, "operating_margin": 0.155, "net_margin": 0.128, "roe": 0.159, "cashflow": 51455, "assets": 315480080, "liabilities": 205062430, "equity": 110417650, "debt_ratio": 0.650, "current_ratio": 2.868, "quick_ratio": 1.124, "inventory_turnover": 2.977, "receivable_turnover": 5.459},
+    {"date": "2024-05-10", "revenue": 312308, "profit": 46259, "gross_margin": 0.266, "operating_margin": 0.153, "net_margin": 0.127, "roe": 0.158, "cashflow": 50355, "assets": 314550560, "liabilities": 204458260, "equity": 110092300, "debt_ratio": 0.650, "current_ratio": 2.859, "quick_ratio": 1.118, "inventory_turnover": 2.956, "receivable_turnover": 5.438},
+    {"date": "2024-05-09", "revenue": 308322, "profit": 45650, "gross_margin": 0.264, "operating_margin": 0.151, "net_margin": 0.126, "roe": 0.157, "cashflow": 49255, "assets": 313621040, "liabilities": 203854090, "equity": 109766950, "debt_ratio": 0.650, "current_ratio": 2.850, "quick_ratio": 1.113, "inventory_turnover": 2.936, "receivable_turnover": 5.417},
+    {"date": "2024-05-08", "revenue": 304336, "profit": 45045, "gross_margin": 0.262, "operating_margin": 0.150, "net_margin": 0.125, "roe": 0.156, "cashflow": 48155, "assets": 312691520, "liabilities": 203249920, "equity": 109441600, "debt_ratio": 0.650, "current_ratio": 2.841, "quick_ratio": 1.107, "inventory_turnover": 2.916, "receivable_turnover": 5.396},
+    {"date": "2024-05-07", "revenue": 300350, "profit": 44445, "gross_margin": 0.260, "operating_margin": 0.148, "net_margin": 0.124, "roe": 0.155, "cashflow": 47055, "assets": 311762000, "liabilities": 202645750, "equity": 109116250, "debt_ratio": 0.650, "current_ratio": 2.831, "quick_ratio": 1.102, "inventory_turnover": 2.896, "receivable_turnover": 5.375},
+    {"date": "2024-05-06", "revenue": 296364, "profit": 43849, "gross_margin": 0.258, "operating_margin": 0.146, "net_margin": 0.123, "roe": 0.154, "cashflow": 45955, "assets": 310832480, "liabilities": 202041580, "equity": 108790900, "debt_ratio": 0.650, "current_ratio": 2.822, "quick_ratio": 1.096, "inventory_turnover": 2.876, "receivable_turnover": 5.354},
+    {"date": "2024-05-05", "revenue": 292378, "profit": 43258, "gross_margin": 0.256, "operating_margin": 0.145, "net_margin": 0.122, "roe": 0.153, "cashflow": 44855, "assets": 309902960, "liabilities": 201437410, "equity": 108465550, "debt_ratio": 0.650, "current_ratio": 2.813, "quick_ratio": 1.091, "inventory_turnover": 2.856, "receivable_turnover": 5.333},
+    {"date": "2024-05-04", "revenue": 288392, "profit": 42671, "gross_margin": 0.254, "operating_margin": 0.143, "net_margin": 0.121, "roe": 0.152, "cashflow": 43755, "assets": 308973440, "liabilities": 200833240, "equity": 108140200, "debt_ratio": 0.650, "current_ratio": 2.804, "quick_ratio": 1.085, "inventory_turnover": 2.835, "receivable_turnover": 5.312},
+    {"date": "2024-05-03", "revenue": 284406, "profit": 42088, "gross_margin": 0.252, "operating_margin": 0.141, "net_margin": 0.120, "roe": 0.151, "cashflow": 42655, "assets": 308043920, "liabilities": 200229070, "equity": 107814850, "debt_ratio": 0.650, "current_ratio": 2.795, "quick_ratio": 1.080, "inventory_turnover": 2.815, "receivable_turnover": 5.291},
+    {"date": "2024-05-02", "revenue": 280420, "profit": 41510, "gross_margin": 0.250, "operating_margin": 0.140, "net_margin": 0.119, "roe": 0.150, "cashflow": 41555, "assets": 307114400, "liabilities": 199624900, "equity": 107489500, "debt_ratio": 0.650, "current_ratio": 2.786, "quick_ratio": 1.074, "inventory_turnover": 2.795, "receivable_turnover": 5.270},
+    {"date": "2024-05-01", "revenue": 276434, "profit": 40936, "gross_margin": 0.248, "operating_margin": 0.138, "net_margin": 0.118, "roe": 0.149, "cashflow": 40455, "assets": 306184880, "liabilities": 199020730, "equity": 107164150, "debt_ratio": 0.650, "current_ratio": 2.777, "quick_ratio": 1.069, "inventory_turnover": 2.775, "receivable_turnover": 5.249},
+    {"date": "2024-04-30", "revenue": 272448, "profit": 40367, "gross_margin": 0.246, "operating_margin": 0.136, "net_margin": 0.117, "roe": 0.148, "cashflow": 39355, "assets": 305255360, "liabilities": 198416560, "equity": 106838800, "debt_ratio": 0.650, "current_ratio": 2.767, "quick_ratio": 1.063, "inventory_turnover": 2.755, "receivable_turnover": 5.228},
+    {"date": "2024-04-29", "revenue": 268462, "profit": 39802, "gross_margin": 0.244, "operating_margin": 0.134, "net_margin": 0.116, "roe": 0.147, "cashflow": 38255, "assets": 304325840, "liabilities": 197812390, "equity": 106513450, "debt_ratio": 0.650, "current_ratio": 2.758, "quick_ratio": 1.058, "inventory_turnover": 2.734, "receivable_turnover": 5.207},
+    {"date": "2024-04-28", "revenue": 264476, "profit": 39241, "gross_margin": 0.242, "operating_margin": 0.133, "net_margin": 0.115, "roe": 0.146, "cashflow": 37155, "assets": 303396320, "liabilities": 197208220, "equity": 106188100, "debt_ratio": 0.650, "current_ratio": 2.749, "quick_ratio": 1.052, "inventory_turnover": 2.714, "receivable_turnover": 5.186},
+    {"date": "2024-04-27", "revenue": 260490, "profit": 38685, "gross_margin": 0.240, "operating_margin": 0.131, "net_margin": 0.114, "roe": 0.145, "cashflow": 36055, "assets": 302466800, "liabilities": 196604050, "equity": 105862750, "debt_ratio": 0.650, "current_ratio": 2.740, "quick_ratio": 1.047, "inventory_turnover": 2.694, "receivable_turnover": 5.165},
+    {"date": "2024-04-26", "revenue": 256504, "profit": 38133, "gross_margin": 0.238, "operating_margin": 0.129, "net_margin": 0.113, "roe": 0.144, "cashflow": 34955, "assets": 301537280, "liabilities": 195999880, "equity": 105537400, "debt_ratio": 0.650, "current_ratio": 2.731, "quick_ratio": 1.041, "inventory_turnover": 2.674, "receivable_turnover": 5.144},
+    {"date": "2024-04-25", "revenue": 252518, "profit": 37585, "gross_margin": 0.236, "operating_margin": 0.127, "net_margin": 0.112, "roe": 0.143, "cashflow": 33855, "assets": 300607760, "liabilities": 195395710, "equity": 105212050, "debt_ratio": 0.650, "current_ratio": 2.722, "quick_ratio": 1.036, "inventory_turnover": 2.654, "receivable_turnover": 5.123},
+    {"date": "2024-04-24", "revenue": 248532, "profit": 37041, "gross_margin": 0.234, "operating_margin": 0.125, "net_margin": 0.111, "roe": 0.142, "cashflow": 32755, "assets": 299678240, "liabilities": 194791540, "equity": 104886700, "debt_ratio": 0.650, "current_ratio": 2.713, "quick_ratio": 1.030, "inventory_turnover": 2.633, "receivable_turnover": 5.102},
+    {"date": "2024-04-23", "revenue": 244546, "profit": 36502, "gross_margin": 0.232, "operating_margin": 0.124, "net_margin": 0.110, "roe": 0.141, "cashflow": 31655, "assets": 298748720, "liabilities": 194187370, "equity": 104561350, "debt_ratio": 0.650, "current_ratio": 2.703, "quick_ratio": 1.024, "inventory_turnover": 2.613, "receivable_turnover": 5.081},
+    {"date": "2024-04-22", "revenue": 240560, "profit": 35967, "gross_margin": 0.230, "operating_margin": 0.122, "net_margin": 0.109, "roe": 0.140, "cashflow": 30555, "assets": 297819200, "liabilities": 193583200, "equity": 104236000, "debt_ratio": 0.650, "current_ratio": 2.694, "quick_ratio": 1.019, "inventory_turnover": 2.593, "receivable_turnover": 5.060},
+    {"date": "2024-04-21", "revenue": 236574, "profit": 35436, "gross_margin": 0.228, "operating_margin": 0.120, "net_margin": 0.108, "roe": 0.139, "cashflow": 29455, "assets": 296889680, "liabilities": 192979030, "equity": 103910650, "debt_ratio": 0.650, "current_ratio": 2.685, "quick_ratio": 1.013, "inventory_turnover": 2.573, "receivable_turnover": 5.039},
+    {"date": "2024-04-20", "revenue": 232588, "profit": 34910, "gross_margin": 0.226, "operating_margin": 0.118, "net_margin": 0.107, "roe": 0.138, "cashflow": 28355, "assets": 295960160, "liabilities": 192374860, "equity": 103585300, "debt_ratio": 0.650, "current_ratio": 2.676, "quick_ratio": 1.008, "inventory_turnover": 2.553, "receivable_turnover": 5.018},
+    {"date": "2024-04-19", "revenue": 228602, "profit": 34387, "gross_margin": 0.224, "operating_margin": 0.116, "net_margin": 0.106, "roe": 0.137, "cashflow": 27255, "assets": 295030640, "liabilities": 191770690, "equity": 103259950, "debt_ratio": 0.650, "current_ratio": 2.667, "quick_ratio": 1.002, "inventory_turnover": 2.533, "receivable_turnover": 4.997},
+    {"date": "2024-04-18", "revenue": 224616, "profit": 33869, "gross_margin": 0.222, "operating_margin": 0.115, "net_margin": 0.105, "roe": 0.136, "cashflow": 26155, "assets": 294101120, "liabilities": 191166520, "equity": 102934600, "debt_ratio": 0.650, "current_ratio": 2.658, "quick_ratio": 0.997, "inventory_turnover": 2.512, "receivable_turnover": 4.976},
+    {"date": "2024-04-17", "revenue": 220630, "profit": 33355, "gross_margin": 0.220, "operating_margin": 0.113, "net_margin": 0.104, "roe": 0.135, "cashflow": 25055, "assets": 293171600, "liabilities": 190562350, "equity": 102609250, "debt_ratio": 0.650, "current_ratio": 2.649, "quick_ratio": 0.991, "inventory_turnover": 2.492, "receivable_turnover": 4.955},
+    {"date": "2024-04-16", "revenue": 216644, "profit": 32845, "gross_margin": 0.218, "operating_margin": 0.111, "net_margin": 0.103, "roe": 0.134, "cashflow": 23955, "assets": 292242080, "liabilities": 189958180, "equity": 102283900, "debt_ratio": 0.650, "current_ratio": 2.639, "quick_ratio": 0.986, "inventory_turnover": 2.472, "receivable_turnover": 4.934},
+    {"date": "2024-04-15", "revenue": 212658, "profit": 32339, "gross_margin": 0.216, "operating_margin": 0.109, "net_margin": 0.102, "roe": 0.133, "cashflow": 22855, "assets": 291312560, "liabilities": 189354010, "equity": 101958550, "debt_ratio": 0.650, "current_ratio": 2.630, "quick_ratio": 0.980, "inventory_turnover": 2.452, "receivable_turnover": 4.913},
+    {"date": "2024-04-14", "revenue": 208672, "profit": 31837, "gross_margin": 0.214, "operating_margin": 0.107, "net_margin": 0.101, "roe": 0.132, "cashflow": 21755, "assets": 290383040, "liabilities": 188749840, "equity": 101633200, "debt_ratio": 0.650, "current_ratio": 2.621, "quick_ratio": 0.975, "inventory_turnover": 2.432, "receivable_turnover": 4.892},
+    {"date": "2024-04-13", "revenue": 204686, "profit": 31339, "gross_margin": 0.212, "operating_margin": 0.105, "net_margin": 0.100, "roe": 0.131, "cashflow": 20655, "assets": 289453520, "liabilities": 188145670, "equity": 101307850, "debt_ratio": 0.650, "current_ratio": 2.612, "quick_ratio": 0.969, "inventory_turnover": 2.411, "receivable_turnover": 4.871},
+    {"date": "2024-04-12", "revenue": 200700, "profit": 30846, "gross_margin": 0.210, "operating_margin": 0.103, "net_margin": 0.099, "roe": 0.130, "cashflow": 19555, "assets": 288524000, "liabilities": 187541500, "equity": 100982500, "debt_ratio": 0.650, "current_ratio": 2.603, "quick_ratio": 0.964, "inventory_turnover": 2.391, "receivable_turnover": 4.850},
+    {"date": "2024-04-11", "revenue": 196714, "profit": 30356, "gross_margin": 0.208, "operating_margin": 0.102, "net_margin": 0.098, "roe": 0.129, "cashflow": 18455, "assets": 287594480, "liabilities": 186937330, "equity": 100657150, "debt_ratio": 0.650, "current_ratio": 2.594, "quick_ratio": 0.958, "inventory_turnover": 2.371, "receivable_turnover": 4.829},
+    {"date": "2024-04-10", "revenue": 192728, "profit": 29870, "gross_margin": 0.206, "operating_margin": 0.100, "net_margin": 0.097, "roe": 0.128, "cashflow": 17355, "assets": 286664960, "liabilities": 186333160, "equity": 100331800, "debt_ratio": 0.650, "current_ratio": 2.585, "quick_ratio": 0.953, "inventory_turnover": 2.351, "receivable_turnover": 4.808},
+    {"date": "2024-04-09", "revenue": 188742, "profit": 29389, "gross_margin": 0.204, "operating_margin": 0.098, "net_margin": 0.096, "roe": 0.127, "cashflow": 16255, "assets": 285735440, "liabilities": 185728990, "equity": 100006450, "debt_ratio": 0.650, "current_ratio": 2.575, "quick_ratio": 0.947, "inventory_turnover": 2.331, "receivable_turnover": 4.787},
+    {"date": "2024-04-08", "revenue": 184756, "profit": 28911, "gross_margin": 0.202, "operating_margin": 0.096, "net_margin": 0.095, "roe": 0.126, "cashflow": 15155, "assets": 284805920, "liabilities": 185124820, "equity": 99681100, "debt_ratio": 0.650, "current_ratio": 2.566, "quick_ratio": 0.942, "inventory_turnover": 2.310, "receivable_turnover": 4.766},
+    {"date": "2024-04-07", "revenue": 180770, "profit": 28438, "gross_margin": 0.200, "operating_margin": 0.094, "net_margin": 0.094, "roe": 0.125, "cashflow": 14055, "assets": 283876400, "liabilities": 184520650, "equity": 99355750, "debt_ratio": 0.650, "current_ratio": 2.557, "quick_ratio": 0.936, "inventory_turnover": 2.290, "receivable_turnover": 4.745},
+    {"date": "2024-04-06", "revenue": 176784, "profit": 27968, "gross_margin": 0.198, "operating_margin": 0.092, "net_margin": 0.093, "roe": 0.124, "cashflow": 12955, "assets": 282946880, "liabilities": 183916480, "equity": 99030400, "debt_ratio": 0.650, "current_ratio": 2.548, "quick_ratio": 0.931, "inventory_turnover": 2.270, "receivable_turnover": 4.724},
+    {"date": "2024-04-05", "revenue": 172798, "profit": 27502, "gross_margin": 0.196, "operating_margin": 0.090, "net_margin": 0.092, "roe": 0.123, "cashflow": 11855, "assets": 282017360, "liabilities": 183312310, "equity": 98705050, "debt_ratio": 0.650, "current_ratio": 2.539, "quick_ratio": 0.925, "inventory_turnover": 2.250, "receivable_turnover": 4.703},
+    {"date": "2024-04-04", "revenue": 168812, "profit": 27041, "gross_margin": 0.194, "operating_margin": 0.088, "net_margin": 0.091, "roe": 0.122, "cashflow": 10755, "assets": 281087840, "liabilities": 182708140, "equity": 98379700, "debt_ratio": 0.650, "current_ratio": 2.530, "quick_ratio": 0.920, "inventory_turnover": 2.230, "receivable_turnover": 4.682},
+    {"date": "2024-04-03", "revenue": 164826, "profit": 26583, "gross_margin": 0.192, "operating_margin": 0.086, "net_margin": 0.090, "roe": 0.121, "cashflow": 9655, "assets": 280158320, "liabilities": 182103970, "equity": 98054350, "debt_ratio": 0.650, "current_ratio": 2.520, "quick_ratio": 0.914, "inventory_turnover": 2.210, "receivable_turnover": 4.661},
+    {"date": "2024-04-02", "revenue": 160840, "profit": 26129, "gross_margin": 0.190, "operating_margin": 0.084, "net_margin": 0.089, "roe": 0.120, "cashflow": 8555, "assets": 279228800, "liabilities": 181499800, "equity": 97729000, "debt_ratio": 0.650, "current_ratio": 2.511, "quick_ratio": 0.909, "inventory_turnover": 2.190, "receivable_turnover": 4.640},
+    {"date": "2024-04-01", "revenue": 156854, "profit": 25679, "gross_margin": 0.187, "operating_margin": 0.082, "net_margin": 0.088, "roe": 0.119, "cashflow": 7455, "assets": 278299280, "liabilities": 180895630, "equity": 97403650, "debt_ratio": 0.650, "current_ratio": 2.502, "quick_ratio": 0.903, "inventory_turnover": 2.170, "receivable_turnover": 4.619}
+  ],
+  "income_statement": {
+    "quarterly": [
+      {
+        "period": "Q1 2024",
+        "revenue": 460000,
+        "cost_of_revenue": 310500,
+        "gross_profit": 149500,
+        "operating_expenses": {
+          "research_development": 13800,
+          "selling_general_admin": 46000,
+          "other_operating_expenses": 9200
+        },
+        "operating_income": 80500,
+        "non_operating_income": {
+          "interest_income": 2300,
+          "interest_expense": 12500,
+          "other_non_operating_income": 4800
+        },
+        "income_before_tax": 75100,
+        "income_tax_expense": 18775,
+        "net_income": 56325,
+        "ebitda": 98100,
+        "ebit": 87600,
+        "business_segments": {
+          "property_development": {
+            "revenue": 211600,
+            "operating_income": 42665
+          },
+          "property_management": {
+            "revenue": 73600,
+            "operating_income": 14490
+          },
+          "business_operations": {
+            "revenue": 115000,
+            "operating_income": 12075
+          },
+          "investment": {
+            "revenue": 59800,
+            "operating_income": 11270
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 368000,
+            "operating_income": 64400
+          },
+          "asia_pacific": {
+            "revenue": 73600,
+            "operating_income": 12880
+          },
+          "europe": {
+            "revenue": 9200,
+            "operating_income": 1610
+          },
+          "americas": {
+            "revenue": 9200,
+            "operating_income": 1610
+          }
+        }
+      },
+      {
+        "period": "Q4 2023",
+        "revenue": 430000,
+        "cost_of_revenue": 293250,
+        "gross_profit": 136750,
+        "operating_expenses": {
+          "research_development": 12900,
+          "selling_general_admin": 43000,
+          "other_operating_expenses": 8600
+        },
+        "operating_income": 72250,
+        "non_operating_income": {
+          "interest_income": 2150,
+          "interest_expense": 11800,
+          "other_non_operating_income": 4300
+        },
+        "income_before_tax": 66900,
+        "income_tax_expense": 16725,
+        "net_income": 50175,
+        "ebitda": 89430,
+        "ebit": 78700,
+        "business_segments": {
+          "property_development": {
+            "revenue": 197800,
+            "operating_income": 38293
+          },
+          "property_management": {
+            "revenue": 68800,
+            "operating_income": 13005
+          },
+          "business_operations": {
+            "revenue": 107500,
+            "operating_income": 10838
+          },
+          "investment": {
+            "revenue": 55900,
+            "operating_income": 10115
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 344000,
+            "operating_income": 57800
+          },
+          "asia_pacific": {
+            "revenue": 68800,
+            "operating_income": 11560
+          },
+          "europe": {
+            "revenue": 8600,
+            "operating_income": 1445
+          },
+          "americas": {
+            "revenue": 8600,
+            "operating_income": 1445
+          }
+        }
+      },
+      {
+        "period": "Q3 2023",
+        "revenue": 405000,
+        "cost_of_revenue": 278550,
+        "gross_profit": 126450,
+        "operating_expenses": {
+          "research_development": 12150,
+          "selling_general_admin": 40500,
+          "other_operating_expenses": 8100
+        },
+        "operating_income": 65700,
+        "non_operating_income": {
+          "interest_income": 2025,
+          "interest_expense": 11350,
+          "other_non_operating_income": 3850
+        },
+        "income_before_tax": 60225,
+        "income_tax_expense": 15056,
+        "net_income": 45169,
+        "ebitda": 82215,
+        "ebit": 71550,
+        "business_segments": {
+          "property_development": {
+            "revenue": 186300,
+            "operating_income": 34821
+          },
+          "property_management": {
+            "revenue": 64800,
+            "operating_income": 12483
+          },
+          "business_operations": {
+            "revenue": 101250,
+            "operating_income": 9855
+          },
+          "investment": {
+            "revenue": 52650,
+            "operating_income": 8541
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 324000,
+            "operating_income": 52560
+          },
+          "asia_pacific": {
+            "revenue": 64800,
+            "operating_income": 10530
+          },
+          "europe": {
+            "revenue": 8100,
+            "operating_income": 1314
+          },
+          "americas": {
+            "revenue": 8100,
+            "operating_income": 1314
+          }
+        }
+      },
+      {
+        "period": "Q2 2023",
+        "revenue": 385000,
+        "cost_of_revenue": 266150,
+        "gross_profit": 118850,
+        "operating_expenses": {
+          "research_development": 11550,
+          "selling_general_admin": 38500,
+          "other_operating_expenses": 7700
+        },
+        "operating_income": 61100,
+        "non_operating_income": {
+          "interest_income": 1925,
+          "interest_expense": 10800,
+          "other_non_operating_income": 3500
+        },
+        "income_before_tax": 55725,
+        "income_tax_expense": 13931,
+        "net_income": 41794,
+        "ebitda": 77105,
+        "ebit": 66525,
+        "business_segments": {
+          "property_development": {
+            "revenue": 177100,
+            "operating_income": 32383
+          },
+          "property_management": {
+            "revenue": 61600,
+            "operating_income": 11609
+          },
+          "business_operations": {
+            "revenue": 96250,
+            "operating_income": 9165
+          },
+          "investment": {
+            "revenue": 50050,
+            "operating_income": 7943
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 308000,
+            "operating_income": 48880
+          },
+          "asia_pacific": {
+            "revenue": 61600,
+            "operating_income": 9776
+          },
+          "europe": {
+            "revenue": 7700,
+            "operating_income": 1222
+          },
+          "americas": {
+            "revenue": 7700,
+            "operating_income": 1222
+          }
+        }
+      },
+      {
+        "period": "Q1 2023",
+        "revenue": 365000,
+        "cost_of_revenue": 253750,
+        "gross_profit": 111250,
+        "operating_expenses": {
+          "research_development": 10950,
+          "selling_general_admin": 36500,
+          "other_operating_expenses": 7300
+        },
+        "operating_income": 56500,
+        "non_operating_income": {
+          "interest_income": 1825,
+          "interest_expense": 10200,
+          "other_non_operating_income": 3250
+        },
+        "income_before_tax": 51375,
+        "income_tax_expense": 12844,
+        "net_income": 38531,
+        "ebitda": 71825,
+        "ebit": 61550,
+        "business_segments": {
+          "property_development": {
+            "revenue": 167900,
+            "operating_income": 29945
+          },
+          "property_management": {
+            "revenue": 58400,
+            "operating_income": 10735
+          },
+          "business_operations": {
+            "revenue": 91250,
+            "operating_income": 8475
+          },
+          "investment": {
+            "revenue": 47450,
+            "operating_income": 7345
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 292000,
+            "operating_income": 45200
+          },
+          "asia_pacific": {
+            "revenue": 58400,
+            "operating_income": 9040
+          },
+          "europe": {
+            "revenue": 7300,
+            "operating_income": 1130
+          },
+          "americas": {
+            "revenue": 7300,
+            "operating_income": 1130
+          }
+        }
+      },
+      {
+        "period": "Q4 2022",
+        "revenue": 345000,
+        "cost_of_revenue": 241500,
+        "gross_profit": 103500,
+        "operating_expenses": {
+          "research_development": 10350,
+          "selling_general_admin": 34500,
+          "other_operating_expenses": 6900
+        },
+        "operating_income": 51750,
+        "non_operating_income": {
+          "interest_income": 1725,
+          "interest_expense": 9600,
+          "other_non_operating_income": 3000
+        },
+        "income_before_tax": 46875,
+        "income_tax_expense": 11719,
+        "net_income": 35156,
+        "ebitda": 66615,
+        "ebit": 56475,
+        "business_segments": {
+          "property_development": {
+            "revenue": 158700,
+            "operating_income": 27428
+          },
+          "property_management": {
+            "revenue": 55200,
+            "operating_income": 9833
+          },
+          "business_operations": {
+            "revenue": 86250,
+            "operating_income": 7763
+          },
+          "investment": {
+            "revenue": 44850,
+            "operating_income": 6728
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 276000,
+            "operating_income": 41400
+          },
+          "asia_pacific": {
+            "revenue": 55200,
+            "operating_income": 8280
+          },
+          "europe": {
+            "revenue": 6900,
+            "operating_income": 1035
+          },
+          "americas": {
+            "revenue": 6900,
+            "operating_income": 1035
+          }
+        }
+      }
+    ],
+    "annual": [
+      {
+        "period": "2023",
+        "revenue": 1585000,
+        "cost_of_revenue": 1091700,
+        "gross_profit": 493300,
+        "operating_expenses": {
+          "research_development": 47550,
+          "selling_general_admin": 158500,
+          "other_operating_expenses": 31700
+        },
+        "operating_income": 255550,
+        "non_operating_income": {
+          "interest_income": 7925,
+          "interest_expense": 44150,
+          "other_non_operating_income": 14900
+        },
+        "income_before_tax": 234225,
+        "income_tax_expense": 58556,
+        "net_income": 175669,
+        "ebitda": 320575,
+        "ebit": 278325,
+        "business_segments": {
+          "property_development": {
+            "revenue": 729100,
+            "operating_income": 135441
+          },
+          "property_management": {
+            "revenue": 253600,
+            "operating_income": 47832
+          },
+          "business_operations": {
+            "revenue": 396250,
+            "operating_income": 38333
+          },
+          "investment": {
+            "revenue": 206050,
+            "operating_income": 33944
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 1268000,
+            "operating_income": 204440
+          },
+          "asia_pacific": {
+            "revenue": 253600,
+            "operating_income": 41888
+          },
+          "europe": {
+            "revenue": 31700,
+            "operating_income": 4755
+          },
+          "americas": {
+            "revenue": 31700,
+            "operating_income": 4755
+          }
+        }
+      },
+      {
+        "period": "2022",
+        "revenue": 1310000,
+        "cost_of_revenue": 917000,
+        "gross_profit": 393000,
+        "operating_expenses": {
+          "research_development": 39300,
+          "selling_general_admin": 131000,
+          "other_operating_expenses": 26200
+        },
+        "operating_income": 196500,
+        "non_operating_income": {
+          "interest_income": 6550,
+          "interest_expense": 36700,
+          "other_non_operating_income": 11500
+        },
+        "income_before_tax": 177850,
+        "income_tax_expense": 44462,
+        "net_income": 133388,
+        "ebitda": 246450,
+        "ebit": 214600,
+        "business_segments": {
+          "property_development": {
+            "revenue": 602600,
+            "operating_income": 104145
+          },
+          "property_management": {
+            "revenue": 209600,
+            "operating_income": 36833
+          },
+          "business_operations": {
+            "revenue": 327500,
+            "operating_income": 29475
+          },
+          "investment": {
+            "revenue": 170300,
+            "operating_income": 26047
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 1048000,
+            "operating_income": 157200
+          },
+          "asia_pacific": {
+            "revenue": 209600,
+            "operating_income": 31440
+          },
+          "europe": {
+            "revenue": 26200,
+            "operating_income": 3930
+          },
+          "americas": {
+            "revenue": 26200,
+            "operating_income": 3930
+          }
+        }
+      },
+      {
+        "period": "2021",
+        "revenue": 1080000,
+        "cost_of_revenue": 763200,
+        "gross_profit": 316800,
+        "operating_expenses": {
+          "research_development": 32400,
+          "selling_general_admin": 108000,
+          "other_operating_expenses": 21600
+        },
+        "operating_income": 154800,
+        "non_operating_income": {
+          "interest_income": 5400,
+          "interest_expense": 30700,
+          "other_non_operating_income": 8600
+        },
+        "income_before_tax": 138100,
+        "income_tax_expense": 34525,
+        "net_income": 103575,
+        "ebitda": 194600,
+        "ebit": 168200,
+        "business_segments": {
+          "property_development": {
+            "revenue": 496800,
+            "operating_income": 82044
+          },
+          "property_management": {
+            "revenue": 172800,
+            "operating_income": 29664
+          },
+          "business_operations": {
+            "revenue": 270000,
+            "operating_income": 23220
+          },
+          "investment": {
+            "revenue": 140400,
+            "operating_income": 19872
+          }
+        },
+        "geographic_segments": {
+          "china": {
+            "revenue": 864000,
+            "operating_income": 123840
+          },
+          "asia_pacific": {
+            "revenue": 172800,
+            "operating_income": 24732
+          },
+          "europe": {
+            "revenue": 21600,
+            "operating_income": 3096
+          },
+          "americas": {
+            "revenue": 21600,
+            "operating_income": 3132
+          }
+        }
+      }
+    ]
+  },
+  "cash_flow": {
+    "operating_activities": {
+      "net_income": 56325,
+      "depreciation_amortization": 12500,
+      "changes_in_working_capital": -5800,
+      "net_cash_from_operating": 63025
+    },
+    "investing_activities": {
+      "capital_expenditures": -28000,
+      "investments": -22500,
+      "other_investing_activities": 8000,
+      "net_cash_from_investing": -42500
+    },
+    "financing_activities": {
+      "debt_issuance_repayment": 12500,
+      "dividends_paid": -6000,
+      "stock_issuance_repurchase": 8000,
+      "net_cash_from_financing": 14500
+    },
+    "net_change_in_cash": 35025,
+    "beginning_cash_balance": 125000,
+    "ending_cash_balance": 160025
+  },
+  "financial_ratios": {
+    "profitability": {
+      "gross_margin": 0.310,
+      "operating_margin": 0.190,
+      "net_profit_margin": 0.152,
+      "return_on_assets": 0.060,
+      "return_on_equity": 0.180,
+      "return_on_invested_capital": 0.106
+    },
+    "liquidity": {
+      "current_ratio": 3.06,
+      "quick_ratio": 1.24,
+      "cash_ratio": 0.41,
+      "operating_cash_flow_ratio": 0.17
+    },
+    "solvency": {
+      "debt_ratio": 0.65,
+      "debt_to_equity": 1.86,
+      "interest_coverage": 16.5,
+      "debt_service_coverage": 3.6
+    },
+    "efficiency": {
+      "asset_turnover": 0.40,
+      "inventory_turnover": 3.4,
+      "receivable_turnover": 5.9,
+      "payable_turnover": 4.2,
+      "cash_conversion_cycle": 112.3
+    },
+    "valuation": {
+      "earnings_per_share": 3.87,
+      "price_to_earnings": 24.8,
+      "price_to_book": 4.5,
+      "dividend_yield": 0.015,
+      "dividend_payout_ratio": 0.12
+    }
+  }
+}
