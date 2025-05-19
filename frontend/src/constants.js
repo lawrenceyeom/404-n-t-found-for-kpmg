@@ -3,9 +3,9 @@ export const API_BASE = 'https://four04-n-t-found-for-kpmg-1.onrender.com';
 export const API_URL = API_BASE;
 
 export const COMPANIES = [
-  { id: 'aura', name: 'AURA稳健', desc: 'AURA稳健公司描述' },
-  { id: 'beta', name: 'BETA成长', desc: 'BETA成长公司描述' },
-  { id: 'crisis', name: 'CRISIS压力', desc: 'CRISIS压力公司描述' },
+  { id: 'aura', name: 'AURA稳健', desc: '公司描述: AURA公司稳健经营，注重风险控制，财务状况良好，现金流稳定。' },
+  { id: 'beta', name: 'BETA成长', desc: '公司描述: BETA公司快速扩张，追求高增长，注重市场占有率，但可能面临较大财务压力。' },
+  { id: 'crisis', name: 'CRISIS压力', desc: '公司描述: CRISIS公司面临较大财务压力，现金流紧张，债务负担重，盈利能力下降。' },
 ];
 
 export const RISK_DIMENSIONS = [

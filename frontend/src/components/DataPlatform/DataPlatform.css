@@ -9,14 +9,14 @@
 }
 
 .platform-title {
-  color: #4be1a0;
+  color: #40a9ff !important;
   margin-bottom: 8px;
   font-size: 24px;
   font-weight: bold;
 }
 
 .platform-subtitle {
-  color: #99b7ff;
+  color: #99b7ff !important;
   margin-bottom: 24px;
   font-size: 16px;
 }

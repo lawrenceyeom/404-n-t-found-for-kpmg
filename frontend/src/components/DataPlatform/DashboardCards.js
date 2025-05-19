@@ -462,7 +462,7 @@ const DashboardCards = () => {
   return (
     <div className="dashboard-wrapper">
       <div className="dashboard-header">
-        <h2 className="dashboard-title">可视化仪表盘</h2>
+        <h2 className="dashboard-title">可视化仪表盘（点击可交互）</h2>
         <div className="dashboard-controls">
           <div className="refresh-control">
             <label className="refresh-label">

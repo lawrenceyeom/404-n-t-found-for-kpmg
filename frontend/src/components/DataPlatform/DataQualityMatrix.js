@@ -643,7 +643,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
     return [
       {
         id: '1',
-        sourceName: 'AURA稳健',
+        sourceName: 'AURA稳健.co',
         sourceType: '企业内部系统',
         metrics: {
           completeness: getRandomScore(0.85, 0.95),
@@ -657,7 +657,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '2',
-        sourceName: 'BETA成长',
+        sourceName: 'BETA成长.co',
         sourceType: '企业内部系统',
         metrics: {
           completeness: getRandomScore(0.80, 0.90),
@@ -671,7 +671,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '3',
-        sourceName: 'CRISIS压力',
+        sourceName: 'CRISIS压力.co',
         sourceType: '企业内部系统',
         metrics: {
           completeness: getRandomScore(0.68, 0.78),
@@ -685,7 +685,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '4',
-        sourceName: 'Wind金融终端',
+        sourceName: '某金融终端',
         sourceType: '金融数据库',
         metrics: {
           completeness: getRandomScore(0.95, 0.99),
@@ -699,7 +699,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '5',
-        sourceName: 'Bloomberg数据库',
+        sourceName: '某国际数据库',
         sourceType: '金融数据库',
         metrics: {
           completeness: getRandomScore(0.94, 0.99),
@@ -727,7 +727,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '7',
-        sourceName: '新浪微博API',
+        sourceName: '社交平台A-API',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.70, 0.80),
@@ -741,7 +741,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '8',
-        sourceName: '微信公众平台',
+        sourceName: '社交平台B',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.68, 0.78),
@@ -755,7 +755,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '9',
-        sourceName: '抖音数据平台',
+        sourceName: '社交平台C数据库-API',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.68, 0.78),
@@ -769,7 +769,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '10',
-        sourceName: '小红书内容API',
+        sourceName: '社交平台D-API',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.65, 0.75),
@@ -783,7 +783,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '11',
-        sourceName: 'LinkedIn数据源',
+        sourceName: '招聘平台A数据源',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.78, 0.88),
@@ -797,7 +797,7 @@ const DataQualityMatrix = ({ dataQuality }) => {
       },
       {
         id: '12',
-        sourceName: '知乎问答数据',
+        sourceName: '社交媒体E问答数据',
         sourceType: '社交媒体',
         metrics: {
           completeness: getRandomScore(0.72, 0.82),
@@ -944,6 +944,9 @@ const DataQualityMatrix = ({ dataQuality }) => {
           <h3 className="data-quality-title">数据质量矩阵</h3>
           <p className="data-quality-description">
             监控各数据源不同质量维度的评分，确保数据分析和AI模型的数据质量。
+          </p>
+          <p className="data-quality-tip" style={{ color: '#40a9ff', marginTop: 4, fontWeight: 600 }}>
+            数据如有问题请点击“重置数据”按钮。
           </p>
         </div>
         <div className="header-actions">

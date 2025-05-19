@@ -72,10 +72,12 @@ import BusinessRiskHeatmap from './components/BusinessRiskHeatmap';
 import FeedbackModal from './components/modals/FeedbackModal';
 import AlertHistoryModal from './components/modals/AlertHistoryModal';
 import RadarDetailModal from './components/modals/RadarDetailModal';
+import WeatherForecastModal from './components/modals/WeatherForecastModal';
 // Note: DrilldownModal is assumed to be internal to HistoricalTrendAnalysis
 
 function App() {
   const [company, setCompany] = useState('aura'); // Top-level state
+  const [lakeType, setLakeType] = useState('AURA稳健'); // 数据湖公司类型
   const [lastVisitedPath, setLastVisitedPath] = useState('');
 
   // --- Instantiate Custom Hooks ---
@@ -98,6 +100,8 @@ function App() {
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
   const [feedbackSuccess, setFeedbackSuccess] = useState(false);
   const [radarModalData, setRadarModalData] = useState(null); // { dimIdx, score }
+  const [isWeatherModalOpen, setIsWeatherModalOpen] = useState(false);
+  const [weatherAnalysisData, setWeatherAnalysisData] = useState(null);
 
   // Feedback form state (can be further moved into FeedbackModal if it handles its own state)
   const [feedbackType, setFeedbackType] = useState('功能建议');
@@ -134,6 +138,30 @@ function App() {
       setRadarModalData(null);
     }
   }, [riskScores]);
+  
+  // 处理打开气象预报详情
+  const handleOpenWeatherForecast = useCallback(() => {
+    setIsWeatherModalOpen(true);
+    
+    // 获取对应公司的财务分析数据
+    const fetchAnalysisData = async () => {
+      try {
+        const response = await fetch(`${API_BASE}/api/datalake?company=${company}&data_type=finance&layer=analysis`);
+        if (response.ok) {
+          const data = await response.json();
+          setWeatherAnalysisData(data);
+        } else {
+          console.error('Failed to fetch finance analysis data');
+          setWeatherAnalysisData(null);
+        }
+      } catch (error) {
+        console.error('Error fetching finance analysis data:', error);
+        setWeatherAnalysisData(null);
+      }
+    };
+    
+    fetchAnalysisData();
+  }, [company, API_BASE]);
 
   const handleFeedbackSubmit = () => {
     // In a real app, you'd likely call an API here
@@ -190,10 +218,24 @@ function App() {
           onOpenFeedback={() => setIsFeedbackModalOpen(true)}
           onOpenAlertHistory={openAlertHistoryModal}
           onOpenRadarDetail={handleOpenRadarDetail}
+          onOpenWeatherForecast={handleOpenWeatherForecast}
         />
         <div style={{ marginTop: 36, width: '100%', display: 'flex', gap: 40, flexWrap: 'wrap', minHeight: '450px' }}>
                 <AssetStructurePieChart financeData={financeData} assetItems={ASSET_ITEMS} />
                 <BusinessRiskHeatmap company={company} bizModules={bizModules} riskDimensions={RISK_DIMENSIONS} />
+        </div>
+        <div style={{
+          width: '100%',
+          textAlign: 'center',
+          marginTop: 20,
+          paddingTop: 12,
+          paddingBottom: 8,
+          borderTop: '1px solid rgba(64, 169, 255, 0.2)',
+          color: 'rgba(179, 207, 255, 0.6)',
+          fontSize: 13,
+          fontWeight: 400,
+        }}>
+          本demo由404 N'T FOUND（谢李晗、顾佳文、翁翊珊、姚人杰）开发，仅供展示预览，不代表最终品质
         </div>
       </main>
   );
@@ -205,6 +247,8 @@ function App() {
           currentCompanyId={company}
           onSetCompany={setCompany}
           companiesData={COMPANIES}
+          lakeType={lakeType}
+          setLakeType={setLakeType}
         />
         <Routes>
           <Route path="/" element={renderMainDashboard()} />
@@ -214,7 +258,7 @@ function App() {
             <Navigate to="/data-platform/data-quality" replace /> :
             <Navigate to="/data-platform/dashboard" replace />
           } />
-          <Route path="/datalake" element={<DataLake />} />
+          <Route path="/datalake" element={<DataLake lakeType={lakeType} />} />
         </Routes>
       {isFeedbackModalOpen && (
         <FeedbackModal
@@ -241,6 +285,16 @@ function App() {
             apiBase={API_BASE}
         />
       )}
+      {isWeatherModalOpen && (
+        <WeatherForecastModal
+          isOpen={isWeatherModalOpen}
+          onClose={() => setIsWeatherModalOpen(false)}
+          weather={weather}
+          company={company}
+          analysisData={weatherAnalysisData}
+        />
+      )}
+      
       {radarModalData && (
         <RadarDetailModal
           isOpen={!!radarModalData}

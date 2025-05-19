@@ -16,6 +16,7 @@ const DashboardGrid = ({
   onOpenFeedback,
   onOpenAlertHistory,
   onOpenRadarDetail,
+  onOpenWeatherForecast,
 }) => {
   return (
     <div style={{
@@ -29,7 +30,7 @@ const DashboardGrid = ({
       <OpinionCard opinionList={opinionList} opinionIdx={opinionIdx} />
       <AlertNotificationCard alert={currentAlerts[currentAlertIdx]} onClick={onOpenAlertHistory} />
       <RiskRadarCard riskScores={riskScores} riskDimensions={riskDimensions} onRadarClick={onOpenRadarDetail} />
-      <WeatherForecastCard weather={weather} />
+      <WeatherForecastCard weather={weather} onClick={onOpenWeatherForecast} />
       <UserFeedbackCard onOpenFeedback={onOpenFeedback} />
     </div>
   );

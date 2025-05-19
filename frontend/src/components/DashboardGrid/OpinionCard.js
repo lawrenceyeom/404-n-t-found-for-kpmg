@@ -1,8 +1,14 @@
 import React, { memo } from 'react';
 import { CARD_STYLE_BASE, CONTENT_BOX_STYLE } from '../../constants';
 import { formatOpinionDate } from '../../utils/helpers';
+import { useNavigate } from 'react-router-dom';
 
 const OpinionCard = ({ opinionList, opinionIdx }) => {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate('/datalake', { state: { initialDataType: 'opinion', initialLayer: 'raw' } });
+  };
   console.log('OpinionCard rendering');
   const renderOpinionContent = () => {
     if (!opinionList || opinionList.length === 0) return <span style={{ color: '#b3cfff' }}>加载中...</span>;
@@ -31,7 +37,17 @@ const OpinionCard = ({ opinionList, opinionIdx }) => {
     );
   };
   return (
-    <div style={{ ...CARD_STYLE_BASE, display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+    <div 
+      style={{ 
+        ...CARD_STYLE_BASE, 
+        display: 'flex', 
+        flexDirection: 'row', 
+        alignItems: 'center',
+        cursor: 'pointer',
+        transition: 'transform 0.2s, box-shadow 0.2s',
+      }}
+      onClick={handleClick}
+    >
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 38, minHeight: 38, width: 38, height: 38, borderRadius: '50%', background: '#40a9ff', fontSize: 22, color: '#fff', marginRight: 16 }}>
         <span role="img" aria-label="opinion">💬</span>
       </div>

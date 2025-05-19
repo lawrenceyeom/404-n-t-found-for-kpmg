@@ -8,6 +8,7 @@ import EChartsRadar from './charts/EChartsRadar';
 import EChartsHeatmap from './charts/EChartsHeatmap';
 import { API_BASE as GLOBAL_API_BASE } from '../../constants';
 import AuditAnalysisView from './AnalysisViews/AuditAnalysisView';
+import { useLocation } from 'react-router-dom';
 
 const HEADER_MAPPINGS = {
   // Finance Raw (renderTable) & Financial Ratios
@@ -157,13 +158,24 @@ const DATA_LAYERS = [
 
 const API_BASE = `${GLOBAL_API_BASE}/api/datalake`;
 
-function DataLake() {
+function DataLake({ lakeType }) {
+  const location = useLocation();
+  const initialDataType = location.state?.initialDataType || 'finance';
+  const initialLayer = location.state?.initialLayer || 'raw';
+  
   const [company, setCompany] = useState('aura');
-  const [dataType, setDataType] = useState('finance');
-  const [layer, setLayer] = useState('raw');
+  const [dataType, setDataType] = useState(initialDataType);
+  const [layer, setLayer] = useState(initialLayer);
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  
+  // 当Header中的lakeType变化时，更新DataLake内部的company状态
+  useEffect(() => {
+    if (lakeType === 'AURA稳健') setCompany('aura');
+    else if (lakeType === 'BETA成长') setCompany('beta');
+    else if (lakeType === 'CRISIS压力') setCompany('crisis');
+  }, [lakeType]);
   
   // 使用useCallback记忆化这些函数，避免不必要的重新渲染
   const handleCompanyChange = useCallback((newCompany) => {
@@ -1153,17 +1165,7 @@ function DataLake() {
       <div className="datalake-wrapper">
         <div className="datalake-header">
           <div className="datalake-title">AURA 数据湖</div>
-          <div className="datalake-company-tabs">
-            {COMPANIES.map(c => (
-              <button 
-                key={c.id} 
-                className={c.id === company ? 'active' : ''}
-                onClick={() => handleCompanyChange(c.id)}
-              >
-                {c.name}
-              </button>
-            ))}
-          </div>
+          {/* 移除原有的公司类型切换按钮，使用Header中的按钮替代 */}
         </div>
         
         <div className="datalake-type-tabs">

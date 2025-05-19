@@ -14,11 +14,12 @@ const DATA_PLATFORM_TABS = [
   { key: 'model-health', label: '模型健康度' },
 ];
 
-const Header = ({ currentCompanyId, onSetCompany }) => {
+const Header = ({ currentCompanyId, onSetCompany, companiesData, lakeType, setLakeType }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const isDashboard = location.pathname === '/';
   const isDataPlatform = location.pathname.startsWith('/data-platform');
+  const isDataLake = location.pathname.startsWith('/datalake');
   const [showMore, setShowMore] = useState(false);
   const moreRef = useRef();
   const [dropdownPos, setDropdownPos] = useState({ top: 0, left: 0, width: 180 });
@@ -47,8 +48,8 @@ const Header = ({ currentCompanyId, onSetCompany }) => {
   }, [showMore]);
 
   // 控制最多显示5个，剩下的放到下拉菜单
-  const visibleTabs = DATA_PLATFORM_TABS.slice(0, 5);
-  const moreTabs = DATA_PLATFORM_TABS.slice(5);
+  const visibleTabs = DATA_PLATFORM_TABS.slice(0, 3);
+  const moreTabs = DATA_PLATFORM_TABS.slice(3);
 
   return (
     <header style={{
@@ -56,7 +57,7 @@ const Header = ({ currentCompanyId, onSetCompany }) => {
       boxShadow: '0 2px 12px #00152933', borderBottom: '1.5px solid #223366',
       position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 100, backdropFilter: 'blur(2px)'
     }}>
-      <img src="/logo.png" alt="logo" style={{ height: 44, marginRight: 28, borderRadius: 8, background: '#fff', padding: 2 }} />
+      <img src="/logo.png" alt="logo" style={{ height: 56, marginRight: 24, borderRadius: 8 }} />
       <div style={{ display: 'flex', alignItems: 'center', gap: 18, marginRight: 32 }}>
         <Link to="/">
           <button style={{
@@ -86,9 +87,34 @@ const Header = ({ currentCompanyId, onSetCompany }) => {
           }}>数据湖</button>
         </Link>
       </div>
-      <h2 style={{ flex: 1, color: '#40a9ff', margin: 0, fontWeight: 800, letterSpacing: 2, fontSize: 28, textShadow: '0 2px 8px #00152955' }}>
-        AURA 智能审计风险监控平台 DEMO
+      <h2 style={{ flex: 1, color: '#40a9ff', margin: 0, fontWeight: 800, letterSpacing: 2, fontSize: 23, textShadow: '0 2px 8px #00152955' }}>
+        AURA智能审计风险平台
       </h2>
+      
+      {/* 公司类型切换按钮 - 只在数据湖页面显示 */}
+      {isDataLake && (
+        <div style={{ display: 'flex', gap: 10, marginRight: 20 }}>
+          {['AURA稳健', 'BETA成长', 'CRISIS压力'].map(type => (
+            <button
+              key={type}
+              style={{
+                background: lakeType === type ? '#4be1a0' : 'rgba(34,51,102,0.85)',
+                color: lakeType === type ? '#15294e' : '#b3cfff',
+                fontWeight: 700,
+                fontSize: 14,
+                border: 'none',
+                borderRadius: 6,
+                padding: '6px 16px',
+                cursor: 'pointer',
+                transition: 'all 0.18s'
+              }}
+              onClick={() => setLakeType(type)}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
+      )}
       {isDataPlatform && (
         <nav style={{ display: 'flex', alignItems: 'center', gap: 4, marginRight: 24, maxWidth: 900, overflowX: 'auto', whiteSpace: 'nowrap' }}>
           {visibleTabs.map(tab => (
